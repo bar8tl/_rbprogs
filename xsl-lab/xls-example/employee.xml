@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!-- ?xml-stylesheet type='text/xsl' href='byexample.xslt'? -->
+
+<v1:emp xmlns:v1='urn:employee:v1'>
+  <fname>Bob</fname>
+  <lname>Smith</lname>
+  <age>45</age>
+  <position>Instructor</position>
+</v1:emp>

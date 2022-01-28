@@ -1,0 +1,4299 @@
+BEGIN_RECORD_SECTION
+  BEGIN_CONTROL_RECORD
+    BEGIN_FIELDS
+      NAME                TABNAM
+      TEXT                Name of Table Structure
+      TYPE                CHARACTER
+      LENGTH              000010
+      FIELD_POS           0001
+      CHARACTER_FIRST     000001
+      CHARACTER_LAST      000010
+
+      NAME                MANDT
+      TEXT                Client
+      TYPE                CHARACTER
+      LENGTH              000003
+      FIELD_POS           0002
+      CHARACTER_FIRST     000011
+      CHARACTER_LAST      000013
+
+      NAME                DOCNUM
+      TEXT                IDoc number
+      TYPE                CHARACTER
+      LENGTH              000016
+      FIELD_POS           0003
+      CHARACTER_FIRST     000014
+      CHARACTER_LAST      000029
+
+      NAME                DOCREL
+      TEXT                SAP Release for IDoc
+      TYPE                CHARACTER
+      LENGTH              000004
+      FIELD_POS           0004
+      CHARACTER_FIRST     000030
+      CHARACTER_LAST      000033
+
+      NAME                STATUS
+      TEXT                Status of IDoc
+      TYPE                CHARACTER
+      LENGTH              000002
+      FIELD_POS           0005
+      CHARACTER_FIRST     000034
+      CHARACTER_LAST      000035
+
+      NAME                DIRECT
+      TEXT                Direction
+      TYPE                CHARACTER
+      LENGTH              000001
+      FIELD_POS           0006
+      CHARACTER_FIRST     000036
+      CHARACTER_LAST      000036
+
+      NAME                OUTMOD
+      TEXT                Output mode
+      TYPE                CHARACTER
+      LENGTH              000001
+      FIELD_POS           0007
+      CHARACTER_FIRST     000037
+      CHARACTER_LAST      000037
+
+      NAME                EXPRSS
+      TEXT                Overriding in inbound processing
+      TYPE                CHARACTER
+      LENGTH              000001
+      FIELD_POS           0008
+      CHARACTER_FIRST     000038
+      CHARACTER_LAST      000038
+
+      NAME                TEST
+      TEXT                Test flag
+      TYPE                CHARACTER
+      LENGTH              000001
+      FIELD_POS           0009
+      CHARACTER_FIRST     000039
+      CHARACTER_LAST      000039
+
+      NAME                IDOCTYP
+      TEXT                Name of basic type
+      TYPE                CHARACTER
+      LENGTH              000030
+      FIELD_POS           0010
+      CHARACTER_FIRST     000040
+      CHARACTER_LAST      000069
+
+      NAME                CIMTYP
+      TEXT                Extension (defined by customer)
+      TYPE                CHARACTER
+      LENGTH              000030
+      FIELD_POS           0011
+      CHARACTER_FIRST     000070
+      CHARACTER_LAST      000099
+
+      NAME                MESTYP
+      TEXT                Message type
+      TYPE                CHARACTER
+      LENGTH              000030
+      FIELD_POS           0012
+      CHARACTER_FIRST     000100
+      CHARACTER_LAST      000129
+
+      NAME                MESCOD
+      TEXT                Message code
+      TYPE                CHARACTER
+      LENGTH              000003
+      FIELD_POS           0013
+      CHARACTER_FIRST     000130
+      CHARACTER_LAST      000132
+
+      NAME                MESFCT
+      TEXT                Message Function
+      TYPE                CHARACTER
+      LENGTH              000003
+      FIELD_POS           0014
+      CHARACTER_FIRST     000133
+      CHARACTER_LAST      000135
+
+      NAME                STD
+      TEXT                EDI standard, flag
+      TYPE                CHARACTER
+      LENGTH              000001
+      FIELD_POS           0015
+      CHARACTER_FIRST     000136
+      CHARACTER_LAST      000136
+
+      NAME                STDVRS
+      TEXT                EDI standard, version and release
+      TYPE                CHARACTER
+      LENGTH              000006
+      FIELD_POS           0016
+      CHARACTER_FIRST     000137
+      CHARACTER_LAST      000142
+
+      NAME                STDMES
+      TEXT                EDI message type
+      TYPE                CHARACTER
+      LENGTH              000006
+      FIELD_POS           0017
+      CHARACTER_FIRST     000143
+      CHARACTER_LAST      000148
+
+      NAME                SNDPOR
+      TEXT                Sender port (SAP System, external subsystem)
+      TYPE                CHARACTER
+      LENGTH              000010
+      FIELD_POS           0018
+      CHARACTER_FIRST     000149
+      CHARACTER_LAST      000158
+
+      NAME                SNDPRT
+      TEXT                Partner type of sender
+      TYPE                CHARACTER
+      LENGTH              000002
+      FIELD_POS           0019
+      CHARACTER_FIRST     000159
+      CHARACTER_LAST      000160
+
+      NAME                SNDPFC
+      TEXT                Partner Function of Sender
+      TYPE                CHARACTER
+      LENGTH              000002
+      FIELD_POS           0020
+      CHARACTER_FIRST     000161
+      CHARACTER_LAST      000162
+
+      NAME                SNDPRN
+      TEXT                Partner Number of Sender
+      TYPE                CHARACTER
+      LENGTH              000010
+      FIELD_POS           0021
+      CHARACTER_FIRST     000163
+      CHARACTER_LAST      000172
+
+      NAME                SNDSAD
+      TEXT                Sender address (SADR)
+      TYPE                CHARACTER
+      LENGTH              000021
+      FIELD_POS           0022
+      CHARACTER_FIRST     000173
+      CHARACTER_LAST      000193
+
+      NAME                SNDLAD
+      TEXT                Logical address of sender
+      TYPE                CHARACTER
+      LENGTH              000070
+      FIELD_POS           0023
+      CHARACTER_FIRST     000194
+      CHARACTER_LAST      000263
+
+      NAME                RCVPOR
+      TEXT                Receiver port
+      TYPE                CHARACTER
+      LENGTH              000010
+      FIELD_POS           0024
+      CHARACTER_FIRST     000264
+      CHARACTER_LAST      000273
+
+      NAME                RCVPRT
+      TEXT                Partner Type of Receiver
+      TYPE                CHARACTER
+      LENGTH              000002
+      FIELD_POS           0025
+      CHARACTER_FIRST     000274
+      CHARACTER_LAST      000275
+
+      NAME                RCVPFC
+      TEXT                Partner function of recipient
+      TYPE                CHARACTER
+      LENGTH              000002
+      FIELD_POS           0026
+      CHARACTER_FIRST     000276
+      CHARACTER_LAST      000277
+
+      NAME                RCVPRN
+      TEXT                Partner Number of Receiver
+      TYPE                CHARACTER
+      LENGTH              000010
+      FIELD_POS           0027
+      CHARACTER_FIRST     000278
+      CHARACTER_LAST      000287
+
+      NAME                RCVSAD
+      TEXT                Recipient address (SADR)
+      TYPE                CHARACTER
+      LENGTH              000021
+      FIELD_POS           0028
+      CHARACTER_FIRST     000288
+      CHARACTER_LAST      000308
+
+      NAME                RCVLAD
+      TEXT                Logical address of recipient
+      TYPE                CHARACTER
+      LENGTH              000070
+      FIELD_POS           0029
+      CHARACTER_FIRST     000309
+      CHARACTER_LAST      000378
+
+      NAME                CREDAT
+      TEXT                Created On
+      TYPE                CHARACTER
+      LENGTH              000008
+      FIELD_POS           0030
+      CHARACTER_FIRST     000379
+      CHARACTER_LAST      000386
+
+      NAME                CRETIM
+      TEXT                Created at
+      TYPE                CHARACTER
+      LENGTH              000006
+      FIELD_POS           0031
+      CHARACTER_FIRST     000387
+      CHARACTER_LAST      000392
+
+      NAME                REFINT
+      TEXT                Transmission file (EDI Interchange)
+      TYPE                CHARACTER
+      LENGTH              000014
+      FIELD_POS           0032
+      CHARACTER_FIRST     000393
+      CHARACTER_LAST      000406
+
+      NAME                REFGRP
+      TEXT                Message group (EDI Message Group)
+      TYPE                CHARACTER
+      LENGTH              000014
+      FIELD_POS           0033
+      CHARACTER_FIRST     000407
+      CHARACTER_LAST      000420
+
+      NAME                REFMES
+      TEXT                Message (EDI Message)
+      TYPE                CHARACTER
+      LENGTH              000014
+      FIELD_POS           0034
+      CHARACTER_FIRST     000421
+      CHARACTER_LAST      000434
+
+      NAME                ARCKEY
+      TEXT                Key for external message archive
+      TYPE                CHARACTER
+      LENGTH              000070
+      FIELD_POS           0035
+      CHARACTER_FIRST     000435
+      CHARACTER_LAST      000504
+
+      NAME                SERIAL
+      TEXT                Serialization
+      TYPE                CHARACTER
+      LENGTH              000020
+      FIELD_POS           0036
+      CHARACTER_FIRST     000505
+      CHARACTER_LAST      000524
+    END_FIELDS
+  END_CONTROL_RECORD
+  BEGIN_DATA_RECORD
+    BEGIN_FIELDS
+      NAME                SEGNAM
+      TEXT                Segment (external name)
+      TYPE                CHARACTER
+      LENGTH              000030
+      FIELD_POS           0001
+      CHARACTER_FIRST     000001
+      CHARACTER_LAST      000030
+
+      NAME                MANDT
+      TEXT                Client
+      TYPE                CHARACTER
+      LENGTH              000003
+      FIELD_POS           0002
+      CHARACTER_FIRST     000031
+      CHARACTER_LAST      000033
+
+      NAME                DOCNUM
+      TEXT                IDoc number
+      TYPE                CHARACTER
+      LENGTH              000016
+      FIELD_POS           0003
+      CHARACTER_FIRST     000034
+      CHARACTER_LAST      000049
+
+      NAME                SEGNUM
+      TEXT                Segment Number
+      TYPE                CHARACTER
+      LENGTH              000006
+      FIELD_POS           0004
+      CHARACTER_FIRST     000050
+      CHARACTER_LAST      000055
+
+      NAME                PSGNUM
+      TEXT                Number of superior parent segment
+      TYPE                CHARACTER
+      LENGTH              000006
+      FIELD_POS           0005
+      CHARACTER_FIRST     000056
+      CHARACTER_LAST      000061
+
+      NAME                HLEVEL
+      TEXT                Hierarchy level of SAP segment
+      TYPE                CHARACTER
+      LENGTH              000002
+      FIELD_POS           0006
+      CHARACTER_FIRST     000062
+      CHARACTER_LAST      000063
+
+      NAME                SDATA
+      TEXT                Application data
+      TYPE                CHARACTER
+      LENGTH              001000
+      FIELD_POS           0007
+      CHARACTER_FIRST     000064
+      CHARACTER_LAST      001063
+    END_FIELDS
+  END_DATA_RECORD
+  BEGIN_STATUS_RECORD
+    BEGIN_FIELDS
+      NAME                TABNAM
+      TEXT                Name of Table Structure
+      TYPE                CHARACTER
+      LENGTH              000010
+      FIELD_POS           0001
+      CHARACTER_FIRST     000001
+      CHARACTER_LAST      000010
+
+      NAME                MANDT
+      TEXT                Client
+      TYPE                CHARACTER
+      LENGTH              000003
+      FIELD_POS           0002
+      CHARACTER_FIRST     000011
+      CHARACTER_LAST      000013
+
+      NAME                DOCNUM
+      TEXT                IDoc number
+      TYPE                CHARACTER
+      LENGTH              000016
+      FIELD_POS           0003
+      CHARACTER_FIRST     000014
+      CHARACTER_LAST      000029
+
+      NAME                LOGDAT
+      TEXT                Date of status information
+      TYPE                CHARACTER
+      LENGTH              000008
+      FIELD_POS           0004
+      CHARACTER_FIRST     000030
+      CHARACTER_LAST      000037
+
+      NAME                LOGTIM
+      TEXT                Time of status information
+      TYPE                CHARACTER
+      LENGTH              000006
+      FIELD_POS           0005
+      CHARACTER_FIRST     000038
+      CHARACTER_LAST      000043
+
+      NAME                STATUS
+      TEXT                Status of IDoc
+      TYPE                CHARACTER
+      LENGTH              000002
+      FIELD_POS           0006
+      CHARACTER_FIRST     000044
+      CHARACTER_LAST      000045
+
+      NAME                STAMQU
+      TEXT                Status for message in status record
+      TYPE                CHARACTER
+      LENGTH              000003
+      FIELD_POS           0007
+      CHARACTER_FIRST     000046
+      CHARACTER_LAST      000048
+
+      NAME                STAMID
+      TEXT                Message for status notification: Message class
+      TYPE                CHARACTER
+      LENGTH              000020
+      FIELD_POS           0008
+      CHARACTER_FIRST     000049
+      CHARACTER_LAST      000068
+
+      NAME                STAMNO
+      TEXT                Message number for status message
+      TYPE                CHARACTER
+      LENGTH              000003
+      FIELD_POS           0009
+      CHARACTER_FIRST     000069
+      CHARACTER_LAST      000071
+
+      NAME                STATYP
+      TEXT                ABAP message type (A, W, E, S, I) in status message
+      TYPE                CHARACTER
+      LENGTH              000001
+      FIELD_POS           0010
+      CHARACTER_FIRST     000072
+      CHARACTER_LAST      000072
+
+      NAME                STAPA1
+      TEXT                First parameter for message in status record
+      TYPE                CHARACTER
+      LENGTH              000050
+      FIELD_POS           0011
+      CHARACTER_FIRST     000073
+      CHARACTER_LAST      000122
+
+      NAME                STAPA2
+      TEXT                Second parameter for message in status record
+      TYPE                CHARACTER
+      LENGTH              000050
+      FIELD_POS           0012
+      CHARACTER_FIRST     000123
+      CHARACTER_LAST      000172
+
+      NAME                STAPA3
+      TEXT                Third parameter for message in status record
+      TYPE                CHARACTER
+      LENGTH              000050
+      FIELD_POS           0013
+      CHARACTER_FIRST     000173
+      CHARACTER_LAST      000222
+
+      NAME                STAPA4
+      TEXT                Fourth parameter for message in status record
+      TYPE                CHARACTER
+      LENGTH              000050
+      FIELD_POS           0014
+      CHARACTER_FIRST     000223
+      CHARACTER_LAST      000272
+
+      NAME                STATXT
+      TEXT                Status text
+      TYPE                CHARACTER
+      LENGTH              000070
+      FIELD_POS           0015
+      CHARACTER_FIRST     000273
+      CHARACTER_LAST      000342
+
+      NAME                UNAME
+      TEXT                User Name
+      TYPE                CHARACTER
+      LENGTH              000012
+      FIELD_POS           0016
+      CHARACTER_FIRST     000343
+      CHARACTER_LAST      000354
+
+      NAME                REPID
+      TEXT                Program
+      TYPE                CHARACTER
+      LENGTH              000030
+      FIELD_POS           0017
+      CHARACTER_FIRST     000355
+      CHARACTER_LAST      000384
+
+      NAME                ROUTID
+      TEXT                Subroutine (routine, function module)
+      TYPE                CHARACTER
+      LENGTH              000030
+      FIELD_POS           0018
+      CHARACTER_FIRST     000385
+      CHARACTER_LAST      000414
+
+      NAME                SEGNUM
+      TEXT                Segment Number
+      TYPE                CHARACTER
+      LENGTH              000006
+      FIELD_POS           0019
+      CHARACTER_FIRST     000415
+      CHARACTER_LAST      000420
+
+      NAME                SEGFLD
+      TEXT                Segment field
+      TYPE                CHARACTER
+      LENGTH              000030
+      FIELD_POS           0020
+      CHARACTER_FIRST     000421
+      CHARACTER_LAST      000450
+
+      NAME                REFINT
+      TEXT                Transmission file (EDI Interchange)
+      TYPE                CHARACTER
+      LENGTH              000014
+      FIELD_POS           0021
+      CHARACTER_FIRST     000451
+      CHARACTER_LAST      000464
+
+      NAME                REFGRP
+      TEXT                Message group (EDI Message Group)
+      TYPE                CHARACTER
+      LENGTH              000014
+      FIELD_POS           0022
+      CHARACTER_FIRST     000465
+      CHARACTER_LAST      000478
+
+      NAME                REFMES
+      TEXT                Message (EDI Message)
+      TYPE                CHARACTER
+      LENGTH              000014
+      FIELD_POS           0023
+      CHARACTER_FIRST     000479
+      CHARACTER_LAST      000492
+
+      NAME                ARCKEY
+      TEXT                Key for external message archive
+      TYPE                CHARACTER
+      LENGTH              000070
+      FIELD_POS           0024
+      CHARACTER_FIRST     000493
+      CHARACTER_LAST      000562
+    END_FIELDS
+  END_STATUS_RECORD
+END_RECORD_SECTION
+BEGIN_SEGMENT_SECTION
+  BEGIN_IDOC          PEXR2002
+    EXTENSION           /RB04/YC1_PEXR2002
+    BEGIN_SEGMENT       E2IDKU1
+      SEGMENTTYPE         E1IDKU1
+      QUALIFIED
+      LEVEL               01
+      STATUS              MANDATORY
+      LOOPMIN             0000000001
+      LOOPMAX             0000000001
+      BEGIN_FIELDS
+        NAME                BGMTYP
+        TEXT                Document Type
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0001
+        CHARACTER_FIRST     000064
+        CHARACTER_LAST      000066
+
+        NAME                BGMNAME
+        TEXT                Document/Message Name
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0002
+        CHARACTER_FIRST     000067
+        CHARACTER_LAST      000101
+
+        NAME                BGMREF
+        TEXT                Message Reference Number
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0003
+        CHARACTER_FIRST     000102
+        CHARACTER_LAST      000136
+
+        NAME                BGMLEV
+        TEXT                Coded Message Type (Confirmation, Reversal, Original...)
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0004
+        CHARACTER_FIRST     000137
+        CHARACTER_LAST      000139
+
+        NAME                BGMACC
+        TEXT                Coded Confirmation Level (Received, Carried Out, Both)
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0005
+        CHARACTER_FIRST     000140
+        CHARACTER_LAST      000142
+      END_FIELDS
+    END_SEGMENT
+    BEGIN_SEGMENT         E2EDK03
+      SEGMENTTYPE         E1EDK03
+      QUALIFIED
+      LEVEL               02
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000000003
+      BEGIN_FIELDS
+        NAME                IDDAT
+        TEXT                Qualifier for IDOC date segment
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0001
+        CHARACTER_FIRST     000064
+        CHARACTER_LAST      000066
+
+        NAME                DATUM
+        TEXT                IDOC: Date
+        TYPE                CHARACTER
+        LENGTH              000008
+        FIELD_POS           0002
+        CHARACTER_FIRST     000067
+        CHARACTER_LAST      000074
+
+        NAME                UZEIT
+        TEXT                IDOC: Time
+        TYPE                CHARACTER
+        LENGTH              000006
+        FIELD_POS           0003
+        CHARACTER_FIRST     000075
+        CHARACTER_LAST      000080
+      END_FIELDS
+    END_SEGMENT
+    BEGIN_SEGMENT         E2EDK02
+      SEGMENTTYPE         E1EDK02
+      QUALIFIED
+      LEVEL               01
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000000001
+      BEGIN_FIELDS
+        NAME                QUALF
+        TEXT                IDOC qualifier reference document
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0001
+        CHARACTER_FIRST     000064
+        CHARACTER_LAST      000066
+
+        NAME                BELNR
+        TEXT                IDOC document number
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0002
+        CHARACTER_FIRST     000067
+        CHARACTER_LAST      000101
+
+        NAME                POSNR
+        TEXT                Item number
+        TYPE                CHARACTER
+        LENGTH              000006
+        FIELD_POS           0003
+        CHARACTER_FIRST     000102
+        CHARACTER_LAST      000107
+
+        NAME                DATUM
+        TEXT                IDOC: Date
+        TYPE                CHARACTER
+        LENGTH              000008
+        FIELD_POS           0004
+        CHARACTER_FIRST     000108
+        CHARACTER_LAST      000115
+
+        NAME                UZEIT
+        TEXT                IDOC: Time
+        TYPE                CHARACTER
+        LENGTH              000006
+        FIELD_POS           0005
+        CHARACTER_FIRST     000116
+        CHARACTER_LAST      000121
+      END_FIELDS
+    END_SEGMENT
+    BEGIN_SEGMENT         E2EDK12000
+      SEGMENTTYPE         E1EDK12
+      QUALIFIED
+      LEVEL               02
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000000099
+      BEGIN_FIELDS
+        NAME                QUALF
+        TEXT                IDOC qualifier reference document
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0001
+        CHARACTER_FIRST     000064
+        CHARACTER_LAST      000066
+
+        NAME                BELNR
+        TEXT                IDOC document number
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0002
+        CHARACTER_FIRST     000067
+        CHARACTER_LAST      000101
+
+        NAME                POSNR
+        TEXT                Item number
+        TYPE                CHARACTER
+        LENGTH              000006
+        FIELD_POS           0003
+        CHARACTER_FIRST     000102
+        CHARACTER_LAST      000107
+
+        NAME                DATUM
+        TEXT                IDOC: Date
+        TYPE                CHARACTER
+        LENGTH              000008
+        FIELD_POS           0004
+        CHARACTER_FIRST     000108
+        CHARACTER_LAST      000115
+
+        NAME                UZEIT
+        TEXT                IDOC: Time
+        TYPE                CHARACTER
+        LENGTH              000006
+        FIELD_POS           0005
+        CHARACTER_FIRST     000116
+        CHARACTER_LAST      000121
+      END_FIELDS
+    END_SEGMENT
+    BEGIN_SEGMENT         E2IDKU2
+      SEGMENTTYPE         E1IDKU2
+      LEVEL               01
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000000001
+      BEGIN_FIELDS
+        NAME                BUSFUN
+        TEXT                Type of Commerical Transaction/Reason for Payment
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0001
+        CHARACTER_FIRST     000064
+        CHARACTER_LAST      000066
+
+        NAME                BUSGEO
+        TEXT                National/International Payment
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0002
+        CHARACTER_FIRST     000067
+        CHARACTER_LAST      000069
+
+        NAME                BUSZBE
+        TEXT                Description of Reason for Payment
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0003
+        CHARACTER_FIRST     000070
+        CHARACTER_LAST      000139
+
+        NAME                BUSZEB
+        TEXT                Payment Level (between Two Companies/within One)
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0004
+        CHARACTER_FIRST     000140
+        CHARACTER_LAST      000142
+
+        NAME                BUSZFO
+        TEXT                Form of Payment at the Bank
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0005
+        CHARACTER_FIRST     000143
+        CHARACTER_LAST      000145
+      END_FIELDS
+    END_SEGMENT
+    BEGIN_SEGMENT         E2IDT01
+      SEGMENTTYPE         E1IDT01
+      QUALIFIED
+      LEVEL               01
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000000001
+      BEGIN_FIELDS
+        NAME                TXTVW
+        TEXT                Text ID
+        TYPE                CHARACTER
+        LENGTH              000004
+        FIELD_POS           0001
+        CHARACTER_FIRST     000064
+        CHARACTER_LAST      000067
+
+        NAME                TXTSP
+        TEXT                Language
+        TYPE                CHARACTER
+        LENGTH              000001
+        FIELD_POS           0002
+        CHARACTER_FIRST     000068
+        CHARACTER_LAST      000068
+
+        NAME                TXTLF
+        TEXT                Continuation Text (Sequential Number)
+        TYPE                CHARACTER
+        LENGTH              000002
+        FIELD_POS           0003
+        CHARACTER_FIRST     000069
+        CHARACTER_LAST      000070
+
+        NAME                TXT01
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0004
+        CHARACTER_FIRST     000071
+        CHARACTER_LAST      000140
+
+        NAME                TXT02
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0005
+        CHARACTER_FIRST     000141
+        CHARACTER_LAST      000210
+
+        NAME                TXT03
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0006
+        CHARACTER_FIRST     000211
+        CHARACTER_LAST      000280
+
+        NAME                TXT04
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0007
+        CHARACTER_FIRST     000281
+        CHARACTER_LAST      000350
+
+        NAME                TXT05
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0008
+        CHARACTER_FIRST     000351
+        CHARACTER_LAST      000420
+
+        NAME                TXT06
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0009
+        CHARACTER_FIRST     000421
+        CHARACTER_LAST      000490
+
+        NAME                TXT07
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0010
+        CHARACTER_FIRST     000491
+        CHARACTER_LAST      000560
+
+        NAME                TXT08
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0011
+        CHARACTER_FIRST     000561
+        CHARACTER_LAST      000630
+
+        NAME                TXT09
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0012
+        CHARACTER_FIRST     000631
+        CHARACTER_LAST      000700
+
+        NAME                TXT10
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0013
+        CHARACTER_FIRST     000701
+        CHARACTER_LAST      000770
+
+        NAME                TXT11
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0014
+        CHARACTER_FIRST     000771
+        CHARACTER_LAST      000840
+
+        NAME                TXT12
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0015
+        CHARACTER_FIRST     000841
+        CHARACTER_LAST      000910
+
+        NAME                TXT13
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0016
+        CHARACTER_FIRST     000911
+        CHARACTER_LAST      000980
+
+        NAME                TXT14
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0017
+        CHARACTER_FIRST     000981
+        CHARACTER_LAST      001050
+      END_FIELDS
+    END_SEGMENT
+    BEGIN_SEGMENT         E2IDKU3002
+      SEGMENTTYPE         E1IDKU3
+      LEVEL               01
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000000001
+      BEGIN_FIELDS
+        NAME                PAIKON
+        TEXT                Terms of Payment
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0001
+        CHARACTER_FIRST     000064
+        CHARACTER_LAST      000066
+
+        NAME                PAIGAR
+        TEXT                Payment Guarantee
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0002
+        CHARACTER_FIRST     000067
+        CHARACTER_LAST      000069
+
+        NAME                PAIART
+        TEXT                Bank Payment Method
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0003
+        CHARACTER_FIRST     000070
+        CHARACTER_LAST      000072
+
+        NAME                PAIMED
+        TEXT                Medium for Transferring the Payment Order
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0004
+        CHARACTER_FIRST     000073
+        CHARACTER_LAST      000075
+
+        NAME                PAIRZAWE
+        TEXT                Payment Method for This Payment
+        TYPE                CHARACTER
+        LENGTH              000001
+        FIELD_POS           0005
+        CHARACTER_FIRST     000076
+        CHARACTER_LAST      000076
+
+        NAME                PAIUZAWE
+        TEXT                Payment method supplement
+        TYPE                CHARACTER
+        LENGTH              000002
+        FIELD_POS           0006
+        CHARACTER_FIRST     000077
+        CHARACTER_LAST      000078
+
+        NAME                PAYRUNCC
+        TEXT                Paying company code
+        TYPE                CHARACTER
+        LENGTH              000004
+        FIELD_POS           0007
+        CHARACTER_FIRST     000079
+        CHARACTER_LAST      000082
+
+        NAME                PAYRUNID
+        TEXT                Additional Identification
+        TYPE                CHARACTER
+        LENGTH              000006
+        FIELD_POS           0008
+        CHARACTER_FIRST     000083
+        CHARACTER_LAST      000088
+
+        NAME                PAYRUNDT
+        TEXT                IDOC: Date
+        TYPE                CHARACTER
+        LENGTH              000008
+        FIELD_POS           0009
+        CHARACTER_FIRST     000089
+        CHARACTER_LAST      000096
+
+        NAME                EXTPAYM
+        TEXT                Bank Payment Method
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0010
+        CHARACTER_FIRST     000097
+        CHARACTER_LAST      000099
+
+        NAME                EXTDESC
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0011
+        CHARACTER_FIRST     000100
+        CHARACTER_LAST      000169
+
+        NAME                RELNUM
+        TEXT                Process number
+        TYPE                CHARACTER
+        LENGTH              000012
+        FIELD_POS           0012
+        CHARACTER_FIRST     000170
+        CHARACTER_LAST      000181
+
+        NAME                INSCODE1
+        TEXT                Code Word for Instructions
+        TYPE                CHARACTER
+        LENGTH              000012
+        FIELD_POS           0013
+        CHARACTER_FIRST     000182
+        CHARACTER_LAST      000193
+
+        NAME                INSTEXT1
+        TEXT                Text for Instruction
+        TYPE                CHARACTER
+        LENGTH              000050
+        FIELD_POS           0014
+        CHARACTER_FIRST     000194
+        CHARACTER_LAST      000243
+
+        NAME                INSINFO1
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0015
+        CHARACTER_FIRST     000244
+        CHARACTER_LAST      000313
+
+        NAME                INSCODE2
+        TEXT                Code Word for Instructions
+        TYPE                CHARACTER
+        LENGTH              000012
+        FIELD_POS           0016
+        CHARACTER_FIRST     000314
+        CHARACTER_LAST      000325
+
+        NAME                INSTEXT2
+        TEXT                Text for Instruction
+        TYPE                CHARACTER
+        LENGTH              000050
+        FIELD_POS           0017
+        CHARACTER_FIRST     000326
+        CHARACTER_LAST      000375
+
+        NAME                INSINFO2
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0018
+        CHARACTER_FIRST     000376
+        CHARACTER_LAST      000445
+
+        NAME                INSCODE3
+        TEXT                Code Word for Instructions
+        TYPE                CHARACTER
+        LENGTH              000012
+        FIELD_POS           0019
+        CHARACTER_FIRST     000446
+        CHARACTER_LAST      000457
+
+        NAME                INSTEXT3
+        TEXT                Text for Instruction
+        TYPE                CHARACTER
+        LENGTH              000050
+        FIELD_POS           0020
+        CHARACTER_FIRST     000458
+        CHARACTER_LAST      000507
+
+        NAME                INSINFO3
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0021
+        CHARACTER_FIRST     000508
+        CHARACTER_LAST      000577
+
+        NAME                INSCODE4
+        TEXT                Code Word for Instructions
+        TYPE                CHARACTER
+        LENGTH              000012
+        FIELD_POS           0022
+        CHARACTER_FIRST     000578
+        CHARACTER_LAST      000589
+
+        NAME                INSTEXT4
+        TEXT                Text for Instruction
+        TYPE                CHARACTER
+        LENGTH              000050
+        FIELD_POS           0023
+        CHARACTER_FIRST     000590
+        CHARACTER_LAST      000639
+
+        NAME                INSINFO4
+        TEXT                Text line
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0024
+        CHARACTER_FIRST     000640
+        CHARACTER_LAST      000709
+      END_FIELDS
+    END_SEGMENT
+    BEGIN_SEGMENT         E2IDKU4
+      SEGMENTTYPE         E1IDKU4
+      LEVEL               01
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000000001
+      BEGIN_FIELDS
+        NAME                FCAREGUL
+        TEXT                Charges Regulation
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0001
+        CHARACTER_FIRST     000064
+        CHARACTER_LAST      000066
+
+        NAME                FCAGIDBN
+        TEXT                Bank ID
+        TYPE                CHARACTER
+        LENGTH              000017
+        FIELD_POS           0002
+        CHARACTER_FIRST     000067
+        CHARACTER_LAST      000083
+
+        NAME                FCAGBNNR
+        TEXT                Bank ID Type
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0003
+        CHARACTER_FIRST     000084
+        CHARACTER_LAST      000086
+
+        NAME                FCAGKNTO
+        TEXT                Account Number of the Charges Account
+        TYPE                CHARACTER
+        LENGTH              000030
+        FIELD_POS           0004
+        CHARACTER_FIRST     000087
+        CHARACTER_LAST      000116
+
+        NAME                FCAGWAER
+        TEXT                Charges Account Currency
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0005
+        CHARACTER_FIRST     000117
+        CHARACTER_LAST      000119
+      END_FIELDS
+    END_SEGMENT
+    BEGIN_GROUP                    1
+      LEVEL               01
+      STATUS              MANDATORY
+      LOOPMIN             0000000001
+      LOOPMAX             0000000001
+      BEGIN_SEGMENT       E2IDKU5
+        SEGMENTTYPE         E1IDKU5
+        QUALIFIED
+        LEVEL               01
+        STATUS              MANDATORY
+        LOOPMIN             0000000001
+        LOOPMAX             0000000001
+        BEGIN_FIELDS
+          NAME                MOAQUAL
+          TEXT                Qualifier for the Amount
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000066
+
+          NAME                MOABETR
+          TEXT                Amount
+          TYPE                CHARACTER
+          LENGTH              000018
+          FIELD_POS           0002
+          CHARACTER_FIRST     000067
+          CHARACTER_LAST      000084
+
+          NAME                CUXWAERZ
+          TEXT                Currency
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0003
+          CHARACTER_FIRST     000085
+          CHARACTER_LAST      000087
+
+          NAME                CUXWAERQ
+          TEXT                Currency
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0004
+          CHARACTER_FIRST     000088
+          CHARACTER_LAST      000090
+
+          NAME                CUXKURS
+          TEXT                Rate for Currency Translations
+          TYPE                CHARACTER
+          LENGTH              000012
+          FIELD_POS           0005
+          CHARACTER_FIRST     000091
+          CHARACTER_LAST      000102
+
+          NAME                CUXDATUM
+          TEXT                Date for Currency Translation
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0006
+          CHARACTER_FIRST     000103
+          CHARACTER_LAST      000137
+
+          NAME                CUXZEIT
+          TEXT                Time for Currency Translation
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0007
+          CHARACTER_FIRST     000138
+          CHARACTER_LAST      000172
+
+          NAME                CUXKURS_M
+          TEXT                Indirectly quoted exchange rate in an IDoc segment
+          TYPE                CHARACTER
+          LENGTH              000012
+          FIELD_POS           0008
+          CHARACTER_FIRST     000173
+          CHARACTER_LAST      000184
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT       E2EDL03
+        SEGMENTTYPE         E1EDL03
+        QUALIFIED
+        LEVEL               02
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000000001
+        BEGIN_FIELDS
+          NAME                IDDAT
+          TEXT                Qualifier for IDOC date segment
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000066
+
+          NAME                DATUM
+          TEXT                Date
+          TYPE                CHARACTER
+          LENGTH              000008
+          FIELD_POS           0002
+          CHARACTER_FIRST     000067
+          CHARACTER_LAST      000074
+
+          NAME                UZEIT
+          TEXT                Time
+          TYPE                CHARACTER
+          LENGTH              000006
+          FIELD_POS           0003
+          CHARACTER_FIRST     000075
+          CHARACTER_LAST      000080
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT         E2EDL02
+        SEGMENTTYPE         E1EDL02
+        QUALIFIED
+        LEVEL               02
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000000001
+        BEGIN_FIELDS
+          NAME                QUALF
+          TEXT                IDOC qualifier reference document
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000066
+
+          NAME                BELNR
+          TEXT                IDOC document number
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0002
+          CHARACTER_FIRST     000067
+          CHARACTER_LAST      000101
+
+          NAME                POSNR
+          TEXT                Item number
+          TYPE                CHARACTER
+          LENGTH              000006
+          FIELD_POS           0003
+          CHARACTER_FIRST     000102
+          CHARACTER_LAST      000107
+
+          NAME                DATUM
+          TEXT                Date
+          TYPE                CHARACTER
+          LENGTH              000008
+          FIELD_POS           0004
+          CHARACTER_FIRST     000108
+          CHARACTER_LAST      000115
+
+          NAME                UZEIT
+          TEXT                Time
+          TYPE                CHARACTER
+          LENGTH              000006
+          FIELD_POS           0005
+          CHARACTER_FIRST     000116
+          CHARACTER_LAST      000121
+        END_FIELDS
+      END_SEGMENT
+    END_GROUP
+    BEGIN_SEGMENT           E2IDB02003
+      SEGMENTTYPE         E1IDB02
+      QUALIFIED
+      LEVEL               02
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000000004
+      BEGIN_FIELDS
+        NAME                FIIQUALI
+        TEXT                Type of Bank Details
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0001
+        CHARACTER_FIRST     000064
+        CHARACTER_LAST      000066
+
+        NAME                FIIBKENN
+        TEXT                Bank ID
+        TYPE                CHARACTER
+        LENGTH              000011
+        FIELD_POS           0002
+        CHARACTER_FIRST     000067
+        CHARACTER_LAST      000077
+
+        NAME                FIIBKCDE
+        TEXT                Bank ID Type
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0003
+        CHARACTER_FIRST     000078
+        CHARACTER_LAST      000080
+
+        NAME                FIIBKUKN
+        TEXT                Bank ID
+        TYPE                CHARACTER
+        LENGTH              000017
+        FIELD_POS           0004
+        CHARACTER_FIRST     000081
+        CHARACTER_LAST      000097
+
+        NAME                FIIBKUCD
+        TEXT                Bank ID Type
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0005
+        CHARACTER_FIRST     000098
+        CHARACTER_LAST      000100
+
+        NAME                FIIBKNAM
+        TEXT                Bank Name
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0006
+        CHARACTER_FIRST     000101
+        CHARACTER_LAST      000170
+
+        NAME                FIIBKORT
+        TEXT                Bank City
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0007
+        CHARACTER_FIRST     000171
+        CHARACTER_LAST      000240
+
+        NAME                FIIBLAND
+        TEXT                Bank Country
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0008
+        CHARACTER_FIRST     000241
+        CHARACTER_LAST      000243
+
+        NAME                FIIKONTO
+        TEXT                Account Number
+        TYPE                CHARACTER
+        LENGTH              000030
+        FIELD_POS           0009
+        CHARACTER_FIRST     000244
+        CHARACTER_LAST      000273
+
+        NAME                FIIKNAME
+        TEXT                Account Holder
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0010
+        CHARACTER_FIRST     000274
+        CHARACTER_LAST      000308
+
+        NAME                FIIKNAM2
+        TEXT                Account Holder - 2nd Line
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0011
+        CHARACTER_FIRST     000309
+        CHARACTER_LAST      000343
+
+        NAME                FIIKWAER
+        TEXT                Account Currency
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0012
+        CHARACTER_FIRST     000344
+        CHARACTER_LAST      000346
+
+        NAME                CTAFUNKT
+        TEXT                Contact Person Function
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0013
+        CHARACTER_FIRST     000347
+        CHARACTER_LAST      000349
+
+        NAME                CTABNAME
+        TEXT                Contact Person/Department
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0014
+        CHARACTER_FIRST     000350
+        CHARACTER_LAST      000384
+
+        NAME                COMNUMM1
+        TEXT                Communication Number
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0015
+        CHARACTER_FIRST     000385
+        CHARACTER_LAST      000409
+
+        NAME                COMNART1
+        TEXT                Type of Communication Number
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0016
+        CHARACTER_FIRST     000410
+        CHARACTER_LAST      000412
+
+        NAME                COMNUMM2
+        TEXT                Communication Number
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0017
+        CHARACTER_FIRST     000413
+        CHARACTER_LAST      000437
+
+        NAME                COMNART2
+        TEXT                Type of Communication Number
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0018
+        CHARACTER_FIRST     000438
+        CHARACTER_LAST      000440
+
+        NAME                COMNUMM3
+        TEXT                Communication Number
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0019
+        CHARACTER_FIRST     000441
+        CHARACTER_LAST      000465
+
+        NAME                COMNART3
+        TEXT                Type of Communication Number
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0020
+        CHARACTER_FIRST     000466
+        CHARACTER_LAST      000468
+
+        NAME                COMNUMM4
+        TEXT                Communication Number
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0021
+        CHARACTER_FIRST     000469
+        CHARACTER_LAST      000493
+
+        NAME                COMNART4
+        TEXT                Type of Communication Number
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0022
+        CHARACTER_FIRST     000494
+        CHARACTER_LAST      000496
+
+        NAME                COMNUMM5
+        TEXT                Communication Number
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0023
+        CHARACTER_FIRST     000497
+        CHARACTER_LAST      000521
+
+        NAME                COMNART5
+        TEXT                Type of Communication Number
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0024
+        CHARACTER_FIRST     000522
+        CHARACTER_LAST      000524
+
+        NAME                FIIBKONT
+        TEXT                Bank Control Key
+        TYPE                CHARACTER
+        LENGTH              000002
+        FIELD_POS           0025
+        CHARACTER_FIRST     000525
+        CHARACTER_LAST      000526
+
+        NAME                FIIXPGRO
+        TEXT                Post Office Bank Current Account
+        TYPE                CHARACTER
+        LENGTH              000001
+        FIELD_POS           0026
+        CHARACTER_FIRST     000527
+        CHARACTER_LAST      000527
+
+        NAME                FIIBRANCH
+        TEXT                Bank Name
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0027
+        CHARACTER_FIRST     000528
+        CHARACTER_LAST      000597
+
+        NAME                STRAS
+        TEXT                Street and house number 1
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0028
+        CHARACTER_FIRST     000598
+        CHARACTER_LAST      000632
+
+        NAME                STRS2
+        TEXT                Street and house number 2
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0029
+        CHARACTER_FIRST     000633
+        CHARACTER_LAST      000667
+
+        NAME                PFACH
+        TEXT                PO Box
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0030
+        CHARACTER_FIRST     000668
+        CHARACTER_LAST      000702
+
+        NAME                COUNC
+        TEXT                County code
+        TYPE                CHARACTER
+        LENGTH              000009
+        FIELD_POS           0031
+        CHARACTER_FIRST     000703
+        CHARACTER_LAST      000711
+
+        NAME                PSTLZ
+        TEXT                Postal code
+        TYPE                CHARACTER
+        LENGTH              000009
+        FIELD_POS           0032
+        CHARACTER_FIRST     000712
+        CHARACTER_LAST      000720
+
+        NAME                PSTL2
+        TEXT                P.O. Box postal code
+        TYPE                CHARACTER
+        LENGTH              000009
+        FIELD_POS           0033
+        CHARACTER_FIRST     000721
+        CHARACTER_LAST      000729
+
+        NAME                REGIO
+        TEXT                Region
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0034
+        CHARACTER_FIRST     000730
+        CHARACTER_LAST      000732
+
+        NAME                NAME2
+        TEXT                Name 2
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0035
+        CHARACTER_FIRST     000733
+        CHARACTER_LAST      000767
+      END_FIELDS
+    END_SEGMENT
+    BEGIN_SEGMENT         E2IDBL2001
+      SEGMENTTYPE         E1IDBL2
+      QUALIFIED
+      LEVEL               02
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000000010
+      BEGIN_FIELDS
+        NAME                FIIQUALI
+        TEXT                Type of Bank Details
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0001
+        CHARACTER_FIRST     000064
+        CHARACTER_LAST      000066
+
+        NAME                FIIBKENN
+        TEXT                Bank ID
+        TYPE                CHARACTER
+        LENGTH              000011
+        FIELD_POS           0002
+        CHARACTER_FIRST     000067
+        CHARACTER_LAST      000077
+
+        NAME                FIIBKCDE
+        TEXT                Bank ID Type
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0003
+        CHARACTER_FIRST     000078
+        CHARACTER_LAST      000080
+
+        NAME                FIIBKUKN
+        TEXT                Bank ID
+        TYPE                CHARACTER
+        LENGTH              000017
+        FIELD_POS           0004
+        CHARACTER_FIRST     000081
+        CHARACTER_LAST      000097
+
+        NAME                FIIBKUCD
+        TEXT                Bank ID Type
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0005
+        CHARACTER_FIRST     000098
+        CHARACTER_LAST      000100
+
+        NAME                FIIBKNAM
+        TEXT                Bank Name
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0006
+        CHARACTER_FIRST     000101
+        CHARACTER_LAST      000170
+
+        NAME                FIIBKORT
+        TEXT                Bank City
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0007
+        CHARACTER_FIRST     000171
+        CHARACTER_LAST      000240
+
+        NAME                FIIBLAND
+        TEXT                Bank Country
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0008
+        CHARACTER_FIRST     000241
+        CHARACTER_LAST      000243
+
+        NAME                FIIKONTO
+        TEXT                Account Number
+        TYPE                CHARACTER
+        LENGTH              000030
+        FIELD_POS           0009
+        CHARACTER_FIRST     000244
+        CHARACTER_LAST      000273
+
+        NAME                FIIKNAME
+        TEXT                Account Holder
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0010
+        CHARACTER_FIRST     000274
+        CHARACTER_LAST      000308
+
+        NAME                FIIKNAM2
+        TEXT                Account Holder - 2nd Line
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0011
+        CHARACTER_FIRST     000309
+        CHARACTER_LAST      000343
+
+        NAME                FIIKWAER
+        TEXT                Account Currency
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0012
+        CHARACTER_FIRST     000344
+        CHARACTER_LAST      000346
+
+        NAME                CTAFUNKT
+        TEXT                Contact Person Function
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0013
+        CHARACTER_FIRST     000347
+        CHARACTER_LAST      000349
+
+        NAME                CTABNAME
+        TEXT                Contact Person/Department
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0014
+        CHARACTER_FIRST     000350
+        CHARACTER_LAST      000384
+
+        NAME                COMNUMM1
+        TEXT                Communication Number
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0015
+        CHARACTER_FIRST     000385
+        CHARACTER_LAST      000409
+
+        NAME                COMNART1
+        TEXT                Type of Communication Number
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0016
+        CHARACTER_FIRST     000410
+        CHARACTER_LAST      000412
+
+        NAME                COMNUMM2
+        TEXT                Communication Number
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0017
+        CHARACTER_FIRST     000413
+        CHARACTER_LAST      000437
+
+        NAME                COMNART2
+        TEXT                Type of Communication Number
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0018
+        CHARACTER_FIRST     000438
+        CHARACTER_LAST      000440
+
+        NAME                COMNUMM3
+        TEXT                Communication Number
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0019
+        CHARACTER_FIRST     000441
+        CHARACTER_LAST      000465
+
+        NAME                COMNART3
+        TEXT                Type of Communication Number
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0020
+        CHARACTER_FIRST     000466
+        CHARACTER_LAST      000468
+
+        NAME                COMNUMM4
+        TEXT                Communication Number
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0021
+        CHARACTER_FIRST     000469
+        CHARACTER_LAST      000493
+
+        NAME                COMNART4
+        TEXT                Type of Communication Number
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0022
+        CHARACTER_FIRST     000494
+        CHARACTER_LAST      000496
+
+        NAME                COMNUMM5
+        TEXT                Communication Number
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0023
+        CHARACTER_FIRST     000497
+        CHARACTER_LAST      000521
+
+        NAME                COMNART5
+        TEXT                Type of Communication Number
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0024
+        CHARACTER_FIRST     000522
+        CHARACTER_LAST      000524
+
+        NAME                FIIBKONT
+        TEXT                Bank Control Key
+        TYPE                CHARACTER
+        LENGTH              000002
+        FIELD_POS           0025
+        CHARACTER_FIRST     000525
+        CHARACTER_LAST      000526
+
+        NAME                FIIXPGRO
+        TEXT                Post Office Bank Current Account
+        TYPE                CHARACTER
+        LENGTH              000001
+        FIELD_POS           0026
+        CHARACTER_FIRST     000527
+        CHARACTER_LAST      000527
+
+        NAME                FIIBRANCH
+        TEXT                Bank Name
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0027
+        CHARACTER_FIRST     000528
+        CHARACTER_LAST      000597
+
+        NAME                STRAS
+        TEXT                Street and house number 1
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0028
+        CHARACTER_FIRST     000598
+        CHARACTER_LAST      000632
+
+        NAME                STRS2
+        TEXT                Street and house number 2
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0029
+        CHARACTER_FIRST     000633
+        CHARACTER_LAST      000667
+
+        NAME                PFACH
+        TEXT                PO Box
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0030
+        CHARACTER_FIRST     000668
+        CHARACTER_LAST      000702
+
+        NAME                COUNC
+        TEXT                County code
+        TYPE                CHARACTER
+        LENGTH              000009
+        FIELD_POS           0031
+        CHARACTER_FIRST     000703
+        CHARACTER_LAST      000711
+
+        NAME                PSTLZ
+        TEXT                Postal code
+        TYPE                CHARACTER
+        LENGTH              000009
+        FIELD_POS           0032
+        CHARACTER_FIRST     000712
+        CHARACTER_LAST      000720
+
+        NAME                PSTL2
+        TEXT                P.O. Box postal code
+        TYPE                CHARACTER
+        LENGTH              000009
+        FIELD_POS           0033
+        CHARACTER_FIRST     000721
+        CHARACTER_LAST      000729
+
+        NAME                REGIO
+        TEXT                Region
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0034
+        CHARACTER_FIRST     000730
+        CHARACTER_LAST      000732
+
+        NAME                NAME2
+        TEXT                Name 2
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0035
+        CHARACTER_FIRST     000733
+        CHARACTER_LAST      000767
+      END_FIELDS
+    END_SEGMENT
+    BEGIN_SEGMENT         E2EDKA1
+      SEGMENTTYPE         E1EDKA1
+      QUALIFIED
+      LEVEL               02
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000000004
+      BEGIN_FIELDS
+        NAME                PARVW
+        TEXT                Partner function (e.g. sold-to party, ship-to party, ...)
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0001
+        CHARACTER_FIRST     000064
+        CHARACTER_LAST      000066
+
+        NAME                PARTN
+        TEXT                Partner number
+        TYPE                CHARACTER
+        LENGTH              000017
+        FIELD_POS           0002
+        CHARACTER_FIRST     000067
+        CHARACTER_LAST      000083
+
+        NAME                LIFNR
+        TEXT                Vendor number at customer location
+        TYPE                CHARACTER
+        LENGTH              000017
+        FIELD_POS           0003
+        CHARACTER_FIRST     000084
+        CHARACTER_LAST      000100
+
+        NAME                NAME1
+        TEXT                Name 1
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0004
+        CHARACTER_FIRST     000101
+        CHARACTER_LAST      000135
+
+        NAME                NAME2
+        TEXT                Name 2
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0005
+        CHARACTER_FIRST     000136
+        CHARACTER_LAST      000170
+
+        NAME                NAME3
+        TEXT                Name 3
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0006
+        CHARACTER_FIRST     000171
+        CHARACTER_LAST      000205
+
+        NAME                NAME4
+        TEXT                Name 4
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0007
+        CHARACTER_FIRST     000206
+        CHARACTER_LAST      000240
+
+        NAME                STRAS
+        TEXT                Street and house number 1
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0008
+        CHARACTER_FIRST     000241
+        CHARACTER_LAST      000275
+
+        NAME                STRS2
+        TEXT                Street and house number 2
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0009
+        CHARACTER_FIRST     000276
+        CHARACTER_LAST      000310
+
+        NAME                PFACH
+        TEXT                PO Box
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0010
+        CHARACTER_FIRST     000311
+        CHARACTER_LAST      000345
+
+        NAME                ORT01
+        TEXT                City
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0011
+        CHARACTER_FIRST     000346
+        CHARACTER_LAST      000380
+
+        NAME                COUNC
+        TEXT                County code
+        TYPE                CHARACTER
+        LENGTH              000009
+        FIELD_POS           0012
+        CHARACTER_FIRST     000381
+        CHARACTER_LAST      000389
+
+        NAME                PSTLZ
+        TEXT                Postal code
+        TYPE                CHARACTER
+        LENGTH              000009
+        FIELD_POS           0013
+        CHARACTER_FIRST     000390
+        CHARACTER_LAST      000398
+
+        NAME                PSTL2
+        TEXT                P.O. Box postal code
+        TYPE                CHARACTER
+        LENGTH              000009
+        FIELD_POS           0014
+        CHARACTER_FIRST     000399
+        CHARACTER_LAST      000407
+
+        NAME                LAND1
+        TEXT                Country Key
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0015
+        CHARACTER_FIRST     000408
+        CHARACTER_LAST      000410
+
+        NAME                ABLAD
+        TEXT                Unloading Point
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0016
+        CHARACTER_FIRST     000411
+        CHARACTER_LAST      000445
+
+        NAME                PERNR
+        TEXT                Contact person's personnel number
+        TYPE                CHARACTER
+        LENGTH              000030
+        FIELD_POS           0017
+        CHARACTER_FIRST     000446
+        CHARACTER_LAST      000475
+
+        NAME                PARNR
+        TEXT                Contact person's number (not personnel number)
+        TYPE                CHARACTER
+        LENGTH              000030
+        FIELD_POS           0018
+        CHARACTER_FIRST     000476
+        CHARACTER_LAST      000505
+
+        NAME                TELF1
+        TEXT                1st telephone number of contact person
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0019
+        CHARACTER_FIRST     000506
+        CHARACTER_LAST      000530
+
+        NAME                TELF2
+        TEXT                2nd telephone number of contact person
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0020
+        CHARACTER_FIRST     000531
+        CHARACTER_LAST      000555
+
+        NAME                TELBX
+        TEXT                Telebox number
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0021
+        CHARACTER_FIRST     000556
+        CHARACTER_LAST      000580
+
+        NAME                TELFX
+        TEXT                Fax number
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0022
+        CHARACTER_FIRST     000581
+        CHARACTER_LAST      000605
+
+        NAME                TELTX
+        TEXT                Teletex number
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0023
+        CHARACTER_FIRST     000606
+        CHARACTER_LAST      000630
+
+        NAME                TELX1
+        TEXT                Telex number
+        TYPE                CHARACTER
+        LENGTH              000025
+        FIELD_POS           0024
+        CHARACTER_FIRST     000631
+        CHARACTER_LAST      000655
+
+        NAME                SPRAS
+        TEXT                Language key
+        TYPE                CHARACTER
+        LENGTH              000001
+        FIELD_POS           0025
+        CHARACTER_FIRST     000656
+        CHARACTER_LAST      000656
+
+        NAME                ANRED
+        TEXT                Form of Address
+        TYPE                CHARACTER
+        LENGTH              000015
+        FIELD_POS           0026
+        CHARACTER_FIRST     000657
+        CHARACTER_LAST      000671
+
+        NAME                ORT02
+        TEXT                District
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0027
+        CHARACTER_FIRST     000672
+        CHARACTER_LAST      000706
+
+        NAME                HAUSN
+        TEXT                House number
+        TYPE                CHARACTER
+        LENGTH              000006
+        FIELD_POS           0028
+        CHARACTER_FIRST     000707
+        CHARACTER_LAST      000712
+
+        NAME                STOCK
+        TEXT                Floor
+        TYPE                CHARACTER
+        LENGTH              000006
+        FIELD_POS           0029
+        CHARACTER_FIRST     000713
+        CHARACTER_LAST      000718
+
+        NAME                REGIO
+        TEXT                Region
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0030
+        CHARACTER_FIRST     000719
+        CHARACTER_LAST      000721
+
+        NAME                PARGE
+        TEXT                Partner's gender
+        TYPE                CHARACTER
+        LENGTH              000001
+        FIELD_POS           0031
+        CHARACTER_FIRST     000722
+        CHARACTER_LAST      000722
+
+        NAME                ISOAL
+        TEXT                Country ISO code
+        TYPE                CHARACTER
+        LENGTH              000002
+        FIELD_POS           0032
+        CHARACTER_FIRST     000723
+        CHARACTER_LAST      000724
+
+        NAME                ISONU
+        TEXT                Country ISO code
+        TYPE                CHARACTER
+        LENGTH              000002
+        FIELD_POS           0033
+        CHARACTER_FIRST     000725
+        CHARACTER_LAST      000726
+
+        NAME                FCODE
+        TEXT                Company key (France)
+        TYPE                CHARACTER
+        LENGTH              000020
+        FIELD_POS           0034
+        CHARACTER_FIRST     000727
+        CHARACTER_LAST      000746
+
+        NAME                IHREZ
+        TEXT                Your reference (Partner)
+        TYPE                CHARACTER
+        LENGTH              000030
+        FIELD_POS           0035
+        CHARACTER_FIRST     000747
+        CHARACTER_LAST      000776
+
+        NAME                BNAME
+        TEXT                IDoc user name
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0036
+        CHARACTER_FIRST     000777
+        CHARACTER_LAST      000811
+
+        NAME                PAORG
+        TEXT                IDOC organization code
+        TYPE                CHARACTER
+        LENGTH              000030
+        FIELD_POS           0037
+        CHARACTER_FIRST     000812
+        CHARACTER_LAST      000841
+
+        NAME                ORGTX
+        TEXT                IDoc organization code text
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0038
+        CHARACTER_FIRST     000842
+        CHARACTER_LAST      000876
+
+        NAME                PAGRU
+        TEXT                IDoc group code
+        TYPE                CHARACTER
+        LENGTH              000030
+        FIELD_POS           0039
+        CHARACTER_FIRST     000877
+        CHARACTER_LAST      000906
+
+        NAME                KNREF
+        TEXT                Customer description of partner (plant, storage location)
+        TYPE                CHARACTER
+        LENGTH              000030
+        FIELD_POS           0040
+        CHARACTER_FIRST     000907
+        CHARACTER_LAST      000936
+
+        NAME                ILNNR
+        TEXT                Character field, length 70
+        TYPE                CHARACTER
+        LENGTH              000070
+        FIELD_POS           0041
+        CHARACTER_FIRST     000937
+        CHARACTER_LAST      001006
+
+        NAME                PFORT
+        TEXT                PO Box city
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0042
+        CHARACTER_FIRST     001007
+        CHARACTER_LAST      001041
+
+        NAME                SPRAS_ISO
+        TEXT                2-Character SAP Language Code
+        TYPE                CHARACTER
+        LENGTH              000002
+        FIELD_POS           0043
+        CHARACTER_FIRST     001042
+        CHARACTER_LAST      001043
+
+        NAME                TITLE
+        TEXT                Title
+        TYPE                CHARACTER
+        LENGTH              000015
+        FIELD_POS           0044
+        CHARACTER_FIRST     001044
+        CHARACTER_LAST      001058
+      END_FIELDS
+    END_SEGMENT
+    BEGIN_GROUP                    2
+      LEVEL               02
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000000004
+      BEGIN_SEGMENT       E2IDBW1
+        SEGMENTTYPE         E1IDBW1
+        LEVEL               02
+        STATUS              MANDATORY
+        LOOPMIN             0000000001
+        LOOPMAX             0000000001
+        BEGIN_FIELDS
+          NAME                INPWEGEB
+          TEXT                Instruction Sender
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000066
+
+          NAME                INPWEEMP
+          TEXT                Instruction Recipient
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0002
+          CHARACTER_FIRST     000067
+          CHARACTER_LAST      000069
+
+          NAME                INPBESWE
+          TEXT                Instruction Key
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0003
+          CHARACTER_FIRST     000070
+          CHARACTER_LAST      000072
+
+          NAME                INPWTXT1
+          TEXT                User-Defined Instruction Text
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0004
+          CHARACTER_FIRST     000073
+          CHARACTER_LAST      000142
+
+          NAME                INPWTXT2
+          TEXT                User-Defined Instruction Text
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0005
+          CHARACTER_FIRST     000143
+          CHARACTER_LAST      000212
+
+          NAME                INPWTXT3
+          TEXT                User-Defined Instruction Text
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0006
+          CHARACTER_FIRST     000213
+          CHARACTER_LAST      000282
+
+          NAME                INPWTXT4
+          TEXT                User-Defined Instruction Text
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0007
+          CHARACTER_FIRST     000283
+          CHARACTER_LAST      000352
+
+          NAME                INPWTXT5
+          TEXT                User-Defined Instruction Text
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0008
+          CHARACTER_FIRST     000353
+          CHARACTER_LAST      000422
+
+          NAME                INPTXTSP
+          TEXT                Instruction Text Language
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0009
+          CHARACTER_FIRST     000423
+          CHARACTER_LAST      000425
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT       E2EDM03
+        SEGMENTTYPE         E1EDM03
+        QUALIFIED
+        LEVEL               03
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000000002
+        BEGIN_FIELDS
+          NAME                IDDAT
+          TEXT                Qualifier for IDOC date segment
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000066
+
+          NAME                DATUM
+          TEXT                Time
+          TYPE                CHARACTER
+          LENGTH              000008
+          FIELD_POS           0002
+          CHARACTER_FIRST     000067
+          CHARACTER_LAST      000074
+
+          NAME                UZEIT
+          TEXT                Time
+          TYPE                CHARACTER
+          LENGTH              000008
+          FIELD_POS           0003
+          CHARACTER_FIRST     000075
+          CHARACTER_LAST      000082
+        END_FIELDS
+      END_SEGMENT
+    END_GROUP
+    BEGIN_GROUP                      3
+      LEVEL               02
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000200000
+      BEGIN_SEGMENT       E2IDPU1
+        SEGMENTTYPE         E1IDPU1
+        QUALIFIED
+        LEVEL               02
+        STATUS              MANDATORY
+        LOOPMIN             0000000001
+        LOOPMAX             0000000001
+        BEGIN_FIELDS
+          NAME                DOCNAME
+          TEXT                Coded Message Name
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000066
+
+          NAME                DOCNUMMR
+          TEXT                Message Number
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0002
+          CHARACTER_FIRST     000067
+          CHARACTER_LAST      000101
+
+          NAME                DOCDATUM
+          TEXT                Date for Message
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0003
+          CHARACTER_FIRST     000102
+          CHARACTER_LAST      000136
+
+          NAME                DOCKOMAR
+          TEXT                Method of Sending Message
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0004
+          CHARACTER_FIRST     000137
+          CHARACTER_LAST      000139
+
+          NAME                DOCSTATU
+          TEXT                Message Status
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0005
+          CHARACTER_FIRST     000140
+          CHARACTER_LAST      000142
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT       /RB04/YC1_Z1EDP02
+        SEGMENTTYPE         /RB04/YC1_Z1EDP02
+        QUALIFIED
+        LEVEL               03
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000000999
+        BEGIN_FIELDS
+          NAME                QUALF
+          TEXT                IDOC qualifier reference document
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000066
+
+          NAME                BELNR
+          TEXT                IDOC document number
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0002
+          CHARACTER_FIRST     000067
+          CHARACTER_LAST      000101
+
+          NAME                ZEILE
+          TEXT                Item number
+          TYPE                CHARACTER
+          LENGTH              000006
+          FIELD_POS           0003
+          CHARACTER_FIRST     000102
+          CHARACTER_LAST      000107
+
+          NAME                DATUM
+          TEXT                IDOC: Date
+          TYPE                CHARACTER
+          LENGTH              000008
+          FIELD_POS           0004
+          CHARACTER_FIRST     000108
+          CHARACTER_LAST      000115
+
+          NAME                UZEIT
+          TEXT                IDOC: Time
+          TYPE                CHARACTER
+          LENGTH              000006
+          FIELD_POS           0005
+          CHARACTER_FIRST     000116
+          CHARACTER_LAST      000121
+
+          NAME                BSARK
+          TEXT                IDOC organization
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0006
+          CHARACTER_FIRST     000122
+          CHARACTER_LAST      000156
+
+          NAME                IHREZ
+          TEXT                Your reference (Partner)
+          TYPE                CHARACTER
+          LENGTH              000030
+          FIELD_POS           0007
+          CHARACTER_FIRST     000157
+          CHARACTER_LAST      000186
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT         /RB04/YC1_Z1EDP15000
+        SEGMENTTYPE         /RB04/YC1_Z1EDP15
+        LEVEL               03
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000000099
+        BEGIN_FIELDS
+          NAME                TDNAME
+          TEXT                EDI text function
+          TYPE                CHARACTER
+          LENGTH              000004
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000067
+
+          NAME                TXT01
+          TEXT                Text continued
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0002
+          CHARACTER_FIRST     000068
+          CHARACTER_LAST      000137
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_GROUP                    4
+        LEVEL               03
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000000010
+        BEGIN_SEGMENT       E2IDPU5
+          SEGMENTTYPE         E1IDPU5
+          QUALIFIED
+          LEVEL               03
+          STATUS              MANDATORY
+          LOOPMIN             0000000001
+          LOOPMAX             0000000001
+          BEGIN_FIELDS
+            NAME                MOAQUAL
+            TEXT                Qualifier for the Amount
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0001
+            CHARACTER_FIRST     000064
+            CHARACTER_LAST      000066
+
+            NAME                MOABETR
+            TEXT                Amount
+            TYPE                CHARACTER
+            LENGTH              000018
+            FIELD_POS           0002
+            CHARACTER_FIRST     000067
+            CHARACTER_LAST      000084
+
+            NAME                CUXWAERZ
+            TEXT                Currency
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0003
+            CHARACTER_FIRST     000085
+            CHARACTER_LAST      000087
+
+            NAME                CUXWAERQ
+            TEXT                Currency
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0004
+            CHARACTER_FIRST     000088
+            CHARACTER_LAST      000090
+
+            NAME                CUXKURS
+            TEXT                Rate for Currency Translations
+            TYPE                CHARACTER
+            LENGTH              000012
+            FIELD_POS           0005
+            CHARACTER_FIRST     000091
+            CHARACTER_LAST      000102
+
+            NAME                CUXDATUM
+            TEXT                Date for Currency Translation
+            TYPE                CHARACTER
+            LENGTH              000035
+            FIELD_POS           0006
+            CHARACTER_FIRST     000103
+            CHARACTER_LAST      000137
+
+            NAME                CUXZEIT
+            TEXT                Time for Currency Translation
+            TYPE                CHARACTER
+            LENGTH              000035
+            FIELD_POS           0007
+            CHARACTER_FIRST     000138
+            CHARACTER_LAST      000172
+
+            NAME                CUXKURS_M
+            TEXT                Indirectly quoted exchange rate in an IDoc segment
+            TYPE                CHARACTER
+            LENGTH              000012
+            FIELD_POS           0008
+            CHARACTER_FIRST     000173
+            CHARACTER_LAST      000184
+          END_FIELDS
+        END_SEGMENT
+        BEGIN_SEGMENT       E2EDU03
+          SEGMENTTYPE         E1EDU03
+          QUALIFIED
+          LEVEL               04
+          STATUS              OPTIONAL
+          LOOPMIN             0000000001
+          LOOPMAX             0000000001
+          BEGIN_FIELDS
+            NAME                IDDAT
+            TEXT                Qualifier for IDOC date segment
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0001
+            CHARACTER_FIRST     000064
+            CHARACTER_LAST      000066
+
+            NAME                DATUM
+            TEXT                Date
+            TYPE                CHARACTER
+            LENGTH              000008
+            FIELD_POS           0002
+            CHARACTER_FIRST     000067
+            CHARACTER_LAST      000074
+
+            NAME                UZEIT
+            TEXT                Time
+            TYPE                CHARACTER
+            LENGTH              000006
+            FIELD_POS           0003
+            CHARACTER_FIRST     000075
+            CHARACTER_LAST      000080
+          END_FIELDS
+        END_SEGMENT
+      END_GROUP
+      BEGIN_SEGMENT           E2EDPA1003
+        SEGMENTTYPE         E1EDPA1
+        QUALIFIED
+        LEVEL               03
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000000010
+        BEGIN_FIELDS
+          NAME                PARVW
+          TEXT                Partner function (e.g. sold-to party, ship-to party, ...)
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000066
+
+          NAME                PARTN
+          TEXT                Partner number
+          TYPE                CHARACTER
+          LENGTH              000017
+          FIELD_POS           0002
+          CHARACTER_FIRST     000067
+          CHARACTER_LAST      000083
+
+          NAME                LIFNR
+          TEXT                Vendor number at customer location
+          TYPE                CHARACTER
+          LENGTH              000017
+          FIELD_POS           0003
+          CHARACTER_FIRST     000084
+          CHARACTER_LAST      000100
+
+          NAME                NAME1
+          TEXT                Name 1
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0004
+          CHARACTER_FIRST     000101
+          CHARACTER_LAST      000135
+
+          NAME                NAME2
+          TEXT                Name 2
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0005
+          CHARACTER_FIRST     000136
+          CHARACTER_LAST      000170
+
+          NAME                NAME3
+          TEXT                Name 3
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0006
+          CHARACTER_FIRST     000171
+          CHARACTER_LAST      000205
+
+          NAME                NAME4
+          TEXT                Name 4
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0007
+          CHARACTER_FIRST     000206
+          CHARACTER_LAST      000240
+
+          NAME                STRAS
+          TEXT                Street and house number 1
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0008
+          CHARACTER_FIRST     000241
+          CHARACTER_LAST      000275
+
+          NAME                STRS2
+          TEXT                Street and house number 2
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0009
+          CHARACTER_FIRST     000276
+          CHARACTER_LAST      000310
+
+          NAME                PFACH
+          TEXT                PO Box
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0010
+          CHARACTER_FIRST     000311
+          CHARACTER_LAST      000345
+
+          NAME                ORT01
+          TEXT                City
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0011
+          CHARACTER_FIRST     000346
+          CHARACTER_LAST      000380
+
+          NAME                COUNC
+          TEXT                County code
+          TYPE                CHARACTER
+          LENGTH              000009
+          FIELD_POS           0012
+          CHARACTER_FIRST     000381
+          CHARACTER_LAST      000389
+
+          NAME                PSTLZ
+          TEXT                Postal code
+          TYPE                CHARACTER
+          LENGTH              000009
+          FIELD_POS           0013
+          CHARACTER_FIRST     000390
+          CHARACTER_LAST      000398
+
+          NAME                PSTL2
+          TEXT                P.O. Box postal code
+          TYPE                CHARACTER
+          LENGTH              000009
+          FIELD_POS           0014
+          CHARACTER_FIRST     000399
+          CHARACTER_LAST      000407
+
+          NAME                LAND1
+          TEXT                Country Key
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0015
+          CHARACTER_FIRST     000408
+          CHARACTER_LAST      000410
+
+          NAME                ABLAD
+          TEXT                Unloading Point
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0016
+          CHARACTER_FIRST     000411
+          CHARACTER_LAST      000445
+
+          NAME                PERNR
+          TEXT                Contact person's personnel number
+          TYPE                CHARACTER
+          LENGTH              000030
+          FIELD_POS           0017
+          CHARACTER_FIRST     000446
+          CHARACTER_LAST      000475
+
+          NAME                PARNR
+          TEXT                Contact person's number (not personnel number)
+          TYPE                CHARACTER
+          LENGTH              000030
+          FIELD_POS           0018
+          CHARACTER_FIRST     000476
+          CHARACTER_LAST      000505
+
+          NAME                TELF1
+          TEXT                1st telephone number of contact person
+          TYPE                CHARACTER
+          LENGTH              000025
+          FIELD_POS           0019
+          CHARACTER_FIRST     000506
+          CHARACTER_LAST      000530
+
+          NAME                TELF2
+          TEXT                2nd telephone number of contact person
+          TYPE                CHARACTER
+          LENGTH              000025
+          FIELD_POS           0020
+          CHARACTER_FIRST     000531
+          CHARACTER_LAST      000555
+
+          NAME                TELBX
+          TEXT                Telebox number
+          TYPE                CHARACTER
+          LENGTH              000025
+          FIELD_POS           0021
+          CHARACTER_FIRST     000556
+          CHARACTER_LAST      000580
+
+          NAME                TELFX
+          TEXT                Fax number
+          TYPE                CHARACTER
+          LENGTH              000025
+          FIELD_POS           0022
+          CHARACTER_FIRST     000581
+          CHARACTER_LAST      000605
+
+          NAME                TELTX
+          TEXT                Teletex number
+          TYPE                CHARACTER
+          LENGTH              000025
+          FIELD_POS           0023
+          CHARACTER_FIRST     000606
+          CHARACTER_LAST      000630
+
+          NAME                TELX1
+          TEXT                Telex number
+          TYPE                CHARACTER
+          LENGTH              000025
+          FIELD_POS           0024
+          CHARACTER_FIRST     000631
+          CHARACTER_LAST      000655
+
+          NAME                SPRAS
+          TEXT                Language key
+          TYPE                CHARACTER
+          LENGTH              000001
+          FIELD_POS           0025
+          CHARACTER_FIRST     000656
+          CHARACTER_LAST      000656
+
+          NAME                ANRED
+          TEXT                Form of Address
+          TYPE                CHARACTER
+          LENGTH              000015
+          FIELD_POS           0026
+          CHARACTER_FIRST     000657
+          CHARACTER_LAST      000671
+
+          NAME                ORT02
+          TEXT                District
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0027
+          CHARACTER_FIRST     000672
+          CHARACTER_LAST      000706
+
+          NAME                HAUSN
+          TEXT                House number
+          TYPE                CHARACTER
+          LENGTH              000006
+          FIELD_POS           0028
+          CHARACTER_FIRST     000707
+          CHARACTER_LAST      000712
+
+          NAME                STOCK
+          TEXT                Floor
+          TYPE                CHARACTER
+          LENGTH              000006
+          FIELD_POS           0029
+          CHARACTER_FIRST     000713
+          CHARACTER_LAST      000718
+
+          NAME                REGIO
+          TEXT                Region
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0030
+          CHARACTER_FIRST     000719
+          CHARACTER_LAST      000721
+
+          NAME                PARGE
+          TEXT                Partner's gender
+          TYPE                CHARACTER
+          LENGTH              000001
+          FIELD_POS           0031
+          CHARACTER_FIRST     000722
+          CHARACTER_LAST      000722
+
+          NAME                ISOAL
+          TEXT                Country ISO code
+          TYPE                CHARACTER
+          LENGTH              000002
+          FIELD_POS           0032
+          CHARACTER_FIRST     000723
+          CHARACTER_LAST      000724
+
+          NAME                ISONU
+          TEXT                Country ISO code
+          TYPE                CHARACTER
+          LENGTH              000002
+          FIELD_POS           0033
+          CHARACTER_FIRST     000725
+          CHARACTER_LAST      000726
+
+          NAME                FCODE
+          TEXT                Company key (France)
+          TYPE                CHARACTER
+          LENGTH              000020
+          FIELD_POS           0034
+          CHARACTER_FIRST     000727
+          CHARACTER_LAST      000746
+
+          NAME                IHREZ
+          TEXT                Your reference (Partner)
+          TYPE                CHARACTER
+          LENGTH              000030
+          FIELD_POS           0035
+          CHARACTER_FIRST     000747
+          CHARACTER_LAST      000776
+
+          NAME                BNAME
+          TEXT                IDoc user name
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0036
+          CHARACTER_FIRST     000777
+          CHARACTER_LAST      000811
+
+          NAME                PAORG
+          TEXT                IDOC organization code
+          TYPE                CHARACTER
+          LENGTH              000030
+          FIELD_POS           0037
+          CHARACTER_FIRST     000812
+          CHARACTER_LAST      000841
+
+          NAME                ORGTX
+          TEXT                IDoc organization code text
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0038
+          CHARACTER_FIRST     000842
+          CHARACTER_LAST      000876
+
+          NAME                PAGRU
+          TEXT                IDoc group code
+          TYPE                CHARACTER
+          LENGTH              000030
+          FIELD_POS           0039
+          CHARACTER_FIRST     000877
+          CHARACTER_LAST      000906
+
+          NAME                KNREF
+          TEXT                Customer description of partner (plant, storage location)
+          TYPE                CHARACTER
+          LENGTH              000030
+          FIELD_POS           0040
+          CHARACTER_FIRST     000907
+          CHARACTER_LAST      000936
+
+          NAME                ILNNR
+          TEXT                Character field, length 70
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0041
+          CHARACTER_FIRST     000937
+          CHARACTER_LAST      001006
+
+          NAME                PFORT
+          TEXT                PO Box city
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0042
+          CHARACTER_FIRST     001007
+          CHARACTER_LAST      001041
+
+          NAME                SPRAS_ISO
+          TEXT                2-Character SAP Language Code
+          TYPE                CHARACTER
+          LENGTH              000002
+          FIELD_POS           0043
+          CHARACTER_FIRST     001042
+          CHARACTER_LAST      001043
+
+          NAME                TITLE
+          TEXT                Title
+          TYPE                CHARACTER
+          LENGTH              000015
+          FIELD_POS           0044
+          CHARACTER_FIRST     001044
+          CHARACTER_LAST      001058
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT         E2EDK14
+        SEGMENTTYPE         E1EDK14
+        QUALIFIED
+        LEVEL               03
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000000010
+        BEGIN_FIELDS
+          NAME                QUALF
+          TEXT                IDOC qualifer organization
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000066
+
+          NAME                ORGID
+          TEXT                IDOC organization
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0002
+          CHARACTER_FIRST     000067
+          CHARACTER_LAST      000101
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT         E2EDP03
+        SEGMENTTYPE         E1EDP03
+        QUALIFIED
+        LEVEL               03
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000000004
+        BEGIN_FIELDS
+          NAME                IDDAT
+          TEXT                Qualifier for IDOC date segment
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000066
+
+          NAME                DATUM
+          TEXT                Date
+          TYPE                CHARACTER
+          LENGTH              000008
+          FIELD_POS           0002
+          CHARACTER_FIRST     000067
+          CHARACTER_LAST      000074
+
+          NAME                UZEIT
+          TEXT                Time
+          TYPE                CHARACTER
+          LENGTH              000006
+          FIELD_POS           0003
+          CHARACTER_FIRST     000075
+          CHARACTER_LAST      000080
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT         E2EDP02
+        SEGMENTTYPE         E1EDP02
+        QUALIFIED
+        LEVEL               03
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000000004
+        BEGIN_FIELDS
+          NAME                QUALF
+          TEXT                IDOC qualifier reference document
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000066
+
+          NAME                BELNR
+          TEXT                IDOC document number
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0002
+          CHARACTER_FIRST     000067
+          CHARACTER_LAST      000101
+
+          NAME                ZEILE
+          TEXT                Item number
+          TYPE                CHARACTER
+          LENGTH              000006
+          FIELD_POS           0003
+          CHARACTER_FIRST     000102
+          CHARACTER_LAST      000107
+
+          NAME                DATUM
+          TEXT                IDOC: Date
+          TYPE                CHARACTER
+          LENGTH              000008
+          FIELD_POS           0004
+          CHARACTER_FIRST     000108
+          CHARACTER_LAST      000115
+
+          NAME                UZEIT
+          TEXT                IDOC: Time
+          TYPE                CHARACTER
+          LENGTH              000006
+          FIELD_POS           0005
+          CHARACTER_FIRST     000116
+          CHARACTER_LAST      000121
+
+          NAME                BSARK
+          TEXT                IDOC organization
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0006
+          CHARACTER_FIRST     000122
+          CHARACTER_LAST      000156
+
+          NAME                IHREZ
+          TEXT                Your reference (Partner)
+          TYPE                CHARACTER
+          LENGTH              000030
+          FIELD_POS           0007
+          CHARACTER_FIRST     000157
+          CHARACTER_LAST      000186
+
+          NAME                RMA
+          TEXT                Order Acknowledgment Number
+          TYPE                CHARACTER
+          LENGTH              000020
+          FIELD_POS           0008
+          CHARACTER_FIRST     000187
+          CHARACTER_LAST      000206
+
+          NAME                REASON
+          TEXT                Order reason (reason for the business transaction)
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0009
+          CHARACTER_FIRST     000207
+          CHARACTER_LAST      000209
+
+          NAME                RSNTXT
+          TEXT                Description
+          TYPE                CHARACTER
+          LENGTH              000040
+          FIELD_POS           0010
+          CHARACTER_FIRST     000210
+          CHARACTER_LAST      000249
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_GROUP                    5
+        LEVEL               03
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000000100
+        BEGIN_SEGMENT       E2IDPU2
+          SEGMENTTYPE         E1IDPU2
+          LEVEL               03
+          STATUS              MANDATORY
+          LOOPMIN             0000000001
+          LOOPMAX             0000000001
+          BEGIN_FIELDS
+            NAME                AJTGRUND
+            TEXT                Reason for Deduction
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0001
+            CHARACTER_FIRST     000064
+            CHARACTER_LAST      000066
+
+            NAME                AJTRZEIL
+            TEXT                Reference Invoice Item for Deduction
+            TYPE                CHARACTER
+            LENGTH              000006
+            FIELD_POS           0002
+            CHARACTER_FIRST     000067
+            CHARACTER_LAST      000072
+
+            NAME                MOABETRG
+            TEXT                Deduction Amount
+            TYPE                CHARACTER
+            LENGTH              000018
+            FIELD_POS           0003
+            CHARACTER_FIRST     000073
+            CHARACTER_LAST      000090
+
+            NAME                MOAWAERS
+            TEXT                Currency for Deduction Amount
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0004
+            CHARACTER_FIRST     000091
+            CHARACTER_LAST      000093
+
+            NAME                RFFNUMQU
+            TEXT                Qualifier for Reference to Reason for Deduction
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0005
+            CHARACTER_FIRST     000094
+            CHARACTER_LAST      000096
+
+            NAME                RFFNUMMR
+            TEXT                Reference Number for Deduction
+            TYPE                CHARACTER
+            LENGTH              000035
+            FIELD_POS           0006
+            CHARACTER_FIRST     000097
+            CHARACTER_LAST      000131
+          END_FIELDS
+        END_SEGMENT
+        BEGIN_SEGMENT       /RB04/YC1_Z1IDPU2000
+          SEGMENTTYPE         /RB04/YC1_Z1IDPU2
+          LEVEL               04
+          STATUS              OPTIONAL
+          LOOPMIN             0000000001
+          LOOPMAX             0000000010
+          BEGIN_FIELDS
+            NAME                CHARGE_INDICATOR
+            TEXT                Indicator field
+            TYPE                CHARACTER
+            LENGTH              000001
+            FIELD_POS           0001
+            CHARACTER_FIRST     000064
+            CHARACTER_LAST      000064
+
+            NAME                CHARGE_CODE
+            TEXT                Character field for IDOC, length 15
+            TYPE                CHARACTER
+            LENGTH              000015
+            FIELD_POS           0002
+            CHARACTER_FIRST     000065
+            CHARACTER_LAST      000079
+
+            NAME                MOABETR
+            TEXT                Character field for IDOC, length 15
+            TYPE                CHARACTER
+            LENGTH              000015
+            FIELD_POS           0003
+            CHARACTER_FIRST     000080
+            CHARACTER_LAST      000094
+
+            NAME                CHARGE_DESC
+            TEXT                Character field for IDOC, length 80
+            TYPE                CHARACTER
+            LENGTH              000080
+            FIELD_POS           0004
+            CHARACTER_FIRST     000095
+            CHARACTER_LAST      000174
+          END_FIELDS
+        END_SEGMENT
+      END_GROUP
+      BEGIN_GROUP                      6
+        LEVEL               03
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000200000
+        BEGIN_SEGMENT       E2IDPU3
+          SEGMENTTYPE         E1IDPU3
+          LEVEL               03
+          STATUS              MANDATORY
+          LOOPMIN             0000000001
+          LOOPMAX             0000000001
+          BEGIN_FIELDS
+            NAME                DLIZEIQU
+            TEXT                Indicator: Item Will Be Paid/Will Not Be Paid
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0001
+            CHARACTER_FIRST     000064
+            CHARACTER_LAST      000066
+
+            NAME                DLIRUPOS
+            TEXT                Reference Invoice Item for Deduction
+            TYPE                CHARACTER
+            LENGTH              000006
+            FIELD_POS           0002
+            CHARACTER_FIRST     000067
+            CHARACTER_LAST      000072
+          END_FIELDS
+        END_SEGMENT
+        BEGIN_SEGMENT       /RB04/YC1_Z1820ITM
+          SEGMENTTYPE         /RB04/YC1_Z1820ITM
+          LEVEL               04
+          STATUS              OPTIONAL
+          LOOPMIN             0000000001
+          LOOPMAX             0000000001
+          BEGIN_FIELDS
+            NAME                QUALF
+            TEXT                IDOC qualifier reference document
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0001
+            CHARACTER_FIRST     000064
+            CHARACTER_LAST      000066
+
+            NAME                KDMAT
+            TEXT                Material belonging to the customer
+            TYPE                CHARACTER
+            LENGTH              000035
+            FIELD_POS           0002
+            CHARACTER_FIRST     000067
+            CHARACTER_LAST      000101
+
+            NAME                MAKTX
+            TEXT                Material Description
+            TYPE                CHARACTER
+            LENGTH              000040
+            FIELD_POS           0003
+            CHARACTER_FIRST     000102
+            CHARACTER_LAST      000141
+
+            NAME                LFIMG
+            TEXT                Actual quantity delivered (in sales units)
+            TYPE                CHARACTER
+            LENGTH              000015
+            FIELD_POS           0004
+            CHARACTER_FIRST     000142
+            CHARACTER_LAST      000156
+
+            NAME                MEINS
+            TEXT                Base Unit of Measure
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0005
+            CHARACTER_FIRST     000157
+            CHARACTER_LAST      000159
+
+            NAME                KBETR
+            TEXT                Rate (condition amount or percentage)
+            TYPE                CHARACTER
+            LENGTH              000013
+            FIELD_POS           0006
+            CHARACTER_FIRST     000160
+            CHARACTER_LAST      000172
+
+            NAME                KPEIN
+            TEXT                Condition pricing unit
+            TYPE                CHARACTER
+            LENGTH              000006
+            FIELD_POS           0007
+            CHARACTER_FIRST     000173
+            CHARACTER_LAST      000178
+
+            NAME                CURR_PRICE
+            TEXT                Rate (condition amount or percentage)
+            TYPE                CHARACTER
+            LENGTH              000013
+            FIELD_POS           0008
+            CHARACTER_FIRST     000179
+            CHARACTER_LAST      000191
+
+            NAME                PREV_PRICE
+            TEXT                Rate (condition amount or percentage)
+            TYPE                CHARACTER
+            LENGTH              000013
+            FIELD_POS           0009
+            CHARACTER_FIRST     000192
+            CHARACTER_LAST      000204
+
+            NAME                VBELN
+            TEXT                Message Number
+            TYPE                CHARACTER
+            LENGTH              000035
+            FIELD_POS           0010
+            CHARACTER_FIRST     000205
+            CHARACTER_LAST      000239
+
+            NAME                BSTNK
+            TEXT                Message Number
+            TYPE                CHARACTER
+            LENGTH              000035
+            FIELD_POS           0011
+            CHARACTER_FIRST     000240
+            CHARACTER_LAST      000274
+          END_FIELDS
+        END_SEGMENT
+        BEGIN_GROUP                    7
+          LEVEL               04
+          STATUS              OPTIONAL
+          LOOPMIN             0000000001
+          LOOPMAX             0000000002
+          BEGIN_SEGMENT       E2IDUU5001
+            SEGMENTTYPE         E1IDUU5
+            QUALIFIED
+            LEVEL               04
+            STATUS              MANDATORY
+            LOOPMIN             0000000001
+            LOOPMAX             0000000001
+            BEGIN_FIELDS
+              NAME                MOAQUAL
+              TEXT                Qualifier for the Amount
+              TYPE                CHARACTER
+              LENGTH              000003
+              FIELD_POS           0001
+              CHARACTER_FIRST     000064
+              CHARACTER_LAST      000066
+
+              NAME                MOABETR
+              TEXT                Amount
+              TYPE                CHARACTER
+              LENGTH              000018
+              FIELD_POS           0002
+              CHARACTER_FIRST     000067
+              CHARACTER_LAST      000084
+
+              NAME                CUXWAERZ
+              TEXT                Currency
+              TYPE                CHARACTER
+              LENGTH              000003
+              FIELD_POS           0003
+              CHARACTER_FIRST     000085
+              CHARACTER_LAST      000087
+
+              NAME                CUXWAERQ
+              TEXT                Currency
+              TYPE                CHARACTER
+              LENGTH              000003
+              FIELD_POS           0004
+              CHARACTER_FIRST     000088
+              CHARACTER_LAST      000090
+
+              NAME                CUXKURS
+              TEXT                Rate for Currency Translations
+              TYPE                CHARACTER
+              LENGTH              000012
+              FIELD_POS           0005
+              CHARACTER_FIRST     000091
+              CHARACTER_LAST      000102
+
+              NAME                CUXDATUM
+              TEXT                Date for Currency Translation
+              TYPE                CHARACTER
+              LENGTH              000035
+              FIELD_POS           0006
+              CHARACTER_FIRST     000103
+              CHARACTER_LAST      000137
+
+              NAME                CUXZEIT
+              TEXT                Time for Currency Translation
+              TYPE                CHARACTER
+              LENGTH              000035
+              FIELD_POS           0007
+              CHARACTER_FIRST     000138
+              CHARACTER_LAST      000172
+
+              NAME                CUXKURS_M
+              TEXT                Indirectly quoted exchange rate in an IDoc segment
+              TYPE                CHARACTER
+              LENGTH              000012
+              FIELD_POS           0008
+              CHARACTER_FIRST     000173
+              CHARACTER_LAST      000184
+            END_FIELDS
+          END_SEGMENT
+          BEGIN_SEGMENT       E2EDV03
+            SEGMENTTYPE         E1EDV03
+            QUALIFIED
+            LEVEL               05
+            STATUS              OPTIONAL
+            LOOPMIN             0000000001
+            LOOPMAX             0000000001
+            BEGIN_FIELDS
+              NAME                IDDAT
+              TEXT                Qualifier for IDOC date segment
+              TYPE                CHARACTER
+              LENGTH              000003
+              FIELD_POS           0001
+              CHARACTER_FIRST     000064
+              CHARACTER_LAST      000066
+
+              NAME                DATUM
+              TEXT                Date
+              TYPE                CHARACTER
+              LENGTH              000008
+              FIELD_POS           0002
+              CHARACTER_FIRST     000067
+              CHARACTER_LAST      000074
+
+              NAME                UZEIT
+              TEXT                Time
+              TYPE                CHARACTER
+              LENGTH              000006
+              FIELD_POS           0003
+              CHARACTER_FIRST     000075
+              CHARACTER_LAST      000080
+            END_FIELDS
+          END_SEGMENT
+        END_GROUP
+        BEGIN_SEGMENT           E2IDUU4
+          SEGMENTTYPE         E1IDUU4
+          LEVEL               04
+          STATUS              OPTIONAL
+          LOOPMIN             0000000001
+          LOOPMAX             0000000005
+          BEGIN_FIELDS
+            NAME                PIAQUALI
+            TEXT                Qualifier for Article/Product Number
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0001
+            CHARACTER_FIRST     000064
+            CHARACTER_LAST      000066
+
+            NAME                PIANUMMR
+            TEXT                Material Number
+            TYPE                CHARACTER
+            LENGTH              000035
+            FIELD_POS           0002
+            CHARACTER_FIRST     000067
+            CHARACTER_LAST      000101
+          END_FIELDS
+        END_SEGMENT
+        BEGIN_SEGMENT         E2EDW03
+          SEGMENTTYPE         E1EDW03
+          QUALIFIED
+          LEVEL               04
+          STATUS              OPTIONAL
+          LOOPMIN             0000000001
+          LOOPMAX             0000000005
+          BEGIN_FIELDS
+            NAME                IDDAT
+            TEXT                Qualifier for IDOC date segment
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0001
+            CHARACTER_FIRST     000064
+            CHARACTER_LAST      000066
+
+            NAME                DATUM
+            TEXT                Date
+            TYPE                CHARACTER
+            LENGTH              000008
+            FIELD_POS           0002
+            CHARACTER_FIRST     000067
+            CHARACTER_LAST      000074
+
+            NAME                UZEIT
+            TEXT                Time
+            TYPE                CHARACTER
+            LENGTH              000006
+            FIELD_POS           0003
+            CHARACTER_FIRST     000075
+            CHARACTER_LAST      000080
+          END_FIELDS
+        END_SEGMENT
+        BEGIN_SEGMENT         E2IDUU2
+          SEGMENTTYPE         E1IDUU2
+          LEVEL               04
+          STATUS              OPTIONAL
+          LOOPMIN             0000000001
+          LOOPMAX             0000000010
+          BEGIN_FIELDS
+            NAME                AJTGRUND
+            TEXT                Reason for Deduction
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0001
+            CHARACTER_FIRST     000064
+            CHARACTER_LAST      000066
+
+            NAME                AJTRZEIL
+            TEXT                Reference Invoice Item for Deduction
+            TYPE                CHARACTER
+            LENGTH              000006
+            FIELD_POS           0002
+            CHARACTER_FIRST     000067
+            CHARACTER_LAST      000072
+
+            NAME                MOABETRG
+            TEXT                Deduction Amount
+            TYPE                CHARACTER
+            LENGTH              000018
+            FIELD_POS           0003
+            CHARACTER_FIRST     000073
+            CHARACTER_LAST      000090
+
+            NAME                MOAWAERS
+            TEXT                Currency for Deduction Amount
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0004
+            CHARACTER_FIRST     000091
+            CHARACTER_LAST      000093
+
+            NAME                RFFNUMQU
+            TEXT                Qualifier for Reference to Reason for Deduction
+            TYPE                CHARACTER
+            LENGTH              000003
+            FIELD_POS           0005
+            CHARACTER_FIRST     000094
+            CHARACTER_LAST      000096
+
+            NAME                RFFNUMMR
+            TEXT                Reference Number for Deduction
+            TYPE                CHARACTER
+            LENGTH              000035
+            FIELD_POS           0006
+            CHARACTER_FIRST     000097
+            CHARACTER_LAST      000131
+          END_FIELDS
+        END_SEGMENT
+      END_GROUP
+    END_GROUP
+    BEGIN_SEGMENT           E2IDLU5
+      SEGMENTTYPE         E1IDLU5
+      QUALIFIED
+      LEVEL               02
+      STATUS              MANDATORY
+      LOOPMIN             0000000001
+      LOOPMAX             0000000010
+      BEGIN_FIELDS
+        NAME                MOAQUAL
+        TEXT                Qualifier for the Amount
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0001
+        CHARACTER_FIRST     000064
+        CHARACTER_LAST      000066
+
+        NAME                MOABETR
+        TEXT                Amount
+        TYPE                CHARACTER
+        LENGTH              000018
+        FIELD_POS           0002
+        CHARACTER_FIRST     000067
+        CHARACTER_LAST      000084
+
+        NAME                CUXWAERZ
+        TEXT                Currency
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0003
+        CHARACTER_FIRST     000085
+        CHARACTER_LAST      000087
+
+        NAME                CUXWAERQ
+        TEXT                Currency
+        TYPE                CHARACTER
+        LENGTH              000003
+        FIELD_POS           0004
+        CHARACTER_FIRST     000088
+        CHARACTER_LAST      000090
+
+        NAME                CUXKURS
+        TEXT                Rate for Currency Translations
+        TYPE                CHARACTER
+        LENGTH              000012
+        FIELD_POS           0005
+        CHARACTER_FIRST     000091
+        CHARACTER_LAST      000102
+
+        NAME                CUXDATUM
+        TEXT                Date for Currency Translation
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0006
+        CHARACTER_FIRST     000103
+        CHARACTER_LAST      000137
+
+        NAME                CUXZEIT
+        TEXT                Time for Currency Translation
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0007
+        CHARACTER_FIRST     000138
+        CHARACTER_LAST      000172
+
+        NAME                CUXKURS_M
+        TEXT                Indirectly quoted exchange rate in an IDoc segment
+        TYPE                CHARACTER
+        LENGTH              000012
+        FIELD_POS           0008
+        CHARACTER_FIRST     000173
+        CHARACTER_LAST      000184
+      END_FIELDS
+    END_SEGMENT
+    BEGIN_GROUP                    8
+      LEVEL               01
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000000001
+      BEGIN_SEGMENT       E2IDKU6
+        SEGMENTTYPE         E1IDKU6
+        LEVEL               01
+        STATUS              MANDATORY
+        LOOPMIN             0000000001
+        LOOPMAX             0000000001
+        BEGIN_FIELDS
+          NAME                GISMLDID
+          TEXT                Pass on Report - Yes/No
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000066
+
+          NAME                GISMLDST
+          TEXT                Report to
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0002
+          CHARACTER_FIRST     000067
+          CHARACTER_LAST      000069
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT       E2EDLA1
+        SEGMENTTYPE         E1EDLA1
+        QUALIFIED
+        LEVEL               02
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000000001
+        BEGIN_FIELDS
+          NAME                PARVW
+          TEXT                Partner function (e.g. sold-to party, ship-to party, ...)
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000066
+
+          NAME                PARTN
+          TEXT                Partner number
+          TYPE                CHARACTER
+          LENGTH              000017
+          FIELD_POS           0002
+          CHARACTER_FIRST     000067
+          CHARACTER_LAST      000083
+
+          NAME                LIFNR
+          TEXT                Vendor number at customer location
+          TYPE                CHARACTER
+          LENGTH              000017
+          FIELD_POS           0003
+          CHARACTER_FIRST     000084
+          CHARACTER_LAST      000100
+
+          NAME                NAME1
+          TEXT                Name 1
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0004
+          CHARACTER_FIRST     000101
+          CHARACTER_LAST      000135
+
+          NAME                NAME2
+          TEXT                Name 2
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0005
+          CHARACTER_FIRST     000136
+          CHARACTER_LAST      000170
+
+          NAME                NAME3
+          TEXT                Name 3
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0006
+          CHARACTER_FIRST     000171
+          CHARACTER_LAST      000205
+
+          NAME                NAME4
+          TEXT                Name 4
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0007
+          CHARACTER_FIRST     000206
+          CHARACTER_LAST      000240
+
+          NAME                STRAS
+          TEXT                Street and house number 1
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0008
+          CHARACTER_FIRST     000241
+          CHARACTER_LAST      000275
+
+          NAME                STRS2
+          TEXT                Street and house number 2
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0009
+          CHARACTER_FIRST     000276
+          CHARACTER_LAST      000310
+
+          NAME                PFACH
+          TEXT                PO Box
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0010
+          CHARACTER_FIRST     000311
+          CHARACTER_LAST      000345
+
+          NAME                ORT01
+          TEXT                City
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0011
+          CHARACTER_FIRST     000346
+          CHARACTER_LAST      000380
+
+          NAME                COUNC
+          TEXT                County code
+          TYPE                CHARACTER
+          LENGTH              000009
+          FIELD_POS           0012
+          CHARACTER_FIRST     000381
+          CHARACTER_LAST      000389
+
+          NAME                PSTLZ
+          TEXT                Postal code
+          TYPE                CHARACTER
+          LENGTH              000009
+          FIELD_POS           0013
+          CHARACTER_FIRST     000390
+          CHARACTER_LAST      000398
+
+          NAME                PSTL2
+          TEXT                P.O. Box postal code
+          TYPE                CHARACTER
+          LENGTH              000009
+          FIELD_POS           0014
+          CHARACTER_FIRST     000399
+          CHARACTER_LAST      000407
+
+          NAME                LAND1
+          TEXT                Country Key
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0015
+          CHARACTER_FIRST     000408
+          CHARACTER_LAST      000410
+
+          NAME                ABLAD
+          TEXT                Unloading Point
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0016
+          CHARACTER_FIRST     000411
+          CHARACTER_LAST      000445
+
+          NAME                PERNR
+          TEXT                Contact person's personnel number
+          TYPE                CHARACTER
+          LENGTH              000030
+          FIELD_POS           0017
+          CHARACTER_FIRST     000446
+          CHARACTER_LAST      000475
+
+          NAME                PARNR
+          TEXT                Contact person's number (not personnel number)
+          TYPE                CHARACTER
+          LENGTH              000030
+          FIELD_POS           0018
+          CHARACTER_FIRST     000476
+          CHARACTER_LAST      000505
+
+          NAME                TELF1
+          TEXT                1st telephone number of contact person
+          TYPE                CHARACTER
+          LENGTH              000025
+          FIELD_POS           0019
+          CHARACTER_FIRST     000506
+          CHARACTER_LAST      000530
+
+          NAME                TELF2
+          TEXT                2nd telephone number of contact person
+          TYPE                CHARACTER
+          LENGTH              000025
+          FIELD_POS           0020
+          CHARACTER_FIRST     000531
+          CHARACTER_LAST      000555
+
+          NAME                TELBX
+          TEXT                Telebox number
+          TYPE                CHARACTER
+          LENGTH              000025
+          FIELD_POS           0021
+          CHARACTER_FIRST     000556
+          CHARACTER_LAST      000580
+
+          NAME                TELFX
+          TEXT                Fax number
+          TYPE                CHARACTER
+          LENGTH              000025
+          FIELD_POS           0022
+          CHARACTER_FIRST     000581
+          CHARACTER_LAST      000605
+
+          NAME                TELTX
+          TEXT                Teletex number
+          TYPE                CHARACTER
+          LENGTH              000025
+          FIELD_POS           0023
+          CHARACTER_FIRST     000606
+          CHARACTER_LAST      000630
+
+          NAME                TELX1
+          TEXT                Telex number
+          TYPE                CHARACTER
+          LENGTH              000025
+          FIELD_POS           0024
+          CHARACTER_FIRST     000631
+          CHARACTER_LAST      000655
+
+          NAME                SPRAS
+          TEXT                Language key
+          TYPE                CHARACTER
+          LENGTH              000001
+          FIELD_POS           0025
+          CHARACTER_FIRST     000656
+          CHARACTER_LAST      000656
+
+          NAME                ANRED
+          TEXT                Form of Address
+          TYPE                CHARACTER
+          LENGTH              000015
+          FIELD_POS           0026
+          CHARACTER_FIRST     000657
+          CHARACTER_LAST      000671
+
+          NAME                ORT02
+          TEXT                District
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0027
+          CHARACTER_FIRST     000672
+          CHARACTER_LAST      000706
+
+          NAME                HAUSN
+          TEXT                House number
+          TYPE                CHARACTER
+          LENGTH              000006
+          FIELD_POS           0028
+          CHARACTER_FIRST     000707
+          CHARACTER_LAST      000712
+
+          NAME                STOCK
+          TEXT                Floor
+          TYPE                CHARACTER
+          LENGTH              000006
+          FIELD_POS           0029
+          CHARACTER_FIRST     000713
+          CHARACTER_LAST      000718
+
+          NAME                REGIO
+          TEXT                Region
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0030
+          CHARACTER_FIRST     000719
+          CHARACTER_LAST      000721
+
+          NAME                PARGE
+          TEXT                Partner's gender
+          TYPE                CHARACTER
+          LENGTH              000001
+          FIELD_POS           0031
+          CHARACTER_FIRST     000722
+          CHARACTER_LAST      000722
+
+          NAME                ISOAL
+          TEXT                Country ISO code
+          TYPE                CHARACTER
+          LENGTH              000002
+          FIELD_POS           0032
+          CHARACTER_FIRST     000723
+          CHARACTER_LAST      000724
+
+          NAME                ISONU
+          TEXT                Country ISO code
+          TYPE                CHARACTER
+          LENGTH              000002
+          FIELD_POS           0033
+          CHARACTER_FIRST     000725
+          CHARACTER_LAST      000726
+
+          NAME                FCODE
+          TEXT                Company key (France)
+          TYPE                CHARACTER
+          LENGTH              000020
+          FIELD_POS           0034
+          CHARACTER_FIRST     000727
+          CHARACTER_LAST      000746
+
+          NAME                IHREZ
+          TEXT                Your reference (Partner)
+          TYPE                CHARACTER
+          LENGTH              000030
+          FIELD_POS           0035
+          CHARACTER_FIRST     000747
+          CHARACTER_LAST      000776
+
+          NAME                BNAME
+          TEXT                IDoc user name
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0036
+          CHARACTER_FIRST     000777
+          CHARACTER_LAST      000811
+
+          NAME                PAORG
+          TEXT                IDOC organization code
+          TYPE                CHARACTER
+          LENGTH              000030
+          FIELD_POS           0037
+          CHARACTER_FIRST     000812
+          CHARACTER_LAST      000841
+
+          NAME                ORGTX
+          TEXT                IDoc organization code text
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0038
+          CHARACTER_FIRST     000842
+          CHARACTER_LAST      000876
+
+          NAME                PAGRU
+          TEXT                IDoc group code
+          TYPE                CHARACTER
+          LENGTH              000030
+          FIELD_POS           0039
+          CHARACTER_FIRST     000877
+          CHARACTER_LAST      000906
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT         E2IDMU5001
+        SEGMENTTYPE         E1IDMU5
+        QUALIFIED
+        LEVEL               02
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000000001
+        BEGIN_FIELDS
+          NAME                MOAQUAL
+          TEXT                Qualifier for the Amount
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000066
+
+          NAME                MOABETR
+          TEXT                Amount
+          TYPE                CHARACTER
+          LENGTH              000018
+          FIELD_POS           0002
+          CHARACTER_FIRST     000067
+          CHARACTER_LAST      000084
+
+          NAME                CUXWAERZ
+          TEXT                Currency
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0003
+          CHARACTER_FIRST     000085
+          CHARACTER_LAST      000087
+
+          NAME                CUXWAERQ
+          TEXT                Currency
+          TYPE                CHARACTER
+          LENGTH              000003
+          FIELD_POS           0004
+          CHARACTER_FIRST     000088
+          CHARACTER_LAST      000090
+
+          NAME                CUXKURS
+          TEXT                Rate for Currency Translations
+          TYPE                CHARACTER
+          LENGTH              000012
+          FIELD_POS           0005
+          CHARACTER_FIRST     000091
+          CHARACTER_LAST      000102
+
+          NAME                CUXDATUM
+          TEXT                Date for Currency Translation
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0006
+          CHARACTER_FIRST     000103
+          CHARACTER_LAST      000137
+
+          NAME                CUXZEIT
+          TEXT                Time for Currency Translation
+          TYPE                CHARACTER
+          LENGTH              000035
+          FIELD_POS           0007
+          CHARACTER_FIRST     000138
+          CHARACTER_LAST      000172
+
+          NAME                CUXKURS_M
+          TEXT                Indirectly quoted exchange rate in an IDoc segment
+          TYPE                CHARACTER
+          LENGTH              000012
+          FIELD_POS           0008
+          CHARACTER_FIRST     000173
+          CHARACTER_LAST      000184
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT         E2IDT02
+        SEGMENTTYPE         E1IDT02
+        QUALIFIED
+        LEVEL               02
+        STATUS              OPTIONAL
+        LOOPMIN             0000000001
+        LOOPMAX             0000000100
+        BEGIN_FIELDS
+          NAME                TXTVW
+          TEXT                Text ID
+          TYPE                CHARACTER
+          LENGTH              000004
+          FIELD_POS           0001
+          CHARACTER_FIRST     000064
+          CHARACTER_LAST      000067
+
+          NAME                TXTSP
+          TEXT                Language
+          TYPE                CHARACTER
+          LENGTH              000001
+          FIELD_POS           0002
+          CHARACTER_FIRST     000068
+          CHARACTER_LAST      000068
+
+          NAME                TXTLF
+          TEXT                Continuation Text (Sequential Number)
+          TYPE                CHARACTER
+          LENGTH              000002
+          FIELD_POS           0003
+          CHARACTER_FIRST     000069
+          CHARACTER_LAST      000070
+
+          NAME                TXT01
+          TEXT                Text line
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0004
+          CHARACTER_FIRST     000071
+          CHARACTER_LAST      000140
+
+          NAME                TXT02
+          TEXT                Text line
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0005
+          CHARACTER_FIRST     000141
+          CHARACTER_LAST      000210
+
+          NAME                TXT03
+          TEXT                Text line
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0006
+          CHARACTER_FIRST     000211
+          CHARACTER_LAST      000280
+
+          NAME                TXT04
+          TEXT                Text line
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0007
+          CHARACTER_FIRST     000281
+          CHARACTER_LAST      000350
+
+          NAME                TXT05
+          TEXT                Text line
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0008
+          CHARACTER_FIRST     000351
+          CHARACTER_LAST      000420
+
+          NAME                TXT06
+          TEXT                Text line
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0009
+          CHARACTER_FIRST     000421
+          CHARACTER_LAST      000490
+
+          NAME                TXT07
+          TEXT                Text line
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0010
+          CHARACTER_FIRST     000491
+          CHARACTER_LAST      000560
+
+          NAME                TXT08
+          TEXT                Text line
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0011
+          CHARACTER_FIRST     000561
+          CHARACTER_LAST      000630
+
+          NAME                TXT09
+          TEXT                Text line
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0012
+          CHARACTER_FIRST     000631
+          CHARACTER_LAST      000700
+
+          NAME                TXT10
+          TEXT                Text line
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0013
+          CHARACTER_FIRST     000701
+          CHARACTER_LAST      000770
+
+          NAME                TXT11
+          TEXT                Text line
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0014
+          CHARACTER_FIRST     000771
+          CHARACTER_LAST      000840
+
+          NAME                TXT12
+          TEXT                Text line
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0015
+          CHARACTER_FIRST     000841
+          CHARACTER_LAST      000910
+
+          NAME                TXT13
+          TEXT                Text line
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0016
+          CHARACTER_FIRST     000911
+          CHARACTER_LAST      000980
+
+          NAME                TXT14
+          TEXT                Text line
+          TYPE                CHARACTER
+          LENGTH              000070
+          FIELD_POS           0017
+          CHARACTER_FIRST     000981
+          CHARACTER_LAST      001050
+        END_FIELDS
+      END_SEGMENT
+    END_GROUP
+    BEGIN_SEGMENT           E2IDKU7
+      SEGMENTTYPE         E1IDKU7
+      LEVEL               01
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000000001
+      BEGIN_FIELDS
+        NAME                AUTRESUL
+        TEXT                Authorization Result
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0001
+        CHARACTER_FIRST     000064
+        CHARACTER_LAST      000098
+
+        NAME                AUTKEY
+        TEXT                Key Used
+        TYPE                CHARACTER
+        LENGTH              000035
+        FIELD_POS           0002
+        CHARACTER_FIRST     000099
+        CHARACTER_LAST      000133
+      END_FIELDS
+    END_SEGMENT
+    BEGIN_SEGMENT         E2IDOCENHANCEMENT000
+      SEGMENTTYPE         E1IDOCENHANCEMENT
+      LEVEL               01
+      STATUS              OPTIONAL
+      LOOPMIN             0000000001
+      LOOPMAX             0000999999
+      BEGIN_FIELDS
+        NAME                IDENTIFIER
+        TEXT                Data Containers for Enhancement of IDoc Types
+        TYPE                CHARACTER
+        LENGTH              000030
+        FIELD_POS           0001
+        CHARACTER_FIRST     000064
+        CHARACTER_LAST      000093
+
+        NAME                DATA
+        TEXT                Data Container for IDoc Enhancement
+        TYPE                CHARACTER
+        LENGTH              000970
+        FIELD_POS           0002
+        CHARACTER_FIRST     000094
+        CHARACTER_LAST      001063
+      END_FIELDS
+    END_SEGMENT
+  END_IDOC
+END_SEGMENT_SECTION

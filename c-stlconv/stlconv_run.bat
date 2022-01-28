@@ -1,0 +1,2 @@
+stlconv MTRLMSTR.TXT MTLMSTR.TXT 6970
+pause

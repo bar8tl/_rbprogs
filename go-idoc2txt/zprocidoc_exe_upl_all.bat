@@ -1,0 +1,24 @@
+procidoc.exe -upl:_-rb04_-yc1_pexr2002.txt:itm.grp.sgm
+procidoc.exe -upl:_-rb04_-yp3_delvry_rbna.txt:itm.grp.sgm
+procidoc.exe -upl:_-rb04_-yp3_delvry_rbna_vw.txt:itm.grp.sgm
+procidoc.exe -upl:_-rb04_-yp3_delvry05_824.txt:itm.grp.sgm  
+procidoc.exe -upl:_-rb04_-yp3_invoic02.txt:itm.grp.sgm
+procidoc.exe -upl:_-rb04_-yp3_invoic02_cu.txt:itm.grp.sgm
+procidoc.exe -upl:_-rb04_-yp3_invoic02_intrace.txt:itm.grp.sgm
+procidoc.exe -upl:_-rb04_-yp3_invoic02_it.txt:itm.grp.sgm
+procidoc.exe -upl:_-rb04_-yp3_invoic02_xml.txt:itm.grp.sgm
+procidoc.exe -upl:delfor02.txt:itm.grp.sgm
+procidoc.exe -upl:delvry03.txt:itm.grp.sgm
+procidoc.exe -upl:delvry05.txt:itm.grp.sgm
+procidoc.exe -upl:delvry07.txt:itm.grp.sgm
+procidoc.exe -upl:invoic01.txt:itm.grp.sgm
+procidoc.exe -upl:invoic02.txt:itm.grp.sgm
+procidoc.exe -upl:orders01.txt:itm.grp.sgm
+procidoc.exe -upl:orders05.txt:itm.grp.sgm
+procidoc.exe -upl:seqjit03.txt:itm.grp.sgm
+procidoc.exe -upl:systat01.txt:itm.grp.sgm
+procidoc.exe -upl:y04vdelvry03.txt:itm.grp.sgm
+procidoc.exe -upl:y04vorders05.txt:itm.grp.sgm
+procidoc.exe -upl:y04vseqjit03.txt:itm.grp.sgm
+procidoc.exe -upl:z48v_invoic02_ex.txt:itm.grp.sgm
+pause

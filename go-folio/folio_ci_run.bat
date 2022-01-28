@@ -1,0 +1,2 @@
+folio.exe ci
+pause

@@ -1,0 +1,18 @@
+{
+  "Segma": [
+    { "Idoc": "DELFOR02",
+      "Segm": [
+        { "Type": "E2EDK09003", "Defn": "E2EDK09" },
+        { "Type": "E2EDK10",    "Defn": "E2EDK10" },
+        { "Type": "E2EDKA1003", "Defn": "E2EDKA1" },
+        { "Type": "E2EDK11001", "Defn": "E2EDK11" },
+        { "Type": "E2EDP10002", "Defn": "E2EDP10" },
+        { "Type": "E2EDP11",    "Defn": "E2EDP11" },
+        { "Type": "E2EDP36000", "Defn": "E2EDP36" },
+        { "Type": "E2EDP14",    "Defn": "E2EDP14" },
+        { "Type": "E2EDP15001", "Defn": "E2EDP15" },
+        { "Type": "E2EDP16002", "Defn": "E2EDP16" }
+      ]
+    }
+  ]
+}

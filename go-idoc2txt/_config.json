@@ -1,0 +1,89 @@
+{
+  "constants": {
+    "contrl": "EDI_DC40",
+    "client": "011"
+  },
+  "program": {
+    "dboNam": "idoctp.db",
+    "dboDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\",
+    "inpDir": "c:\\c_portab\\01_rb\\_rbprogs\\go-idoc2txt\\idoctypes\\",
+    "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\",
+    "inFilt": "!(*processed*)",
+    "inName": "rundt+'_'+idocn+docno+docdt+'_inp_processed'",
+    "ouName": "rundt+'_'+idocn+docno+docdt+'_out'"
+  },
+  "run": [
+    {
+      "option": "dat", "objNam": "/rb04/yp3_invoic02_xml",
+      "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\fidoc_invxml\\input\\",
+      "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\fidoc_invxml\\output\\"
+    },
+    {
+      "option": "dat", "objNam": "/rb04/yc1_pexr2002",
+      "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\fidoc_pexr2002\\input\\",
+      "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\fidoc_pexr2002\\output\\"
+    },
+    {
+      "option": "dat", "objNam": "delfor02",
+      "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\fidoc_delfor\\input\\",
+      "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\fidoc_delfor\\output\\"
+    },
+    {
+      "option": "dat", "objNam": "seqjit03",
+      "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\fidoc_seqjit\\input\\",
+      "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\fidoc_seqjit\\output\\"
+    },
+    {
+      "option": "dat", "objNam": "y04vseqjit03",
+      "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\fidoc_seqjit\\input\\",
+      "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\fidoc_seqjit\\output\\"
+    },
+    {
+      "option": "qry", "objNam": "/rb04/yp3_invoic02_xml", "qryNam" : "query_invxml.json",
+      "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\qidoc_invxml\\input\\",
+      "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\qidoc_invxml\\output\\",
+      "qryDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\qidoc_invxml\\query\\"
+    },
+    {
+      "option": "unf", "objNam": "/rb04/yp3_invoic02_xml",
+      "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\hidoc_invxml\\input\\",
+      "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\hidoc_invxml\\output\\",
+      "rcPrnF": "RE"
+    },
+    {
+      "option": "unf", "objNam": "z48v_invoic02_ex",
+      "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\hidoc_invxml_atmo\\input\\",
+      "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\hidoc_invxml_atmo\\output\\",
+      "rcPrnF": "RE"
+    },
+    {
+      "option": "unf", "objNam": "/rb04/yp3_invoic02",
+      "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\hidoc_invo\\input\\",
+      "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\hidoc_invo\\output\\",
+      "rcPrnF": "RE"
+    },
+    {
+      "option": "unf", "objNam": "/rb04/yp3_invoic02_cu",
+      "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\hidoc_invocu\\input\\",
+      "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\hidoc_invocu\\output\\",
+      "rcPrnF": "RE"
+    },
+    {
+      "option": "unf", "objNam": "delvry03",
+      "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\hidoc_whscon\\input\\",
+      "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\hidoc_whscon\\output\\",
+      "rcPrnF": "SH"
+    },
+    {
+      "option": "unf", "objNam": "/rb04/yp3_delvry_rbna",
+      "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\hidoc_asn\\input\\",
+      "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\hidoc_asn\\output\\",
+      "rcPrnF": "SH"
+    }
+  ],
+  "cdb": [
+    { "id": "itm", "table": "items", "cr": true },
+    { "id": "str", "table": "struc", "cr": true },
+    { "id": "sga", "table": "segma", "cr": true }
+  ]
+}

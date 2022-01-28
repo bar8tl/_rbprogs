@@ -1,0 +1,16 @@
+{
+ "Folio": [
+  {
+   "Seqid": "is",
+   "Custm": "RBEI/EBS8-SX",
+   "Prefx": "EBS8OPL",
+   "Seqno": 0
+  },
+  {
+   "Seqid": "io",
+   "Custm": "CI/XES5",
+   "Prefx": "XES5OPL",
+   "Seqno": 1
+  }
+ ]
+}

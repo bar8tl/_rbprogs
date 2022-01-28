@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Comprobante xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.sat.gob.mx/cfd/2 http://www.sat.gob.mx/sitio_internet/cfd/2/cfdv22.xsd' xmlns="http://www.sat.gob.mx/cfd/2" version="2.2" serie="J" folio="6955" fecha="2013-07-19T22:54:51" sello="C7BAvG3pQ/qZlkc0zjeyfs5ZQYisHQK1S/2d8LcjR3TsPlWElktpOFVgQESYB83Z9tmxQv1TjhZhuEjfW8bo9YFAP3sA9Se3Pw20h02D/5r2bCHlrlYlfJyTt9IWveXlZpQMtq6YmrELq4eUlPEGKB6OdLi1fzgK3QTTrS0P2s4=" noAprobacion="1887260" anoAprobacion="2011" formaDePago="Pago en una sola exhibición" noCertificado="00001000000201961816" certificado="MIIEgzCCA2ugAwIBAgIUMDAwMDEwMDAwMDAyMDE5NjE4MTYwDQYJKoZIhvcNAQEFBQAwggGVMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMSEwHwYJKoZIhvcNAQkBFhJhc2lzbmV0QHNhdC5nb2IubXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wuIEd1ZXJyZXJvMQ4wDAYDVQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRvIEZlZGVyYWwxFDASBgNVBAcMC0N1YXVodMOpbW9jMRUwEwYDVQQtEwxTQVQ5NzA3MDFOTjMxPjA8BgkqhkiG9w0BCQIML1Jlc3BvbnNhYmxlOiBDZWNpbGlhIEd1aWxsZXJtaW5hIEdhcmPDrWEgR3VlcnJhMB4XDTEyMDkxNzE2NDcxMloXDTE2MDkxNzE2NDcxMlowgcQxIzAhBgNVBAMTGlJPQkVSVCBCT1NDSCBTIERFIFJMIERFIENWMSMwIQYDVQQpExpST0JFUlQgQk9TQ0ggUyBERSBSTCBERSBDVjEjMCEGA1UEChMaUk9CRVJUIEJPU0NIIFMgREUgUkwgREUgQ1YxJTAjBgNVBC0THFJCTzkxMDEwMlFKOSAvIENVRk01MDExMTdLQTUxHjAcBgNVBAUTFSAvIENVRk01MDExMTdIREZSTE4wMTEMMAoGA1UECxMDU0FUMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDSC9RqCVnHxWxlPIZlg4royFfuzugVxWZXFecCtCctmW4IHPNVloBuLg5qt8EmQKKMB06msvzPZHOkfyU3bx9JCIe3DKghY2KBdvlR8lFcybp6d6ZdsGJ8YmUmsCNouL9bb1/XPtRo63LUkXo7XUU5gDSc1VQr9AdKwPaTRhQOnwIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQUFAAOCAQEASC4OlGAVXdjBUM1KUjdS2An0vgaqpEVQp83wWpAoIN3iY5GDmJ15NO2hKjELoYvMzLzHU9kJVoynHv9tgtY9BqJkNikDx4its/V+vRTl+NtE0+lHEyKKrXRfvINlGXFirrf1Xf9/Ak1VK+LptKVCOf4A26lwcjPJbTT6/CMm3SVMqQGQv78Hfva9oW6EeAHsjZ6ScZ3GQkeySDVO2X0LNvZrNLZDCZJwKiHgK/7qr0YazAK+4sgThHfQ6uc0DURUCpe51BCnbNSvE/77R5da8RHeVxMjB2yxiTPGqgYd/M53FKcuGtcTbt7xS9R033r5zUKPFAtAHDFBPkLae8AWpg==" subTotal="40.00" TipoCambio="12.23780" Moneda="USD" total="46.40" tipoDeComprobante="ingreso" metodoDePago="Transferencia Electrónica" LugarExpedicion="Toluca México" NumCtaPago="NO IDENTIFICADO">
+  <Emisor rfc="RBO910102QJ9" nombre="ROBERT BOSCH, S. DE R.L. DE C.V.">
+    <DomicilioFiscal calle="Robert Bosch" noExterior="405" colonia="Zona Industrial" municipio="Toluca" estado="México" pais="México" codigoPostal="50071"/>
+    <ExpedidoEn calle="Robert Bosch  - Zona Industrial" noExterior="405" municipio="Toluca" estado="México" pais="México" codigoPostal="50071"/>
+    <RegimenFiscal Regimen="General"/>
+  </Emisor>
+  <Receptor rfc="VME640813HF6" nombre="VOLKSWAGEN DE MEXICO SA DE CV">
+    <Domicilio calle="AUTOPISTA MEXICO PUEBLA KM 116" colonia="SAN LORENZO ALMECATLA" municipio="CUAUTLANCINGO" estado="Puebla" pais="México" codigoPostal="72700"/>
+  </Receptor>
+  <Conceptos>
+    <Concepto cantidad="2.000" unidad="PZA" descripcion="DRIVE ASSEMBLY;" valorUnitario="20.0000" importe="40.00"/>
+  </Conceptos>
+  <Impuestos totalImpuestosTrasladados="6.40">
+    <Traslados>
+      <Traslado impuesto="IVA" tasa="16.00" importe="6.40"/>
+    </Traslados>
+  </Impuestos>
+  <Addenda>
+    <PSV:Factura xmlns:PSV="http://www.vwnovedades.com/volkswagen/kanseilab/shcp/2009/Addenda/PSV" version="1.0" tipoDocumentoFiscal="FA" tipoDocumentoVWM="PSV" division="VW">
+      <PSV:Moneda tipoMoneda="USD" tipoCambio="12.23780" codigoImpuesto="1A"/>
+      <PSV:Proveedor codigo="6001012864" nombre="ROBERT BOSCH, S. DE R.L. DE C.V." correoContacto=" "/>
+      <PSV:Referencias remision="237006955"/>
+      <PSV:Solicitante/>
+      <PSV:Archivo datos="JVBERi0xLjUNJeLjz9MNCjE2IDAgb2JqDTw8L0xpbmVhcml6ZWQgMS9MIDQxNTE1MS9PIDE4L0UgOTEwMjIvTiA0L1QgNDE0ODMwL0...iExuBu8wjaeT" tipo="PDF"/>
+      <PSV:Partes>
+        <PSV:Parte posicion="1" descripcionMaterial="DRIVE ASSEMBLY;" cantidadMaterial="2.000" unidadMedida="PZA" precioUnitario="20.0000" montoLinea="40.00" codigoImpuesto="1A">
+          <PSV:Referencias ordenCompra="Test 1"/>
+        </PSV:Parte>
+      </PSV:Partes>
+    </PSV:Factura>
+  </Addenda>
+</Comprobante>

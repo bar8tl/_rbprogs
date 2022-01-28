@@ -1,0 +1,5 @@
+drop table if exists refe;
+create table refe (system text,domain text,descr text,link text,line text,mode text,userid text,password text,numkey text,class text,notes text,start text,valid text,mydata text);
+.separator ,
+.import refe.csv refe
+.exit
