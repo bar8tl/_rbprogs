@@ -1,0 +1,16 @@
+Como armar una presentación con Go
+
+Ricardo Barrera
+Programador
+Ricardo.Barrera@mx.bosch.com
+
+* Este es un nuevo slide para practica de present
+
+Y esto es texto en el nuevo slide
+
+* Si no colocamos texto en el slide 
+
+* Un diagrama
+.image mypresent_01.png
+
+* Correr código

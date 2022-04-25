@@ -10,7 +10,7 @@ import "github.com/atotto/clipboard"
 import "os"
 import "strings"
 
-const dbpth = "c:\\c_portab\\01_rb\\programdata\\go-refe\\refe.db"
+const dbpth = "c:\\programdata\\bar8tl\\go-refe\\refe.db"
 
 var admai, odmai string
 
@@ -95,8 +95,8 @@ func Cpykey(domai, systm, crdtp string) error {
 	  return errors.New("file not found")
 	}
 	var usrid, pswrd, numky string
-	rdb, err := db.Query(`select userid, password, numkey from refe where " +
-    "domain=? and valid<>"n" and system=?;`, domai, systm)
+	rdb, err := db.Query(`select userid, password, numkey from refe where ` +
+    `domain=? and valid<>"n" and system=?;`, domai, systm)
 	if err != nil {
 		clipboard.WriteAll("")
 		return errors.New("system not found")

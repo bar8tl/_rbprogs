@@ -2,7 +2,7 @@
 // Start login credentials retrieval into the Win10 clipboard 
 package main
 
-import "bar8tl/p/refe/rb"
+import rb "bar8tl/p/refe"
 import "os"
 import "strings"
 
