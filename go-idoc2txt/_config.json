@@ -5,7 +5,7 @@
   },
   "program": {
     "dboNam": "idoctp.db",
-    "dboDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\",
+    "dboDir": "c:\\ProgramData\\bar8tl\\go-idoc2txt\\",
     "inpDir": "c:\\c_portab\\01_rb\\_rbprogs\\go-idoc2txt\\idoctypes\\",
     "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\",
     "inFilt": "!(*processed*)",
@@ -46,8 +46,8 @@
     },
     {
       "option": "unf", "objNam": "/rb04/yp3_invoic02_xml",
-      "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\hidoc_invxml\\input\\",
-      "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-idoc2txt\\hidoc_invxml\\output\\",
+      "inpDir": "c:\\ProgramData\\bar8tl\\go-idoc2txt\\hidoc_invxml\\input\\",
+      "outDir": "c:\\ProgramData\\bar8tl\\go-idoc2txt\\hidoc_invxml\\output\\",
       "rcPrnF": "RE"
     },
     {

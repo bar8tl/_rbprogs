@@ -55,9 +55,12 @@ func NewUnfold() *Unfold_tp {
 // system readeable flat text files
 func (u *Unfold_tp) UfldData(parm lib.Param_tp, s Settings_tp) {
   s.SetRunVars(parm)
+  fmt.Println("entry", s.Inpdr, s.Outdr)
   u.Idocx = strings.ToUpper(s.Objnm)
   files, _ := ioutil.ReadDir(s.Inpdr)
   for _, f := range files {
+    fmt.Println(f)
+    u.ProcDataLines(s, f)
     if len(s.Ifilt) == 0 || (len(s.Ifilt) > 0 && PassFilter(s, f)) {
       u.ProcDataLines(s, f)
     }
@@ -304,6 +307,7 @@ func (u *Unfold_tp) DumpSegmentLine(s Settings_tp, wtr *bufio.Writer) {
     u.SetSegmentField("DATA", "PSGNUM", u.Sghnb)
     u.SetSegmentField("DATA", "HLEVEL", u.Sglvl)
     fmt.Fprintf(wtr, "%s\r\n", u.Lsegm)
+    fmt.Println(wtr)
     wtr.Flush()
     u.Dirty = false
   }

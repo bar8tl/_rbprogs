@@ -3,10 +3,11 @@
 package main
 
 import rb "bar8tl/p/bbmwht"
+import ut "bar8tl/p/rblib"
 import "log"
 
 // Core logic for Payments -----------------------------------------------------
-func processPaymentLine(lineExcel rb.Line_tp) {
+func processPaymentLine(lineExcel rb.Line_tp) { // for lines type DZ payment
   if firstLine {
     firstLine = false
   } else {
@@ -15,7 +16,7 @@ func processPaymentLine(lineExcel rb.Line_tp) {
   p.PaymentData = lineExcel
 }
 // Core logic for Invoices -----------------------------------------------------
-func processInvoiceLine(lineExcel rb.Line_tp) {
+func processInvoiceLine(lineExcel rb.Line_tp) { // for lines type RV invoice
   var docrel   rb.Docrel_tp
   var tax, wht int
   var taxTasa, whtTasa float64
@@ -24,18 +25,20 @@ func processInvoiceLine(lineExcel rb.Line_tp) {
     case "A5", "B5" : tax = 16; wht = 16
     case "AA", "BA" : tax =  8; wht =  0
     case "AB", "BB" : tax =  8; wht =  8
-    case "A0", "B0" : tax =  0; wht =  0 // not used by BBM but handled
+    case "A0", "B0" : tax =  0; wht =  0
     case "AE", "BE" : tax = 16; wht =  8 // partial wht discontinued, no handled
     case "AF", "BF" : tax =  8; wht =  3 // partial wht discontinued, no handled
   }
   taxTasa = float64(tax) / float64(100)
   whtTasa = float64(wht) / float64(100)
   docrel.ObjetoImpDR                  = rb.OBJETOIMPUESTO
-  docrel.TrasladoDR.BaseDR            = p.AmountDocCurr / (1 + taxTasa-whtTasa)
+  docrel.TrasladoDR.BaseDR            = ut.Round(p.ImportePago /
+                                          (1.0 + taxTasa - whtTasa), rb.DEC)
   docrel.TrasladoDR.ImpuestoDR        = rb.IMPUESTO
   docrel.TrasladoDR.TipoFactorDR      = rb.TIPOFACTOR
   docrel.TrasladoDR.TasaOCuotaDR      = taxTasa
-  docrel.TrasladoDR.ImporteDR         = docrel.TrasladoDR.BaseDR * taxTasa
+  docrel.TrasladoDR.ImporteDR         = ut.Round(docrel.TrasladoDR.BaseDR *
+                                          taxTasa, rb.DEC)
   p.ImpuestosP.TrasladoP.BaseP       += docrel.TrasladoDR.BaseDR
   p.ImpuestosP.TrasladoP.ImporteP    += docrel.TrasladoDR.ImporteDR
   p.Totales.MontoTotalPagos          += p.AmountDocCurr
@@ -49,13 +52,14 @@ func processInvoiceLine(lineExcel rb.Line_tp) {
     p.Totales.TrasladosBaseIVA0      += docrel.TrasladoDR.BaseDR
     p.Totales.TrasladosImpuestoIVA0  += docrel.TrasladoDR.ImporteDR
   }
-  docrel.RetncionDR = rb.TaxesDR_tp{0.00, "", "", 0.000000, 0.00}
+  docrel.RetncionDR = rb.TaxesDR_tp{0.00, "", "", 0.0, 0.0}
   if wht != 0 {
-    docrel.RetncionDR.BaseDR          = p.AmountDocCurr / (1 + taxTasa-whtTasa)
+    docrel.RetncionDR.BaseDR          = docrel.TrasladoDR.BaseDR
     docrel.RetncionDR.ImpuestoDR      = rb.IMPUESTO
     docrel.RetncionDR.TipoFactorDR    = rb.TIPOFACTOR
     docrel.RetncionDR.TasaOCuotaDR    = whtTasa
-    docrel.RetncionDR.ImporteDR       = docrel.RetncionDR.BaseDR * whtTasa
+    docrel.RetncionDR.ImporteDR       = ut.Round(docrel.RetncionDR.BaseDR *
+                                          whtTasa, rb.DEC)
     p.ImpuestosP.RetncionP.BaseP     += docrel.RetncionDR.BaseDR
     p.ImpuestosP.RetncionP.ImporteP  += docrel.RetncionDR.ImporteDR
     p.Totales.RetencionesIVA         += docrel.RetncionDR.ImporteDR

@@ -2,6 +2,8 @@
 // Utility functions
 package rblib
 
+import "fmt"
+import "math"
 import "strconv"
 import "strings"
 
@@ -98,4 +100,44 @@ func SplitQueryKey(key string) (q Qtokn_tp) {
     }
   }
   return q
+}
+
+// Functions to perform rounding over numbers type float64
+func Round(n float64, d int) float64 {
+  sg := 1.0
+  if n < 0 {
+    sg = -1.0
+  }
+  soutc := "%." + strconv.Itoa(d) + "f"
+  sintr := fmt.Sprintf(soutc, math.Trunc((n + sg * (0.5 * math.Pow10(-d))) *
+    math.Pow10(d)) * math.Pow10(-d))
+  fintr, _ := strconv.ParseFloat(sintr, 64)
+  return fintr
+}
+
+func Roundup(n float64, d int) float64 {
+  sg := 1.0
+  if n < 0 {
+    sg = -1.0
+  }
+  soutc := "%." + strconv.Itoa(d) + "f"
+  sintr := fmt.Sprintf(soutc, math.Trunc((n + sg * (0.9 * math.Pow10(-d))) *
+    math.Pow10(d)) * math.Pow10(-d))
+  fintr, _ := strconv.ParseFloat(sintr, 64)
+  return fintr
+}
+
+func Truncate(n float64, d int) float64 {
+  soutc := "%." + strconv.Itoa(d) + "f"
+  sintr := fmt.Sprintf(soutc, math.Trunc(n * math.Pow10(d)) * math.Pow10(-d))
+  fintr, _ := strconv.ParseFloat(sintr, 64)
+  return fintr
+}
+
+func Ffloor(n, r float64, d int) float64 {
+  return Truncate((n - (math.Pow10(-d) / 2)) * r, d)
+}
+
+func Fceil(n, r float64, d int) float64 {
+  return Roundup(((n + (math.Pow10(-d)) / 2) - (math.Pow10(-12))) * r, d)
 }
