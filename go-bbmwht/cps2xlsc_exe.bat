@@ -1,2 +1,0 @@
-cps2xlsc
-pause

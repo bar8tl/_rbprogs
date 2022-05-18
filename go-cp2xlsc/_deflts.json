@@ -1,0 +1,22 @@
+{
+  "dflt": {
+    "INPUTS_DIR"    : "c:\\c_portab\\01_rb\\_rbprogs\\go-cp2xlsc\\",
+    "OUTPUTS_DIR"   : "c:\\c_portab\\01_rb\\_rbprogs\\go-cp2xlsc\\",
+    "FILES_DIR"     : "c:\\c_portab\\01_rb\\_rbprogs\\go-cp2xlsc\\",
+    "INPUTS_FILTER" : "!(*processed*)",
+    "INPUTS_NAMING" : "rundt+'_'+ifiln+'_inp_processed'",
+    "OUTPUTS_NAMING": "rundt+'_'+ifiln+'_out'"
+  },
+  "konst": {
+    "IMPUESTO"       : "002",
+    "TIPOFACTOR"     : "Tasa",
+    "OBJETOIMPUESTO" : "02",
+    "TAB"            : "edicom",
+    "DEC"            : 6,
+    "ONE"            : "ONE",
+    "MANY"           : "MANY",
+    "FULL"           : "FULL",
+    "BATCH"          : "BATCH",
+    "INDIV"          : "INDIV"
+  }
+}

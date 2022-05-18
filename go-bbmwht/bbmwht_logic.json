@@ -1,0 +1,62 @@
+{
+  "sap_taxcodes" : [
+    { "code":"A0", "text":"VAT 0% Output Collect",             "categ":"TAX", "class":"VAT", "rate": "0.00", "wht":"0.00", "satimp":"IVA" },
+    { "code":"A2", "text":"VAT 16% Output Collect",            "categ":"TAX", "class":"VAT", "rate": "0.16", "wht":"0.16", "satimp":"IVA" },
+    { "code":"A5", "text":"VAT 16% Output Tax Collect WHT",    "categ":"WHT", "class":"VAT", "rate": "0.16", "wht":"0.16", "satimp":"IVA" },
+    { "code":"AA", "text":"VAT 8% Output Collect",             "categ":"TAX", "class":"VAT", "rate": "0.08", "wht":"0.08", "satimp":"IVA" },
+    { "code":"AB", "text":"VAT 8% Output Tax Collect WHT",     "categ":"WHT", "class":"VAT", "rate": "0.08", "wht":"0.08", "satimp":"IVA" },
+    { "code":"AE", "text":"VAT 16% Output Tax Collect 6% WHT", "categ":"WHT", "class":"VAT", "rate": "0.16", "wht":"0.06", "satimp":"IVA" },
+    { "code":"AF", "text":"VAT 8% Output Tax Collect 3% WHT",  "categ":"WHT", "class":"VAT", "rate": "0.08", "wht":"0.03", "satimp":"IVA" },
+    { "code":"B0", "text":"VAT 0% Output Collect",             "categ":"TAX", "class":"VAT", "rate": "0.00", "wht":"0.00", "satimp":"IVA" },
+    { "code":"B2", "text":"VAT 16% Output Collect",            "categ":"TAX", "class":"VAT", "rate": "0.16", "wht":"0.16", "satimp":"IVA" },
+    { "code":"B5", "text":"VAT 16% Output Tax Collect WHT",    "categ":"WHT", "class":"VAT", "rate": "0.16", "wht":"0.16", "satimp":"IVA" },
+    { "code":"BA", "text":"VAT 8% Output Collect",             "categ":"TAX", "class":"VAT", "rate": "0.08", "wht":"0.08", "satimp":"IVA" },
+    { "code":"BB", "text":"VAT 8% Output Tax Collect WHT",     "categ":"WHT", "class":"VAT", "rate": "0.08", "wht":"0.08", "satimp":"IVA" },
+    { "code":"BE", "text":"VAT 16% Output Tax Collect 6% WHT", "categ":"WHT", "class":"VAT", "rate": "0.16", "wht":"0.06", "satimp":"IVA" },
+    { "code":"BF", "text":"VAT 8% Output Tax Collect 3% WHT",  "categ":"WHT", "class":"VAT", "rate": "0.08", "wht":"0.03", "satimp":"IVA" }
+  ],
+  "AllTax": { "Codes_A2_B2_A5_B5_AA_BA_AB_BB_AE_BE_AF_BF": [
+    { "code":"A2" }, { "code":"B2" },
+    { "code":"A5" }, { "code":"B5" },
+    { "code":"AA" }, { "code":"BA" },
+    { "code":"AB" }, { "code":"BB" },
+    { "code":"AE" }, { "code":"BE" },
+    { "code":"AF" }, { "code":"BF" }
+  ]},
+  "WhtFull": { "Codes_A5_B5_AB_BB": [
+    { "code":"A5" }, { "code":"B5" },
+    { "code":"AB" }, { "code":"BB" }
+  ]},
+  "WhtPartial": { "Codes_AE_AF": [
+    { "code":"AE" },
+    { "code":"AF" }
+  ]},
+  "BorderTax": { "Codes_AA_BA_AB_BB_AF_BF": [
+    { "code":"AA" }, { "code":"BA" },
+    { "code":"AB" }, { "code":"BB" },
+    { "code":"AF" }, { "code":"BF" }
+  ]},
+  "Transfer": { "Codes_A2_B2_A5_B5_AA_BA_AB_BB_BE_BF": [
+    { "code":"A2" }, { "code":"B2" },
+    { "code":"A5" }, { "code":"B5" },
+    { "code":"AA" }, { "code":"BA" },
+    { "code":"AB" }, { "code":"BB" },
+                     { "code":"BE" },
+                     { "code":"BF" }
+  ]},
+  "Withholding": { "Codes_A5_B5_AB_BB_AE_AF": [
+    { "code":"A5" }, { "code":"B5" },
+    { "code":"AB" }, { "code":"BB" },
+    { "code":"AE" }                },
+    { "code":"AF" }                }
+  ]},
+  "sat_Impuesto": [
+    { "key":"ISR",  "value": "001" },
+    { "key":"IVA",  "value": "002" },
+    { "key":"IEPS", "value": "003" }
+  ],
+  "sat_TipoFactor": [
+    { "key":"IVA",  "value": "Tasa"    },
+    { "key":"",     "value": "Excento" }
+  ]
+}

@@ -2,6 +2,7 @@
 // Pagos2.0 fields. Auxiliary tools
 package bbmwht
 
+import ut "bar8tl/p/rblib"
 import "fmt"
 import "strconv"
 
@@ -21,7 +22,7 @@ type Line_tp struct {
   clearingDocument         string
   AmountDocCurr            string // Payment total amount
   documentCurrency         string
-  effExchangeRate          string
+  EffExchangeRate          string // Exchange rate
   assignment               string
   formaPago                string
   noParcialidad            string
@@ -258,14 +259,16 @@ func (p *Stools_tp) GetLineFields(row []string) (l Line_tp) {
       case 5  : l.clearingDocument       = row[i]
       case 6  : l.AmountDocCurr          = row[i];
         p.AmountDocCurr, _ = strconv.ParseFloat(l.AmountDocCurr, 64)
+        p.AmountDocCurr = ut.Round(p.AmountDocCurr, 6)
       case 7  : l.documentCurrency       = row[i]
-      case 8  : l.effExchangeRate        = row[i]
+      case 8  : l.EffExchangeRate        = row[i]
       case 9  : l.assignment             = row[i]
       case 10 : l.formaPago              = row[i]
       case 11 : l.noParcialidad          = row[i]
       case 12 : l.importeSaldoAnterior   = row[i]
       case 13 : l.ImportePago            = row[i];
         p.ImportePago, _ = strconv.ParseFloat(l.ImportePago, 64)
+        p.ImportePago = ut.Round(p.ImportePago, 6)
       case 14 : l.importeSaldoInsoluto   = row[i]
       case 15 : l.tipoRelacion           = row[i]
       case 16 : l.pagoCanceladoDocNumber = row[i]
@@ -296,14 +299,16 @@ func (p *Mtools_tp) GetLineFields(row []string) (l Line_tp) {
       case 5  : l.clearingDocument       = row[i]
       case 6  : l.AmountDocCurr          = row[i];
         p.AmountDocCurr, _ = strconv.ParseFloat(l.AmountDocCurr, 64)
+        p.AmountDocCurr = ut.Round(p.AmountDocCurr, 6)
       case 7  : l.documentCurrency       = row[i]
-      case 8  : l.effExchangeRate        = row[i]
+      case 8  : l.EffExchangeRate        = row[i]
       case 9  : l.assignment             = row[i]
       case 10 : l.formaPago              = row[i]
       case 11 : l.noParcialidad          = row[i]
       case 12 : l.importeSaldoAnterior   = row[i]
       case 13 : l.ImportePago            = row[i];
         p.ImportePago, _ = strconv.ParseFloat(l.ImportePago, 64)
+        p.ImportePago = ut.Round(p.ImportePago, 6)
       case 14 : l.importeSaldoInsoluto   = row[i]
       case 15 : l.tipoRelacion           = row[i]
       case 16 : l.pagoCanceladoDocNumber = row[i]
@@ -494,7 +499,7 @@ func (p *Stools_tp) buildLineExcel(tab string, o lsout_tp) {
   p.g.SetCellValue(tab, fmt.Sprintf("F%d",  p.recn), o.src.clearingDocument)
   p.g.SetCellValue(tab, fmt.Sprintf("G%d",  p.recn), o.src.AmountDocCurr)
   p.g.SetCellValue(tab, fmt.Sprintf("H%d",  p.recn), o.src.documentCurrency)
-  p.g.SetCellValue(tab, fmt.Sprintf("I%d",  p.recn), o.src.effExchangeRate)
+  p.g.SetCellValue(tab, fmt.Sprintf("I%d",  p.recn), o.src.EffExchangeRate)
   p.g.SetCellValue(tab, fmt.Sprintf("J%d",  p.recn), o.src.assignment)
   p.g.SetCellValue(tab, fmt.Sprintf("K%d",  p.recn), o.src.formaPago)
   p.g.SetCellValue(tab, fmt.Sprintf("L%d",  p.recn), o.src.noParcialidad)
@@ -547,7 +552,7 @@ func (p *Stools_tp) buildTitleExcel(tab string, o lstit_tp) {
   p.g.SetCellValue(tab, fmt.Sprintf("F%d",  p.recn), o.src.clearingDocument)
   p.g.SetCellValue(tab, fmt.Sprintf("G%d",  p.recn), o.src.AmountDocCurr)
   p.g.SetCellValue(tab, fmt.Sprintf("H%d",  p.recn), o.src.documentCurrency)
-  p.g.SetCellValue(tab, fmt.Sprintf("I%d",  p.recn), o.src.effExchangeRate)
+  p.g.SetCellValue(tab, fmt.Sprintf("I%d",  p.recn), o.src.EffExchangeRate)
   p.g.SetCellValue(tab, fmt.Sprintf("J%d",  p.recn), o.src.assignment)
   p.g.SetCellValue(tab, fmt.Sprintf("K%d",  p.recn), o.src.formaPago)
   p.g.SetCellValue(tab, fmt.Sprintf("L%d",  p.recn), o.src.noParcialidad)
@@ -600,7 +605,7 @@ func (p *Mtools_tp) buildLineExcel(tab string, o lmout_tp) {
   p.g.SetCellValue(tab, fmt.Sprintf("F%d",  p.recn), o.src.clearingDocument)
   p.g.SetCellValue(tab, fmt.Sprintf("G%d",  p.recn), o.src.AmountDocCurr)
   p.g.SetCellValue(tab, fmt.Sprintf("H%d",  p.recn), o.src.documentCurrency)
-  p.g.SetCellValue(tab, fmt.Sprintf("I%d",  p.recn), o.src.effExchangeRate)
+  p.g.SetCellValue(tab, fmt.Sprintf("I%d",  p.recn), o.src.EffExchangeRate)
   p.g.SetCellValue(tab, fmt.Sprintf("J%d",  p.recn), o.src.assignment)
   p.g.SetCellValue(tab, fmt.Sprintf("K%d",  p.recn), o.src.formaPago)
   p.g.SetCellValue(tab, fmt.Sprintf("L%d",  p.recn), o.src.noParcialidad)
@@ -683,7 +688,7 @@ func (p *Mtools_tp) buildTitleExcel(tab string, o lmtit_tp) {
   p.g.SetCellValue(tab, fmt.Sprintf("F%d",  p.recn), o.src.clearingDocument)
   p.g.SetCellValue(tab, fmt.Sprintf("G%d",  p.recn), o.src.AmountDocCurr)
   p.g.SetCellValue(tab, fmt.Sprintf("H%d",  p.recn), o.src.documentCurrency)
-  p.g.SetCellValue(tab, fmt.Sprintf("I%d",  p.recn), o.src.effExchangeRate)
+  p.g.SetCellValue(tab, fmt.Sprintf("I%d",  p.recn), o.src.EffExchangeRate)
   p.g.SetCellValue(tab, fmt.Sprintf("J%d",  p.recn), o.src.assignment)
   p.g.SetCellValue(tab, fmt.Sprintf("K%d",  p.recn), o.src.formaPago)
   p.g.SetCellValue(tab, fmt.Sprintf("L%d",  p.recn), o.src.noParcialidad)

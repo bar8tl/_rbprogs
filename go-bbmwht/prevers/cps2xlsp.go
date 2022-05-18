@@ -10,18 +10,19 @@ import "strconv"
 
 // Auxiliary funtions ----------------------------------------------------------
 type Stools_tp struct {
-  F             *excelize.File
-  g             *excelize.File
-  index         int
-  recn          int
-  AmountDocCurr float64
-  ImportePago   float64
-  PaymentData   Line_tp
-  Totales       Totales_tp
-  ImpuestosP    Payment_tp
-  invoices      []linv_tp
-  OneTaxPaym    Payment_tp
-  firstInvoice  bool
+  F               *excelize.File
+  g               *excelize.File
+  index           int
+  recn            int
+  AmountDocCurr   float64
+  ImportePago     float64
+  EffExchangeRate float64
+  PaymentData     Line_tp
+  Totales         Totales_tp
+  ImpuestosP      Payment_tp
+  invoices        []linv_tp
+  OneTaxPaym      Payment_tp
+  firstInvoice    bool
 }
 
 func NewStools() *Stools_tp {
@@ -107,15 +108,17 @@ func (p *Stools_tp) WritePaymentLine() *Stools_tp {
     o.taxRetncionImporte    = 0.0
   }
   amountDocCurr, _ := strconv.ParseFloat(p.PaymentData.AmountDocCurr, 64)
+  amountDocCurr = ut.Round(amountDocCurr, 2)
   o.difMontoTotalPagos = -1.0 * amountDocCurr - p.Totales.MontoTotalPagos
-  if math.Abs(o.difMontoTotalPagos) < 0.0000009 {
+  if math.Abs(o.difMontoTotalPagos) < 0.0000015 {
     o.difMontoTotalPagos = 0.0
   }
   importePagoCalc := o.taxTrasladoBase + o.taxTrasladoImporte -
                      o.taxRetncionImporte
   importePago, _  := strconv.ParseFloat(p.PaymentData.AmountDocCurr, 64)
+  importePago = ut.Round(importePago, 2)
   o.difImportePago = -1.0 * importePago - importePagoCalc
-  if math.Abs(o.difImportePago) < 0.0000009 {
+  if math.Abs(o.difImportePago) < 0.0000015 {
     o.difImportePago = 0.0
   }
   p.buildLineExcel(TABNAME, o)
@@ -157,8 +160,9 @@ func (p *Stools_tp) WriteInvoiceLines() *Stools_tp {
                        i.docrel.TrasladoDR.ImporteDR -
                        i.docrel.RetncionDR.ImporteDR
     importePago, _ := strconv.ParseFloat(i.src.ImportePago, 64)
+    importePago = ut.Round(importePago, 2)
     o.difImportePago = importePago - importePagoCalc
-    if math.Abs(o.difImportePago) < 0.0000009 {
+    if math.Abs(o.difImportePago) < 0.0000015 {
       o.difImportePago = 0.0
     }
     p.buildLineExcel(TABNAME, o)

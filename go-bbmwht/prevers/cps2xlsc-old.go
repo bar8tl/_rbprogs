@@ -21,11 +21,11 @@ func processInvoiceLine(lineExcel rb.Line_tp) { // for lines type RV invoice
   var tax, wht int
   var taxTasa, whtTasa float64
   switch lineExcel.TaxCode {
-    case "A2", "B2" : tax = 16; wht =  0
-    case "A5", "B5" : tax = 16; wht = 16
-    case "AA", "BA" : tax =  8; wht =  0
-    case "AB", "BB" : tax =  8; wht =  8
-    case "A0", "B0" : tax =  0; wht =  0
+    case "A2", "B2", "CI", "CF" : tax = 16; wht =  0
+    case "A5", "B5"             : tax = 16; wht = 16
+    case "AA", "BA", "VA"       : tax =  8; wht =  0
+    case "AB", "BB"             : tax =  8; wht =  8
+    case "A0", "B0", "CG", "V0" : tax =  0; wht =  0
     case "AE", "BE" : tax = 16; wht =  8 // partial wht discontinued, no handled
     case "AF", "BF" : tax =  8; wht =  3 // partial wht discontinued, no handled
   }
@@ -41,7 +41,7 @@ func processInvoiceLine(lineExcel rb.Line_tp) { // for lines type RV invoice
                                           taxTasa, rb.DEC)
   p.ImpuestosP.TrasladoP.BaseP       += docrel.TrasladoDR.BaseDR
   p.ImpuestosP.TrasladoP.ImporteP    += docrel.TrasladoDR.ImporteDR
-  p.Totales.MontoTotalPagos          += p.AmountDocCurr
+  p.Totales.MontoTotalPagos          += p.ImportePago
   if tax == 16 {
     p.Totales.TrasladosBaseIVA16     += docrel.TrasladoDR.BaseDR
     p.Totales.TrasladosImpuestoIVA16 += docrel.TrasladoDR.ImporteDR
@@ -72,7 +72,7 @@ var p *rb.Stools_tp
 
 func main() {
   p = rb.NewStools()
-  p.OpenInpExcel("edicoms1.0.xlsx")
+  p.OpenInpExcel("edicoms1.0_dc.xlsx")
   rows, err := p.F.GetRows("edicom")
   if err != nil {
     log.Fatal(err)
@@ -88,6 +88,6 @@ func main() {
       processInvoiceLine(lineExcel)
     }
   }
-  p.WritePaymentLine().WriteInvoiceLines().WriteOutExcel("edicoms2.0.xlsx")
+  p.WritePaymentLine().WriteInvoiceLines().WriteOutExcel("edicoms2.0_dc.xlsx")
 }
 // ----------------------------- end of file -----------------------------------
