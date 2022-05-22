@@ -2,8 +2,13 @@
 // Utility functions
 package rblib
 
+import "archive/zip"
+import "bytes"
 import "fmt"
+import "io"
+import "log"
 import "math"
+import "os"
 import "strconv"
 import "strings"
 
@@ -100,6 +105,59 @@ func SplitQueryKey(key string) (q Qtokn_tp) {
     }
   }
   return q
+}
+
+// Funtions to create/display ZIP compressed data files
+func Zipgen(ifnam, ofnam string) {
+  outf, err := os.Create(ofnam)
+  if err != nil {
+    log.Fatalf("Create: %v\n", err)
+  }
+  w := zip.NewWriter(outf)
+  f, err := w.Create(ifnam)
+  if err != nil {
+    log.Fatal(err)
+  }
+  inf, err := os.Open(ifnam)
+  if err != nil {
+    log.Fatalf("Open: %v\n", err)
+  }
+  fs, _ := inf.Stat()
+  ibuf := make([]byte, fs.Size())
+  _, err = inf.Read(ibuf)
+  if err != nil {
+    log.Fatal(err)
+  }
+  inf.Close()
+  _, err = f.Write(ibuf)
+  if err != nil {
+    log.Fatal(err)
+  }
+  err = w.Close()
+  if err != nil {
+    log.Fatal(err)
+  }
+}
+
+func Zipdsp(fname string) {
+  rc, err := zip.OpenReader(fname)
+  if err != nil {
+    log.Fatal(err)
+  }
+  defer rc.Close()
+  for _, f := range rc.File {
+    d, err := f.Open()
+    if err != nil {
+      log.Fatal(err)
+    }
+    defer d.Close()
+    buf := new(bytes.Buffer)
+    buf.ReadFrom(d)
+    for iline, err := buf.ReadString(byte('\n')); err != io.EOF; iline,
+      err = buf.ReadString(byte('\n')) {
+      fmt.Print(iline)
+    }
+  }
 }
 
 // Functions to perform rounding over numbers type float64

@@ -55,7 +55,7 @@ func procIndivFile(s rb.Settings_tp, dir, f string) {
   for _, row := range rows {
     rdr.GetLineFields(row)
     switch rdr.Src.DocumentType {
-      case "Document Type" : wtr.FetchTitle(rdr.Src)
+      case "Document Type" : wtr.FetchTitle()
       case "DZ", "PK"      : ProcessPaymentLine(c, *rdr, wtr)
       case "RV"            : ProcessInvoiceLine(c, *rdr)
     }
