@@ -1,4 +1,5 @@
-// names.go [2017-05-24 BAR8TL] Renames input/output files according status
+// names.go - Funtions to rename input/output files according status
+// 2022-05-17 BAR8TL Version1.0 - Released
 package cp2xlsc
 
 import "log"

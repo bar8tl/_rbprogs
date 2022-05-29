@@ -12,13 +12,13 @@
   },
   "run": [
     {
-      "option": "txc", "objNam": "edicom_bbm", "mode": "INDIV", "output": "FULL",
+      "option": "txc", "objNam": "edicom-bbm", "mode": "INDIV", "output": "FULL",
       "inpFil": "edicom-bbm.xlsx",
       "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-cp2xlsc\\edicom-bbm\\input\\",
       "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-cp2xlsc\\edicom-bbm\\output\\"
     },
     {
-      "option": "txc", "objNam": "edicom_dc",  "mode": "INDIV", "output": "FULL",
+      "option": "txc", "objNam": "edicom-dc",  "mode": "INDIV", "output": "FULL",
       "inpFil": "edicom-dc.xlsx",
       "inpDir": "c:\\c_portab\\01_rb\\ProgramData\\go-cp2xlsc\\edicom-dc\\input\\",
       "outDir": "c:\\c_portab\\01_rb\\ProgramData\\go-cp2xlsc\\edicom-dc\\output\\"

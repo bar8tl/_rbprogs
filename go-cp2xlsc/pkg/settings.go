@@ -1,4 +1,5 @@
-// settings.go [2017-05-24 BAR8TL] Container of pgm-level & run-level settings
+// settings.go - Container of program/run-option level settings
+// 2022-05-17 BAR8TL Version1.0 - Released
 package cp2xlsc
 
 import ut "bar8tl/p/rblib"

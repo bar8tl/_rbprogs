@@ -1,30 +1,27 @@
-// cpm2xlsc.go [2022-04-06 BAR8TL] Extend Pagos1.0 EDICOM-file with Pagos2.0
-// fields. Core Logic
+// corelogic.go - Extend Pagos1.0 EDICOM-file with Pagos2.0 fields (Core Logic)
+// 2022-05-17 BAR8TL Version1.0 - In progress
 package main
 
-import rb "bar8tl/p/cp2xlsc"
 import ut "bar8tl/p/rblib"
 
 var firstLine bool = true
 
 // Logic for Payments
-func ProcessPaymentLine(c *rb.Calctax_tp, lineExcel rb.Reader_tp,
-  wtr *rb.Writer_tp) {
+func ProcessPaymentLine(c *Calctax_tp, wtr *Writer_tp) {
   if firstLine {
     firstLine = false
   } else {
     c.FetchPaymentLine(wtr).FetchInvoiceLines(wtr).ResetPaymentData()
   }
-  c.StorePayment(lineExcel)
+  c.StorePayment()
 }
 
 // Logic for Invoices
-func ProcessInvoiceLine(c *rb.Calctax_tp, lineExcel rb.Reader_tp) {
-  var docrel   rb.Docrel_tp
+func ProcessInvoiceLine(c *Calctax_tp) {
   var tax, wht int
   var taxTasa, whtTasa float64
   var importePago      float64
-  switch lineExcel.Src.TaxCode {
+  switch rds[m["taxCode"]] {
     case "A2", "B2", "CI", "CF" : tax = 16; wht =  0
     case "A5", "B5"             : tax = 16; wht = 16
     case "AA", "BA", "VA"       : tax =  8; wht =  0
@@ -35,57 +32,65 @@ func ProcessInvoiceLine(c *rb.Calctax_tp, lineExcel rb.Reader_tp) {
   }
   taxTasa = float64(tax) / float64(100)
   whtTasa = float64(wht) / float64(100)
-  if lineExcel.Src.DocumentCurrency != "MXN" {
-    importePago = lineExcel.ImportePago * c.EffExchangeRate
+  if pms[m["documentCurrency"]] == "MXN" {
+    if rds[m["documentCurrency"]] == "MXN" {
+      importePago = rdf[m["importePago"]]
+    } else {
+      importePago = rdf[m["importePago"]] / rdf[m["effExchangeRate"]]
+    }
   } else {
-    importePago = lineExcel.ImportePago
+    importePago = rdf[m["importePago"]] * pmf[m["effExchangeRate"]]
   }
-  importePago = ut.Round(importePago, 6)
-  docrel.ObjetoImpDR                  = rb.OBJETOIMPUESTO
-  docrel.TrasladoDR.BaseDR            = ut.Round(importePago /
-                                          (1.0 + taxTasa - whtTasa), rb.DEC)
-  docrel.TrasladoDR.ImpuestoDR        = rb.IMPUESTO
-  docrel.TrasladoDR.TipoFactorDR      = rb.TIPOFACTOR
-  docrel.TrasladoDR.TasaOCuotaDR      = taxTasa
-  docrel.TrasladoDR.ImporteDR         = ut.Round(docrel.TrasladoDR.BaseDR *
-                                          taxTasa, rb.DEC)
-  c.ImpuestosP.TrasladoP.BaseP       += docrel.TrasladoDR.BaseDR
-  c.ImpuestosP.TrasladoP.ImporteP    += docrel.TrasladoDR.ImporteDR
-  c.Totales.MontoTotalPagos          += importePago
+  importePago = ut.Round(importePago, DEC)
+  drs[m["objetoImpuesto"]]             = OBJETOIMP
+  drf[m["trasladoBaseDR"]]             = round(importePago /
+                                           (1.0 + taxTasa - whtTasa))
+  drs[m["trasladoImpuestoDR"]]         = IMPUESTO
+  drs[m["trasladoTipoFactorDR"]]       = TIPOFACTOR
+  drf[m["trasladoTasaOCuotaDR"]]       = taxTasa
+  drf[m["trasladoImporteDR"]]          = round(drf[m["trasladoBaseDR"]] *
+                                           taxTasa)
+  pmf[m["taxTrasladoBase"]]           += drf[m["trasladoBaseDR"]]
+  pmf[m["taxTrasladoImporte"]]        += drf[m["trasladoImporteDR"]]
+  pmf[m["montoTotalPagos"]]           += importePago
   if tax == 16 {
-    c.TaxPIVA16.TrasladoP.BaseP      += docrel.TrasladoDR.BaseDR
-    c.TaxPIVA16.TrasladoP.ImporteP   += docrel.TrasladoDR.ImporteDR
-    c.Totales.TrasladosBaseIVA16     += docrel.TrasladoDR.BaseDR
-    c.Totales.TrasladosImpuestoIVA16 += docrel.TrasladoDR.ImporteDR
+    pmf[m["trasladoBasePIVA16"]]      += drf[m["trasladoBaseDR"]]
+    pmf[m["trasladoImportePIVA16"]]   += drf[m["trasladoImporteDR"]]
+    pmf[m["trasladosBaseIVA16"]]      += drf[m["trasladoBaseDR"]]
+    pmf[m["trasladosImpuestoIVA16"]]  += drf[m["trasladoImporteDR"]]
   } else if tax == 8 {
-    c.TaxPIVA8.TrasladoP.BaseP       += docrel.TrasladoDR.BaseDR
-    c.TaxPIVA8.TrasladoP.ImporteP    += docrel.TrasladoDR.ImporteDR
-    c.Totales.TrasladosBaseIVA8      += docrel.TrasladoDR.BaseDR
-    c.Totales.TrasladosImpuestoIVA8  += docrel.TrasladoDR.ImporteDR
+    pmf[m["trasladoBasePIVA8"]]       += drf[m["trasladoBaseDR"]]
+    pmf[m["trasladoImportePIVA8"]]    += drf[m["trasladoImporteDR"]]
+    pmf[m["trasladosBaseIVA8"]]       += drf[m["trasladoBaseDR"]]
+    pmf[m["trasladosImpuestoIVA8"]]   += drf[m["trasladoImporteDR"]]
   } else if tax == 0 {
-    c.TaxPIVA0.TrasladoP.BaseP       += docrel.TrasladoDR.BaseDR
-    c.TaxPIVA0.TrasladoP.ImporteP    += docrel.TrasladoDR.ImporteDR
-    c.Totales.TrasladosBaseIVA0      += docrel.TrasladoDR.BaseDR
-    c.Totales.TrasladosImpuestoIVA0  += docrel.TrasladoDR.ImporteDR
+    pmf[m["trasladoBasePIVA0"]]       += drf[m["trasladoBaseDR"]]
+    pmf[m["trasladoImportePIVA0"]]    += drf[m["trasladoImporteDR"]]
+    pmf[m["trasladosBaseIVA0"]]       += drf[m["trasladoBaseDR"]]
+    pmf[m["trasladosImpuestoIVA0"]]   += drf[m["trasladoImporteDR"]]
   }
-  docrel.RetncionDR = rb.TaxesDR_tp{0.0, "", "", 0.0, 0.0}
+  drf[m["retncionBaseDR"]]             = 0.0
+  drs[m["retncionImpuestoDR"]]         = ""
+  drs[m["retncionTipoFactorDR"]]       = ""
+  drf[m["retncionTasaOCuotaDR"]]       = 0.0
+  drf[m["retncionImporteDR"]]          = 0.0
   if wht != 0 {
-    docrel.RetncionDR.BaseDR          = docrel.TrasladoDR.BaseDR
-    docrel.RetncionDR.ImpuestoDR      = rb.IMPUESTO
-    docrel.RetncionDR.TipoFactorDR    = rb.TIPOFACTOR
-    docrel.RetncionDR.TasaOCuotaDR    = whtTasa
-    docrel.RetncionDR.ImporteDR       = ut.Round(docrel.RetncionDR.BaseDR *
-                                          whtTasa, rb.DEC)
-    c.ImpuestosP.RetncionP.BaseP     += docrel.RetncionDR.BaseDR
-    c.ImpuestosP.RetncionP.ImporteP  += docrel.RetncionDR.ImporteDR
-    c.Totales.RetencionesIVA         += docrel.RetncionDR.ImporteDR
+    drf[m["retncionBaseDR"]]           = drf[m["trasladoBaseDR"]]
+    drs[m["retncionImpuestoDR"]]       = IMPUESTO
+    drs[m["retncionTipoFactorDR"]]     = TIPOFACTOR
+    drf[m["retncionTasaOCuotaDR"]]     = whtTasa
+    drf[m["retncionImporteDR"]]        = round(drf[m["retncionBaseDR"]] *
+                                           whtTasa)
+    pmf[m["taxRetncionBase"]]         += drf[m["retncionBaseDR"]]
+    pmf[m["taxRetncionImporte"]]      += drf[m["retncionImporteDR"]]
+    pmf[m["retencionesIVA"]]          += drf[m["retncionImporteDR"]]
     if wht == 16 {
-      c.TaxPIVA16.RetncionP.BaseP    += docrel.RetncionDR.BaseDR
-      c.TaxPIVA16.RetncionP.ImporteP += docrel.RetncionDR.ImporteDR
+      pmf[m["retncionBasePIVA16"]]    += drf[m["retncionBaseDR"]]
+      pmf[m["retncionImportePIVA16"]] += drf[m["retncionImporteDR"]]
     } else if wht == 8 {
-      c.TaxPIVA8.RetncionP.BaseP     += docrel.RetncionDR.BaseDR
-      c.TaxPIVA8.RetncionP.ImporteP  += docrel.RetncionDR.ImporteDR
+      pmf[m["retncionBasePIVA8"]]     += drf[m["retncionBaseDR"]]
+      pmf[m["retncionImportePIVA8"]]  += drf[m["retncionImporteDR"]]
     }
   }
-  c.StoreDocRel(lineExcel, docrel)
+  c.StoreDocRel()
 }

@@ -1,4 +1,5 @@
-// config.go [2017-05-24 BAR8TL] Upload config values file
+// config.go - Upload program/run-option configuration settings
+// 2022-05-17 BAR8TL Version1.0 - Released
 package cp2xlsc
 
 import "encoding/json"
@@ -34,9 +35,9 @@ type Run_tp struct {
 }
 
 type Config_tp struct {
-  Const Constant_tp `json:"constants"`
-  Progm Program_tp  `json:"program"`
-  Run   []Run_tp    `json:"run"`
+  Const   Constant_tp `json:"constants"`
+  Progm   Program_tp  `json:"program"`
+  Run   []Run_tp      `json:"run"`
 }
 
 func (c *Config_tp) NewConfig(fname string) {

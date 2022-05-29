@@ -1,4 +1,5 @@
-// defaults.go [2017-05-24 BAR8TL] Upload default values file
+// defaults.go - Upload program settings to be used as default values
+// 2022-05-17 BAR8TL Version1.0 - Released
 package cp2xlsc
 
 import "encoding/json"

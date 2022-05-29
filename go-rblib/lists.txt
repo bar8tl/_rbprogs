@@ -1,273 +1,273 @@
-idx|companyCode|1
-idx|customer|2
-idx|documentNumber|3
-idx|documentType|4
-idx|paymentDateTime|5
-idx|clearingDocument|6
-idx|amountDocCurr|7
-idx|documentCurrency|8
-idx|dffExchangeRate|9
-idx|assignment|10
-idx|formaPago|11
-idx|noParcialidad|12
-idx|importeSaldoAnterior|13
-idx|importePago|14
-idx|importeSaldoInsoluto|15
-idx|tipoRelacion|16
-idx|pagoCanceladoDocNumber|17
-idx|numOperacion|18
-idx|rfcBancoOrdenente|19
-idx|nombreBancoOrdenante|20
-idx|cuentaOrdenante|21
-idx|rfcBancoBeneficiario|22
-idx|cuentaBeneficiario|23
-idx|tipoCadenaPago|24
-idx|certificadoPago|25
-idx|cadenaPago|26
-idx|selloPago|27
-idx|taxCode|28
-idx|retencionesIVA|29
-idx|trasladosBaseIVA16|30
-idx|trasladosImpuestoIVA16|31
-idx|trasladosBaseIVA8|32
-idx|trasladosImpuestoIVA8|33
-idx|trasladosBaseIVA0|34
-idx|trasladosImpuestoIVA0|35
-idx|montoTotalPagos|36
-idx|objetoImpuesto|37
-idx|taxTrasladoBase|38
-idx|taxTrasladoImpuesto|39
-idx|taxTrasladoTipoFactor|40
-idx|taxTrasladoTasaOCuota|41
-idx|taxTrasladoImporte|42
-idx|taxRetncionBase|43
-idx|taxRetncionImpuesto|44
-idx|taxRetncionTipoFactor|45
-idx|taxRetncionTasaOCuota|46
-idx|taxRetncionImporte|47
-idx|difMontoTotalPagos1|48
-idx|difImportePago1|49
-idx|trasladoBaseDR|50
-idx|trasladoImpuestoDR|51
-idx|trasladoTipoFactorDR|52
-idx|trasladoTasaOCuotaDR|53
-idx|trasladoImporteDR|54
-idx|retncionBaseDR|55
-idx|retncionImpuestoDR|56
-idx|retncionTipoFactorDR|57
-idx|retncionTasaOCuotaDR|58
-idx|retncionImporteDR|59
-idx|trasladoBasePIVA16|60
-idx|trasladoImpuestoPIVA16|61
-idx|trasladoTipoFactorPIVA16|62
-idx|trasladoTasaOCuotaPIVA16|63
-idx|trasladoImportePIVA16|64
-idx|retncionBasePIVA16|65
-idx|retncionImpuestoPIVA16|66
-idx|retncionTipoFactorPIVA16|67
-idx|retncionTasaOCuotaPIVA16|68
-idx|retncionImportePIVA16|69
-idx|trasladoBasePIVA8|70
-idx|trasladoImpuestoPIVA8|71
-idx|trasladoTipoFactorPIVA8|72
-idx|trasladoTasaOCuotaPIVA8|73
-idx|trasladoImportePIVA8|74
-idx|retncionBasePIVA8|75
-idx|retncionImpuestoPIVA8|76
-idx|retncionTipoFactorPIVA8|77
-idx|retncionTasaOCuotaPIVA8|78
-idx|retncionImportePIVA8|79
-idx|trasladoBasePIVA0|80
-idx|trasladoImpuestoPIVA0|81
-idx|trasladoTipoFactorPIVA0|82
-idx|trasladoTasaOCuotaPIVA0|83
-idx|trasladoImportePIVA0|84
-idx|retncionBasePIVA0|85
-idx|retncionImpuestoPIVA0|86
-idx|retncionTipoFactorPIVA0|87
-idx|retncionTasaOCuotaPIVA0|88
+idx|companyCode|0
+idx|customer|1
+idx|documentNumber|2
+idx|documentType|3
+idx|paymentDateTime|4
+idx|clearingDocument|5
+idx|amountDocCurr|6
+idx|documentCurrency|7
+idx|dffExchangeRate|8
+idx|assignment|9
+idx|formaPago|10
+idx|noParcialidad|11
+idx|importeSaldoAnterior|12
+idx|importePago|13
+idx|importeSaldoInsoluto|14
+idx|tipoRelacion|15
+idx|pagoCanceladoDocNumber|16
+idx|numOperacion|17
+idx|rfcBancoOrdenente|18
+idx|nombreBancoOrdenante|19
+idx|cuentaOrdenante|20
+idx|rfcBancoBeneficiario|21
+idx|cuentaBeneficiario|22
+idx|tipoCadenaPago|23
+idx|certificadoPago|24
+idx|cadenaPago|25
+idx|selloPago|26
+idx|taxCode|27
+idx|retencionesIVA|28
+idx|trasladosBaseIVA16|29
+idx|trasladosImpuestoIVA16|30
+idx|trasladosBaseIVA8|31
+idx|trasladosImpuestoIVA8|32
+idx|trasladosBaseIVA0|33
+idx|trasladosImpuestoIVA0|34
+idx|montoTotalPagos|35
+idx|objetoImpuesto|36
+idx|taxTrasladoBase|37
+idx|taxTrasladoImpuesto|38
+idx|taxTrasladoTipoFactor|39
+idx|taxTrasladoTasaOCuota|40
+idx|taxTrasladoImporte|41
+idx|taxRetncionBase|42
+idx|taxRetncionImpuesto|43
+idx|taxRetncionTipoFactor|44
+idx|taxRetncionTasaOCuota|45
+idx|taxRetncionImporte|46
+idx|difMontoTotalPagos1|47
+idx|difImportePago1|48
+idx|trasladoBaseDR|49
+idx|trasladoImpuestoDR|50
+idx|trasladoTipoFactorDR|51
+idx|trasladoTasaOCuotaDR|52
+idx|trasladoImporteDR|53
+idx|retncionBaseDR|54
+idx|retncionImpuestoDR|55
+idx|retncionTipoFactorDR|56
+idx|retncionTasaOCuotaDR|57
+idx|retncionImporteDR|58
+idx|trasladoBasePIVA16|59
+idx|trasladoImpuestoPIVA16|60
+idx|trasladoTipoFactorPIVA16|61
+idx|trasladoTasaOCuotaPIVA16|62
+idx|trasladoImportePIVA16|63
+idx|retncionBasePIVA16|64
+idx|retncionImpuestoPIVA16|65
+idx|retncionTipoFactorPIVA16|66
+idx|retncionTasaOCuotaPIVA16|67
+idx|retncionImportePIVA16|68
+idx|trasladoBasePIVA8|69
+idx|trasladoImpuestoPIVA8|70
+idx|trasladoTipoFactorPIVA8|71
+idx|trasladoTasaOCuotaPIVA8|72
+idx|trasladoImportePIVA8|73
+idx|retncionBasePIVA8|74
+idx|retncionImpuestoPIVA8|75
+idx|retncionTipoFactorPIVA8|76
+idx|retncionTasaOCuotaPIVA8|77
+idx|retncionImportePIVA8|78
+idx|trasladoBasePIVA0|79
+idx|trasladoImpuestoPIVA0|80
+idx|trasladoTipoFactorPIVA0|81
+idx|trasladoTasaOCuotaPIVA0|82
+idx|trasladoImportePIVA0|83
+idx|retncionBasePIVA0|84
+idx|retncionImpuestoPIVA0|85
+idx|retncionTipoFactorPIVA0|86
+idx|retncionTasaOCuotaPIVA0|87
 idx|retncionImportePIVA0|89
-idx|difMontoTotalPagos3|90
-idx|difImportePago3|91
-tit|1|Company Code
-tit|2|Customer
-tit|3|Document Number
-tit|4|Document Type
-tit|5|Payment Date - Time
-tit|6|Clearing Document
-tit|7|Amount in Doc. Curr
-tit|8|Document Currency
-tit|9|Eff.exchange rate
-tit|10|Assignment
-tit|11|Forma de Pago
-tit|12|No. de Parcialidad
-tit|13|Importe Saldo Anterior
-tit|14|Importe Pago
-tit|15|Importe Saldo Insoluto
-tit|16|Tipo Relacion (04)
-tit|17|Pago Cancelado (Doc Number)
-tit|18|Num Operacion
-tit|19|RFC Banco Ordenente
-tit|20|Nombre Banco Ordenante
-tit|21|Cuenta Ordenante
-tit|22|RFC Banco Beneficiario
-tit|23|Cuenta Beneficiario
-tit|24|Tipo Cadena Pago (01)
-tit|25|Certificado Pago
-tit|26|Cadena Pago
-tit|27|Sello Pago
-tit|28|Tax Code
-tit|29|Retenciones IVA
-tit|30|Traslados Base IVA16
-tit|31|Traslados Impuesto IVA16
-tit|32|Traslados Base IVA8
-tit|33|Traslados Impuesto IVA8
-tit|34|Traslados Base IVA0
-tit|35|Traslados Impuesto IVA0
-tit|36|Monto Total Pagos
-tit|37|Objeto Impuesto
-tit|38|Tax Traslado Base
-tit|39|Tax Traslado Impuesto
-tit|40|Tax Traslado TipoFactor
-tit|41|Tax Traslado TasaOCuota
-tit|42|Tax Traslado Importe
-tit|43|Tax Retencion Base
-tit|44|Tax Retencion Impuesto
-tit|45|Tax Retencion TipoFactor
-tit|46|Tax Retencion TasaOCuota
-tit|47|Tax Retencion Importe
-tit|48|Diff Monto Total Pagos
-tit|49|Diff Importe Pago1
-tit|50|DR Traslado Base
-tit|51|DR Traslado Impuesto
-tit|52|DR Traslado TipoFactor
-tit|53|DR Traslado TasaOCuota
-tit|54|DR Traslado Importe
-tit|55|DR Retencion Base
-tit|56|DR Retencion Impuesto
-tit|57|DR Retencion TipoFactor
-tit|58|DR Retencion TasaOCuota
-tit|59|DR Retencion Importe
-tit|60|P Traslado Base IVA16
-tit|61|P Traslado Impuesto IVA16
-tit|62|P Traslado TipoFactor IVA16
-tit|63|P Traslado TasaOCuota IVA16
-tit|64|P Traslado Importe IVA16
-tit|65|P Retencion Base IVA16
-tit|66|P Retencion Impuesto IVA16
-tit|67|P Retencion TipoFactor IVA16
-tit|68|P Retencion TasaOCuota IVA16
-tit|69|P Retencion Importe IVA16
-tit|70|P Traslado Base IVA8
-tit|71|P Traslado Impuesto IVA8
-tit|72|P Traslado TipoFactor IVA8
-tit|73|P Traslado TasaOCuota IVA8
-tit|74|P Traslado Importe IVA8
-tit|75|P Retencion Base IVA8
-tit|76|P Retencion Impuesto IVA8
-tit|77|P Retencion TipoFactor IVA8
-tit|78|P Retencion TasaOCuota IVA8
-tit|79|P Retencion Importe IVA8
-tit|80|P Traslado Base IVA0
-tit|81|P Traslado Impuesto IVA0
-tit|82|P Traslado TipoFactor IVA0
-tit|83|P Traslado TasaOCuota IVA0
-tit|84|P Traslado Importe IVA0
-tit|85|P Retencion Base IVA0
-tit|86|P Retencion Impuesto IVA0
-tit|87|P Retencion TipoFactor IVA0
-tit|88|P Retencion TasaOCuota IVA0
-tit|89|P Retencion Importe IVA0
-tit|90|Diff Monto Total Pagos
-tit|91|Diff Importe Pago3
-col|1|A
-col|2|B
-col|3|C
-col|4|D
-col|5|E
-col|6|F
-col|7|G
-col|8|H
-col|9|I
-col|10|J
-col|11|K
-col|12|L
-col|13|M
-col|14|N
-col|15|O
-col|16|P
-col|17|Q
-col|18|R
-col|19|S
-col|20|T
-col|21|U
-col|22|V
-col|23|W
-col|24|X
-col|25|Y
-col|26|Z
-col|27|AA
-col|28|AB
-col|29|AC
-col|30|AD
-col|31|AE
-col|32|AF
-col|33|AG
-col|34|AH
-col|35|AI
-col|36|AJ
-col|37|AK
-col|38|AL
-col|39|AM
-col|40|AN
-col|41|AO
-col|42|AP
-col|43|AQ
-col|44|AR
-col|45|AS
-col|46|AT
-col|47|AU
-col|48|AV
-col|49|AW
-col|50|AL
-col|51|AM
-col|52|AN
-col|53|AO
-col|54|AP
-col|55|AQ
-col|56|AR
-col|57|AS
-col|58|AT
-col|59|AU
-col|60|AV
-col|61|AW
-col|62|AX
-col|63|AY
-col|64|AZ
-col|65|BA
-col|66|BB
-col|67|BC
-col|68|BD
-col|69|BE
-col|70|BF
-col|71|BG
-col|72|BH
-col|73|BI
-col|74|BJ
-col|75|BK
-col|76|BL
-col|77|BM
-col|78|BN
-col|79|BO
-col|80|BP
-col|81|BQ
-col|82|BR
-col|83|BS
-col|84|BT
-col|85|BU
-col|86|BV
-col|87|BW
-col|88|BX
-col|89|BY
-col|90|BZ
-col|91|CA
+idx|difMontoTotalPagos3|89
+idx|difImportePago3|90
+tit|0|Company Code
+tit|1|Customer
+tit|2|Document Number
+tit|3|Document Type
+tit|4|Payment Date - Time
+tit|5|Clearing Document
+tit|6|Amount in Doc. Curr
+tit|7|Document Currency
+tit|8|Eff.exchange rate
+tit|9|Assignment
+tit|10|Forma de Pago
+tit|11|No. de Parcialidad
+tit|12|Importe Saldo Anterior
+tit|13|Importe Pago
+tit|14|Importe Saldo Insoluto
+tit|15|Tipo Relacion (04)
+tit|16|Pago Cancelado (Doc Number)
+tit|17|Num Operacion
+tit|18|RFC Banco Ordenente
+tit|19|Nombre Banco Ordenante
+tit|20|Cuenta Ordenante
+tit|21|RFC Banco Beneficiario
+tit|22|Cuenta Beneficiario
+tit|23|Tipo Cadena Pago (01)
+tit|24|Certificado Pago
+tit|25|Cadena Pago
+tit|26|Sello Pago
+tit|27|Tax Code
+tit|28|Retenciones IVA
+tit|29|Traslados Base IVA16
+tit|30|Traslados Impuesto IVA16
+tit|31|Traslados Base IVA8
+tit|32|Traslados Impuesto IVA8
+tit|33|Traslados Base IVA0
+tit|34|Traslados Impuesto IVA0
+tit|35|Monto Total Pagos
+tit|36|Objeto Impuesto
+tit|37|Tax Traslado Base
+tit|38|Tax Traslado Impuesto
+tit|39|Tax Traslado TipoFactor
+tit|40|Tax Traslado TasaOCuota
+tit|41|Tax Traslado Importe
+tit|42|Tax Retencion Base
+tit|43|Tax Retencion Impuesto
+tit|44|Tax Retencion TipoFactor
+tit|45|Tax Retencion TasaOCuota
+tit|46|Tax Retencion Importe
+tit|47|Diff Monto Total Pagos
+tit|48|Diff Importe Pago1
+tit|49|DR Traslado Base
+tit|50|DR Traslado Impuesto
+tit|51|DR Traslado TipoFactor
+tit|52|DR Traslado TasaOCuota
+tit|53|DR Traslado Importe
+tit|54|DR Retencion Base
+tit|55|DR Retencion Impuesto
+tit|56|DR Retencion TipoFactor
+tit|57|DR Retencion TasaOCuota
+tit|58|DR Retencion Importe
+tit|59|P Traslado Base IVA16
+tit|60|P Traslado Impuesto IVA16
+tit|61|P Traslado TipoFactor IVA16
+tit|62|P Traslado TasaOCuota IVA16
+tit|63|P Traslado Importe IVA16
+tit|64|P Retencion Base IVA16
+tit|65|P Retencion Impuesto IVA16
+tit|66|P Retencion TipoFactor IVA16
+tit|67|P Retencion TasaOCuota IVA16
+tit|68|P Retencion Importe IVA16
+tit|69|P Traslado Base IVA8
+tit|70|P Traslado Impuesto IVA8
+tit|71|P Traslado TipoFactor IVA8
+tit|72|P Traslado TasaOCuota IVA8
+tit|73|P Traslado Importe IVA8
+tit|74|P Retencion Base IVA8
+tit|75|P Retencion Impuesto IVA8
+tit|76|P Retencion TipoFactor IVA8
+tit|77|P Retencion TasaOCuota IVA8
+tit|78|P Retencion Importe IVA8
+tit|79|P Traslado Base IVA0
+tit|80|P Traslado Impuesto IVA0
+tit|81|P Traslado TipoFactor IVA0
+tit|82|P Traslado TasaOCuota IVA0
+tit|83|P Traslado Importe IVA0
+tit|84|P Retencion Base IVA0
+tit|85|P Retencion Impuesto IVA0
+tit|86|P Retencion TipoFactor IVA0
+tit|87|P Retencion TasaOCuota IVA0
+tit|88|P Retencion Importe IVA0
+tit|89|Diff Monto Total Pagos
+tit|90|Diff Importe Pago3
+col|0|A
+col|1|B
+col|2|C
+col|3|D
+col|4|E
+col|5|F
+col|6|G
+col|7|H
+col|8|I
+col|9 |J
+col|10|K
+col|11|L
+col|12|M
+col|13|N
+col|14|O
+col|15|P
+col|16|Q
+col|17|R
+col|18|S
+col|19|T
+col|20|U
+col|21|V
+col|22|W
+col|23|X
+col|24|Y
+col|25|Z
+col|26|AA
+col|27|AB
+col|28|AC
+col|29|AD
+col|30|AE
+col|31|AF
+col|32|AG
+col|33|AH
+col|34|AI
+col|35|AJ
+col|36|AK
+col|37|AL
+col|38|AM
+col|39|AN
+col|40|AO
+col|41|AP
+col|42|AQ
+col|43|AR
+col|44|AS
+col|45|AT
+col|46|AU
+col|47|AV
+col|48|AW
+col|49|AL
+col|50|AM
+col|51|AN
+col|52|AO
+col|53|AP
+col|54|AQ
+col|55|AR
+col|56|AS
+col|57|AT
+col|58|AU
+col|59|AV
+col|60|AW
+col|61|AX
+col|62|AY
+col|63|AZ
+col|64|BA
+col|65|BB
+col|66|BC
+col|67|BD
+col|68|BE
+col|69|BF
+col|70|BG
+col|71|BH
+col|72|BI
+col|73|BJ
+col|74|BK
+col|75|BL
+col|76|BM
+col|77|BN
+col|78|BO
+col|79|BP
+col|80|BQ
+col|81|BR
+col|82|BS
+col|83|BT
+col|84|BU
+col|85|BV
+col|86|BW
+col|87|BX
+col|88|BY
+col|89|BZ
+col|90|CA

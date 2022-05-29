@@ -1,5 +1,5 @@
-// cp2xlsc.go [2022-04-06 BAR8TL] Extend Pagos1.0 EDICOM-file with Pagos2.0
-// fields - Entry point
+// cp2xlsc.go - Extend Pagos1.0 EDICOM-file with Pagos2.0 fields (Entry point)
+// 2022-05-17 BAR8TL Version1.0 - In progress
 package main
 
 import rb "bar8tl/p/cp2xlsc"
@@ -20,7 +20,7 @@ func main() {
 
 func taxCalc(parm ut.Param_tp, s rb.Settings_tp) {
   s.SetRunVars(parm)
-  if s.Modep == s.Konst.BATCH {
+  if s.Modep == s.Konst.BATCH { // For batch process browse inputs directory
     files, _ := ioutil.ReadDir(s.Inpdr)
     for _, f := range files {
       ffile  := f.Name()
@@ -31,7 +31,7 @@ func taxCalc(parm ut.Param_tp, s rb.Settings_tp) {
         procIndivFile(s, s.Inpdr, ffile)
       }
     }
-  } else {
+  } else {                      // For individual process use specified file
     ffile  := s.Infil
     s.Flext = filepath.Ext(ffile)
     s.Flnam = strings.TrimRight(ffile, s.Flext)
@@ -43,23 +43,25 @@ func taxCalc(parm ut.Param_tp, s rb.Settings_tp) {
 }
 
 func procIndivFile(s rb.Settings_tp, dir, f string) {
-  c   := rb.NewCalctax(s)
-  rdr := rb.NewReader()
+  m = make(map[string]int)
+  loadAssets(s)
+  c   := NewCalctax(s)
+  rdr := NewReader()
   rdr.OpenInpExcel(dir, f)
-  rows, err := rb.F.GetRows(s.Konst.TAB)
+  rows, err := F.GetRows(s.Konst.TAB)
   if err != nil {
     log.Fatal(err)
   }
-  wtr := rb.NewWriter(s)
+  wtr := NewWriter(s)
   wtr.CreateOutExcel()
   for _, row := range rows {
     rdr.GetLineFields(row)
-    switch rdr.Src.DocumentType {
-      case "Document Type" : wtr.FetchTitle()
-      case "DZ", "PK"      : ProcessPaymentLine(c, *rdr, wtr)
-      case "RV"            : ProcessInvoiceLine(c, *rdr)
+    switch rds[m["documentType"]] {
+      case "Document Type": wtr.FetchTitle()
+      case "DZ", "PK"     : ProcessPaymentLine(c, wtr)
+      case "RV"           : ProcessInvoiceLine(c)
     }
   }
   c.FetchPaymentLine(wtr).FetchInvoiceLines(wtr)
-  wtr.ProduceExcelOutput(dir)
+  wtr.ProduceExcelOutput(s, dir)
 }

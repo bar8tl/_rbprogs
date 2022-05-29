@@ -1,4 +1,5 @@
-// envmnt.go [2017-05-24/BAR8TL] Establish program scope environment variables
+// envmnt.go - Definition of program environment variables
+// 2022-05-17 BAR8TL Version1.0 - Released
 package cp2xlsc
 
 import lib "bar8tl/p/rblib"
