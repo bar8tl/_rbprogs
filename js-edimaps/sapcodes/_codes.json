@@ -276,6 +276,42 @@
       ]
     },
     {
+      "ctype": "AMOUNT_TYPE", "usage": "",
+      "codes": [
+        {"key": "001", "val": "Payment"                                                    },
+        {"key": "002", "val": "Total"                                                      },
+        {"key": "003", "val": "Cash Discount"                                              },
+        {"key": "004", "val": "Invoice Amount"                                             },
+        {"key": "005", "val": "Tax"                                                        },
+        {"key": "006", "val": "Net Amount"                                                 },
+        {"key": "007", "val": "Deductions"                                                 },
+        {"key": "008", "val": "Reporting Amount"                                           },
+        {"key": "009", "val": "Fee"                                                        },
+        {"key": "010", "val": "Total Fees"                                                 },
+        {"key": "011", "val": "Payment"                                                    },
+        {"key": "012", "val": "Posted Amount"                                              },
+        {"key": "013", "val": "Original Amount"                                            },
+        {"key": "014", "val": "Amount Converted"                                           },
+        {"key": "015", "val": "Amount Received"                                            },
+        {"key": "016", "val": "Credit Memo"                                                },
+        {"key": "017", "val": "Collection Total"                                           },
+        {"key": "018", "val": "Amount To be Posted"                                        },
+        {"key": "019", "val": "Opening Balance"                                            },
+        {"key": "020", "val": "Opening Balance (if Interim Balance)"                       },
+        {"key": "021", "val": "Closing Balance"                                            },
+        {"key": "022", "val": "Closing Balance (if Interim Balance)"                       },
+        {"key": "023", "val": "Total Debits"                                               },
+        {"key": "024", "val": "Total Credits"                                              },
+        {"key": "025", "val": "Early Total"                                                },
+        {"key": "026", "val": "Late Total"                                                 },
+        {"key": "027", "val": "Correction Total"                                           },
+        {"key": "028", "val": "Grand Total"                                                },
+        {"key": "029", "val": "Others Total"                                               },
+        {"key": "030", "val": "Withholding Tax"                                            },
+        {"key": "031", "val": "Total Withholding Tax"                                      }
+      ]
+    },
+    {
       "ctype": "AMOUNT", "usage": "E1EDP26.QUALF",
       "codes": [
         {"key": "001", "val": "Gross price"                                                },
@@ -875,6 +911,25 @@
         {"key": "E", "val": "Error"                                                        },
         {"key": "S", "val": "Success message"                                              },
         {"key": "I", "val": "Information"                                                  }
+      ]
+    },
+    {
+      "ctype": "MESSAGE_NAME", "usage": "Coded Message Name",
+      "codes": [
+        {"key": "INV", "val": "Invoice"                                                    },
+        {"key": "CRM", "val": "Credit memo"                                                },
+        {"key": "REM", "val": "Remittance advice"                                          },
+        {"key": "DBM", "val": "Debit memo"                                                 },
+        {"key": "CRE", "val": "Credit advice"                                              },
+        {"key": "CEE", "val": "Ext. credit advice"                                         },
+        {"key": "DEB", "val": "Debit advice"                                               },
+        {"key": "PAO", "val": "Payment order"                                              },
+        {"key": "PEX", "val": "Extended payment order"                                     },
+        {"key": "PMU", "val": "Multiple payment order"                                     },
+        {"key": "DIR", "val": "Direct debit"                                               },
+        {"key": "FST", "val": "Financial statement"                                        },
+        {"key": "LBX", "val": "Lockbox"                                                    },
+        {"key": "ACP", "val": "Polling information"                                        }
       ]
     }
   ]

@@ -10,24 +10,14 @@ var ivs [][91]string
 var ivf [][91]float64
 
 type Calctax_tp struct {
-  firstInvoice          bool
-  firstInvoTraslIVA16   bool
-  firstInvoRetenIVA16   bool
-  firstInvoTraslIVA8    bool
-  firstInvoRetenIVA8    bool
-  firstInvoTraslIVA0    bool
-  firstInvoRetenIVA0    bool
+  fiv [7]bool
 }
 
 func NewCalctax(s rb.Settings_tp) *Calctax_tp {
   var c Calctax_tp
-  c.firstInvoice        = true
-  c.firstInvoTraslIVA16 = true
-  c.firstInvoRetenIVA16 = true
-  c.firstInvoTraslIVA8  = true
-  c.firstInvoRetenIVA8  = true
-  c.firstInvoTraslIVA0  = true
-  c.firstInvoRetenIVA0  = true
+  for i, _ := range c.fiv {
+    c.fiv[i] = true
+  }
   return &c
 }
 
@@ -38,13 +28,9 @@ func (c *Calctax_tp) ResetPaymentData() {
   for i, _ := range pmf {
     pmf[i] = 0.0
   }
-  c.firstInvoice        = true
-  c.firstInvoTraslIVA16 = true
-  c.firstInvoRetenIVA16 = true
-  c.firstInvoTraslIVA8  = true
-  c.firstInvoRetenIVA8  = true
-  c.firstInvoTraslIVA0  = true
-  c.firstInvoRetenIVA0  = true
+  for i, _ := range c.fiv {
+    c.fiv[i] = true
+  }
   ivs = nil
   ivf = nil
 }
@@ -85,62 +71,62 @@ func (c *Calctax_tp) StoreDocRel() {
   ivs = append(ivs, drs)
   ivf = append(ivf, drf)
   // Reset cumulative amounts of One-taxcode payments
-  if c.firstInvoice {
+  if c.fiv[n["firstInvoice"]] {
     pms[m["taxTrasladoImpuesto"]]   = drs[m["taxTrasladoImpuesto"]]
     pms[m["taxTrasladoTipoFactor"]] = drs[m["taxTrasladoTipoFactor"]]
     pms[m["taxTrasladoTasaOCuota"]] = drs[m["taxTrasladoTasaOCuota"]]
     pms[m["taxRetncionImpuesto"]]   = drs[m["taxRetncionImpuesto"]]
     pms[m["taxRetncionTipoFactor"]] = drs[m["taxRetncionTipoFactor"]]
     pms[m["taxRetncionTasaOCuota"]] = drs[m["taxRetncionTasaOCuota"]]
-    c.firstInvoice = false
+    c.fiv[n["firstInvoice"]] = false
   }
   // Reset cumulative amounts of Multiple-taxcode payments
   if drf[m["taxTrasladoTasaOCuota"]] == 0.16 {
-    if c.firstInvoTraslIVA16 {
+    if c.fiv[n["firstInvoTraslIVA16"]] {
       pms[m["trasladoImpuestoPIVA16"]]   = drs[m["taxTrasladoImpuesto"]]
       pms[m["trasladoTipoFactorPIVA16"]] = drs[m["taxTrasladoTipoFactor"]]
       pms[m["trasladoTasaOCuotaPIVA16"]] = drs[m["taxTrasladoTasaOCuota"]]
-      c.firstInvoTraslIVA16 = false
+      c.fiv[n["firstInvoTraslIVA16"]] = false
     }
   }
   if drf[m["taxRetncionTasaOCuota"]] == 0.16 {
-    if c.firstInvoRetenIVA16 {
+    if c.fiv[n["firstInvoRetenIVA16"]] {
       pms[m["retncionImpuestoPIVA16"]]   = drs[m["taxRetncionImpuesto"]]
       pms[m["retncionTipoFactorPIVA16"]] = drs[m["taxRetncionTipoFactor"]]
       pms[m["retncionTasaOCuotaPIVA16"]] = drs[m["taxRetncionTasaOCuota"]]
-      c.firstInvoRetenIVA16 = false
+      c.fiv[n["firstInvoRetenIVA16"]] = false
     }
   }
   if drf[m["taxTrasladoTasaOCuota"]] == 0.08 {
-    if c.firstInvoTraslIVA8 {
+    if c.fiv[n["firstInvoTraslIVA8"]] {
       pms[m["trasladoImpuestoPIVA8"]]    = drs[m["taxTrasladoImpuesto"]]
       pms[m["trasladoTipoFactorPIVA8"]]  = drs[m["taxTrasladoTipoFactor"]]
       pms[m["trasladoTasaOCuotaPIVA8"]]  = drs[m["taxTrasladoTasaOCuota"]]
-      c.firstInvoTraslIVA8 = false
+      c.fiv[n["firstInvoTraslIVA8"]] = false
     }
   }
   if drf[m["taxRetncionTasaOCuota"]] == 0.08 {
-    if c.firstInvoRetenIVA8 {
+    if c.fiv[n["firstInvoRetenIVA8"]] {
       pms[m["retncionImpuestoPIVA8"]]    = drs[m["taxRetncionImpuesto"]]
       pms[m["retncionTipoFactorPIVA8"]]  = drs[m["taxRetncionTipoFactor"]]
       pms[m["retncionTasaOCuotaPIVA8"]]  = drs[m["taxRetncionTasaOCuota"]]
-      c.firstInvoRetenIVA8 = false
+      c.fiv[n["firstInvoRetenIVA8"]] = false
     }
   }
   if drf[m["taxTrasladoTasaOCuota"]] == 0.0 {
-    if c.firstInvoTraslIVA0 {
+    if c.fiv[n["firstInvoTraslIVA0"]] {
       pms[m["trasladoImpuestoPIVA0"]]    = drs[m["taxTrasladoImpuesto"]]
       pms[m["trasladoTipoFactorPIVA0"]]  = drs[m["taxTrasladoTipoFactor"]]
       pms[m["trasladoTasaOCuotaPIVA0"]]  = drs[m["taxTrasladoTasaOCuota"]]
-      c.firstInvoTraslIVA0 = false
+      c.fiv[n["firstInvoTraslIVA0"]] = false
     }
   }
   if drf[m["taxRetncionTasaOCuota"]] == 0.0 {
-    if c.firstInvoRetenIVA0 {
+    if c.fiv[n["firstInvoRetenIVA0"]] {
       pms[m["retncionImpuestoPIVA0"]]    = drs[m["taxRetncionImpuesto"]]
       pms[m["retncionTipoFactorPIVA0"]]  = drs[m["taxRetncionTipoFactor"]]
       pms[m["retncionTasaOCuotaPIVA0"]]  = drs[m["taxRetncionTasaOCuota"]]
-      c.firstInvoRetenIVA0 = false
+      c.fiv[n["firstInvoRetenIVA0"]] = false
     }
   }
 }

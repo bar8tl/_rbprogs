@@ -1,5 +1,5 @@
 // corelogic.go - Extend Pagos1.0 EDICOM-file with Pagos2.0 fields (Core Logic)
-// 2022-05-17 BAR8TL Version1.0 - In progress
+// 2022-05-17 BAR8TL Version1.0 - Released
 package main
 
 import ut "bar8tl/p/rblib"

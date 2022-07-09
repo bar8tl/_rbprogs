@@ -1,5 +1,5 @@
 // cp2xlsc.go - Extend Pagos1.0 EDICOM-file with Pagos2.0 fields (Entry point)
-// 2022-05-17 BAR8TL Version1.0 - In progress
+// 2022-05-17 BAR8TL Version1.0 - Released
 package main
 
 import rb "bar8tl/p/cp2xlsc"
@@ -43,7 +43,6 @@ func taxCalc(parm ut.Param_tp, s rb.Settings_tp) {
 }
 
 func procIndivFile(s rb.Settings_tp, dir, f string) {
-  m = make(map[string]int)
   loadAssets(s)
   c   := NewCalctax(s)
   rdr := NewReader()

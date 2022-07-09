@@ -1,0 +1,2 @@
+writefile.exe
+pause

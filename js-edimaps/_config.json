@@ -30,8 +30,8 @@
     {"id": "cig", "table": "igitems",  "cr": true}
   ],
   "lrf": [
-    {"id": "idx", "table": "indix",    "file": "_edirbna_mapping_dav57-index.xlsx", "tab": "idx", "ld": true},
-    {"id": "chg", "table": "changes",  "file": "_edirbna_mapping_dav57-index.xlsx", "tab": "chg", "ld": true},
+    {"id": "idx", "table": "indix",    "file": "_edirbna_mapping-index.xlsx", "tab": "idx", "ld": true},
+    {"id": "chg", "table": "changes",  "file": "_edirbna_mapping-index.xlsx", "tab": "chg", "ld": true},
     {"id": "cix", "table": "cd_index", "file": "cd_index.txt",                      "tab": "",    "ld": true},
     {"id": "ccd", "table": "cd_codes", "file": "cd_codes.txt",                      "tab": "",    "ld": true},
     {"id": "cdt", "table": "cd_data",  "file": "cd_data.txt",                       "tab": "",    "ld": true}

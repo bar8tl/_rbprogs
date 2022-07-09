@@ -46,7 +46,7 @@
     {"activ": true, "table": "cd_index", "sqlst": "CREATE TABLE IF NOT EXISTS cd_index (tabid TEXT, tabtx TEXT, tabus TEXT, PRIMARY KEY (tabid));"},
     {"activ": true, "table": "cd_codes", "sqlst": "CREATE TABLE IF NOT EXISTS cd_codes (tabid TEXT, cdkey TEXT, cdtext TEXT, PRIMARY KEY (tabid, cdkey));"},
     {"activ": true, "table": "cd_data",  "sqlst": "CREATE TABLE IF NOT EXISTS cd_data  (tabid TEXT, cdkey TEXT, relshp1 TEXT, relshp2 TEXT, PRIMARY KEY (tabid, cdkey));"},
-    {"activ": true, "table": "indix",    "sqlst": "CREATE TABLE IF NOT EXISTS indix    (mapid TEXT, ctmrs TEXT, ctmrl TEXT, messg TEXT, mvers TEXT, idocm TEXT, idoct TEXT, mstat TEXT, fname TEXT, relsd TEXT, chgnr TEXT, suprt TEXT, asgnd TEXT, rsvld TEXT, dstat TEXT, msgtp TEXT, PRIMARY KEY (mapid, chgnr));"},
+    {"activ": true, "table": "indix",    "sqlst": "CREATE TABLE IF NOT EXISTS indix    (mapid TEXT, ctmrs TEXT, ctmrl TEXT, messg TEXT, mvers TEXT, idocm TEXT, idoct TEXT, mstat TEXT, fname TEXT, relsd TEXT, chgnr TEXT, suprt TEXT, asgnd TEXT, dstat TEXT, msgtp TEXT, PRIMARY KEY (mapid, chgnr));"},
     {"activ": true, "table": "changes",  "sqlst": "CREATE TABLE IF NOT EXISTS changes  (chgno TEXT, fname TEXT, PRIMARY KEY (chgno));"},
     {"activ": true, "table": "headers",  "sqlst": "CREATE TABLE IF NOT EXISTS headers  (seqno TEXT, mapid TEXT UNIQUE, mptit TEXT, lupdt TEXT, authr TEXT, bvers TEXT, cstmr TEXT, tgtfm TEXT, srcfm TEXT, instr TEXT, sampl TEXT);"},
     {"activ": true, "table": "groups",   "sqlst": "CREATE TABLE IF NOT EXISTS groups   (seqno TEXT, mapid TEXT, grpid TEXT, gtext TEXT, lpmax TEXT, stats TEXT, PRIMARY KEY (mapid, grpid));"},

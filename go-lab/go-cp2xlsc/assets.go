@@ -10,6 +10,7 @@ var TIPOFACTOR string
 var OBJETOIMP  string
 var DEC        int
 var m      map[string]int
+var n      map[string]int
 var drs    [91]string
 var drf    [91]float64
 var pms    [91]string
@@ -25,8 +26,8 @@ var alphac   []int
 var alpha1   []int
 var alpha3   []int
 
-// Indexes map
-func loadIndexMap() {
+// Indexes maps
+func loadIndexMaps() {
   // Source fields
   m["companyCode"]              = 0
   m["customer"]                 = 1
@@ -122,6 +123,14 @@ func loadIndexMap() {
   m["retncionImportePIVA0"]     = 88
   m["difMontoTotalPagos3"]      = 89
   m["difImportePago3"]          = 90
+  // Fisrt invoice indicators
+  n["firstInvoice"]             = 0
+  n["firstInvoTraslIVA16"]      = 1
+  n["firstInvoRetenIVA16"]      = 2
+  n["firstInvoTraslIVA8"]       = 3
+  n["firstInvoRetenIVA8"]       = 4
+  n["firstInvoTraslIVA0"]       = 5
+  n["firstInvoRetenIVA0"]       = 6
 }
 
 // Title table
@@ -328,7 +337,9 @@ func loadAssets(s rb.Settings_tp) {
   OBJETOIMP  = s.Const.Taxbl
   DEC        = s.Konst.DEC
   outpt      = s.Outpt
-  loadIndexMap()
+  m = make(map[string]int)
+  n = make(map[string]int)
+  loadIndexMaps()
   loadTitleTable()
   loadColumnTable()
   numers = []int{

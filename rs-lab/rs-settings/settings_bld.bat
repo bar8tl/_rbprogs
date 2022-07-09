@@ -1,0 +1,2 @@
+rustc parms.rs
+pause

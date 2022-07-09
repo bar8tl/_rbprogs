@@ -16,7 +16,11 @@ node edimaps.js -dmp:ddi862
 node edimaps.js -dmp:dxt850
 node edimaps.js -dmp:dxa850
 node edimaps.js -dmp:dgk850
+node edimaps.js -dmp:dmxdfr
+node edimaps.js -dmp:dmxdjt
+node edimaps.js -dmp:dns830
 node edimaps.js -dmp:bob850
+node edimaps.js -dmp:fdy830
 node edimaps.js -dmp:flx830
 node edimaps.js -dmp:gan830
 node edimaps.js -dmp:hag830
@@ -25,6 +29,7 @@ node edimaps.js -dmp:hdk830
 node edimaps.js -dmp:hin850
 node edimaps.js -dmp:hon862
 node edimaps.js -dmp:jat830
+node edimaps.js -dmp:jel850
 node edimaps.js -dmp:krmdfr
 node edimaps.js -dmp:ktxdfr
 node edimaps.js -dmp:kaw830
@@ -52,6 +57,7 @@ node edimaps.js -dmp:riv850
 node edimaps.js -dmp:riv860
 node edimaps.js -dmp:riv862
 node edimaps.js -dmp:sch830
+node edimaps.js -dmp:sew830
 node edimaps.js -dmp:sum830
 node edimaps.js -dmp:sum850
 node edimaps.js -dmp:tes830

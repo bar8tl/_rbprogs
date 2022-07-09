@@ -47,11 +47,11 @@ module.exports.Dlrf = class Dlrf {
       db.serialize(() => {
         db.run('DELETE FROM indix;');
         for (var i = 0; i < xlsjs.length; i++) {
-          db.run('INSERT INTO indix VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);',
+          db.run('INSERT INTO indix VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);',
             xlsjs[i].mapid, xlsjs[i].ctmrs, xlsjs[i].ctmrl, xlsjs[i].messg,
             xlsjs[i].mvers, xlsjs[i].idocm, xlsjs[i].idoct, xlsjs[i].mstat,
             xlsjs[i].fname, xlsjs[i].relsd, xlsjs[i].chgnr, xlsjs[i].suprt,
-            xlsjs[i].asgnd, xlsjs[i].rslvd, xlsjs[i].dstat,
+            xlsjs[i].asgnd, xlsjs[i].dstat,
             s.GetMsgTp(xlsjs[i].messg));
         }
         db.close();
